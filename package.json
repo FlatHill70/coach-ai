@@ -5,10 +5,15 @@
   "description": "Coach — personal training and nutrition coach skill for Claude Code",
   "type": "module",
   "license": "MIT",
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "test": "node --test \"tests/*.test.mjs\"",
     "demo": "node examples/demo/generate.mjs",
     "media": "node docs/media/build.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.64.0-alpha-2026-09-24"
   }
 }

@@ -17,8 +17,12 @@ Origen: skill personal `~/.claude/skills/entrenador` (no se toca). Este repo es 
 - [x] Fase 1 — motor (`scripts/coach.mjs` + lib), catálogo bilingüe de 144 ejercicios, demo "Alex", 10 tests en verde.
 - [x] Fase 2 — SKILL.md + referencias (safety, onboarding, levels-and-goals, programming, weak-points, nutrition, data-sources, apple-shortcut, cli). `claude plugin validate` OK.
 
+- [x] Fase 4 — README/README.es, CONTRIBUTING, CHANGELOG, plantillas de issues, install.sh/ps1 (`4dfb4b1`).
+- [x] Fase 5 — CI (tests en matriz + validate + smoke Node 20), release-please, workflow de release con zips y tag `coach--vX`.
+- [x] Conversaciones reales grabadas con `docs/media/record-conversations.mjs` (`claude -p --setting-sources project`, sin shell:true en Windows).
+
+## En curso
+- [ ] Fase 3 — media (banner claro/oscuro, social preview, 5 capturas + 2 móvil, GIF). Dirección: "Libreta de entrenamiento" (seed ec6191fb, pick). Ejecuta frontend-designer en docs/media/. Falta: revisión final (finish reviewer) y DESIGN.md.
+
 ## Pendiente
-- [ ] Fase 3 — media (banner, capturas, GIF) con impeccable → taste → frontend-designer.
-- [ ] Fase 4 — README/README.es, CONTRIBUTING, CHANGELOG, plantillas de issues, install.sh/ps1.
-- [ ] Fase 5 — CI (tests en matriz + validate), release-please, workflow de release con zip.
-- [ ] Fase 6 — crear repo en GitHub, push, primera release v0.1.0, probar `/plugin marketplace add` + install desde cero.
+- [ ] Fase 6 — crear repo FlatHill70/coach, push, permisos de Actions para release-please, release v0.1.0 + assets, topics, social preview (manual en Settings: GitHub no tiene API), probar `/plugin marketplace add` + install desde cero.

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Coach banner</title>
+<link rel="stylesheet" href="world.css">
+<style>
+  body { width: 1280px; height: 640px; }
+  #frame { width: 1280px; height: 640px; }
+  .side { position: absolute; left: 788px; top: 0; width: 452px; height: 640px; display: flex; flex-direction: column; justify-content: center; }
+  .wordmark { font-family: "Big Shoulders Display", sans-serif; font-weight: 900; font-size: 196px; line-height: 0.82; letter-spacing: -0.01em; color: var(--surface-ink); margin-left: -6px; }
+  .line { font-family: "Hanken Grotesk", sans-serif; font-weight: 400; font-size: 24px; line-height: 1.38; color: var(--surface-ink-soft); max-width: 410px; margin-top: 30px; text-wrap: balance; }
+  .strip-wrap { position: relative; margin-top: 46px; height: 60px; }
+  .strip { left: 0; top: 0; padding: 15px 44px 14px 40px; transform: rotate(1.4deg); font-family: "JetBrains Mono", monospace; font-size: 15.5px; color: #1d2226; white-space: nowrap; letter-spacing: -0.01em; }
+</style>
+</head>
+<body>
+<div id="frame" class="surface"></div>
+<script src="world.js"></script>
+<script src="logpage.js"></script>
+<script>
+(async () => {
+  const W = World;
+  const M = window.__MEDIA__;
+  const theme = W.theme();
+  await W.ready();
+  const frame = document.getElementById("frame");
+  W.paint(frame, theme, theme === "dark" ? 7121 : 3307);
+
+  const L = { x: 44, y: -78, w: 694, h: 820, top: 160, headH: 28, rowH: 31, cols: [60, 152, 334, 520], font: 19, printSize: 12.5, noteSize: 23, ink: 3.4, bindStep: 23 };
+  const log = W.logPage(frame, M.week, L);
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("class", "ink");
+  svg.setAttribute("width", L.w);
+  svg.setAttribute("height", L.h);
+  log.page.appendChild(svg);
+  const notes = document.createElement("div");
+  notes.className = "notes";
+  log.page.appendChild(notes);
+  W.correct(log, svg, notes, M.corrections, L, 5150);
+  log.page.style.transform = "rotate(-2deg)";
+
+  const side = document.createElement("div");
+  side.className = "side";
+  side.innerHTML = `<div class="wordmark">Coach</div>
+    <p class="line">${M.tagline}</p>
+    <div class="strip-wrap"><div class="sheet strip">${M.install}</div></div>`;
+  frame.appendChild(side);
+  const strip = side.querySelector(".strip");
+  const wrap = side.querySelector(".strip-wrap");
+  W.tape(wrap, -26, -6, -12, 64, 91);
+  W.tape(wrap, strip.offsetWidth - 30, 28, -9, 64, 92);
+  document.body.dataset.ready = "1";
+})();
+</script>
+</body>
+</html>
