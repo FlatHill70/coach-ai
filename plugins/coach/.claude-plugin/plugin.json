@@ -1,0 +1,11 @@
+{
+  "name": "coach",
+  "displayName": "Coach — training & nutrition",
+  "version": "0.1.0",
+  "description": "Personal strength and nutrition coach for any level and goal: safety screening with teen mode, programs, Hevy/Strong analysis, weak-point detection, goals with ETAs, adaptive calorie targets, meal plans. Reads Apple Health and Health Connect.",
+  "author": { "name": "FlatHill70", "url": "https://github.com/FlatHill70" },
+  "homepage": "https://github.com/FlatHill70/coach",
+  "repository": "https://github.com/FlatHill70/coach",
+  "license": "MIT",
+  "keywords": ["fitness", "gym", "strength", "hypertrophy", "nutrition", "coach", "hevy", "strong", "apple-health", "health-connect"]
+}

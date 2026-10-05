@@ -1,0 +1,13 @@
+{
+  "name": "coach",
+  "description": "Coach — a personal training and nutrition coach skill for Claude Code.",
+  "owner": { "name": "FlatHill70", "url": "https://github.com/FlatHill70" },
+  "plugins": [
+    {
+      "name": "coach",
+      "source": "./plugins/coach",
+      "description": "Personal strength and nutrition coach for any level and goal.",
+      "category": "health"
+    }
+  ]
+}
