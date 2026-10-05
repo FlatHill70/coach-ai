@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Tests (${{ matrix.os }}, Node ${{ matrix.node }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node: [22, 24]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm test
+
+  engine-node20:
+    name: Engine smoke test (Node 20)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run the engine against the demo dataset
+        env:
+          COACH_HOME: ${{ runner.temp }}/coach-home
+          COACH_TODAY: "2026-10-05"
+          COACH_NO_UPDATE_CHECK: "1"
+        run: |
+          node examples/demo/generate.mjs
+          node plugins/coach/skills/coach/scripts/coach.mjs status > /dev/null
+          node plugins/coach/skills/coach/scripts/coach.mjs workouts balance > /dev/null
+          node plugins/coach/skills/coach/scripts/coach.mjs nutrition targets > /dev/null
+          node plugins/coach/skills/coach/scripts/coach.mjs goals progress > /dev/null
+
+  validate:
+    name: Validate plugin and marketplace
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install -g @anthropic-ai/claude-code
+      - run: claude plugin validate .
+      - run: claude plugin validate ./plugins/coach
+      - name: No em-dashes in shipped skill text
+        run: |
+          if grep -rn "—" plugins/coach/skills/coach/SKILL.md; then
+            echo "SKILL.md must not contain em-dashes (the coach copies its formats)."; exit 1
+          fi

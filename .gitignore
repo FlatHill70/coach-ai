@@ -4,3 +4,9 @@ docs/media/.cache/
 *.log
 .DS_Store
 Thumbs.db
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/build/
+.impeccable/decision-*.json
+dist/
+.impeccable/questions/

@@ -32,7 +32,9 @@ export function entryFor(name) {
   for (const [k, v] of Object.entries(cat)) {
     if (norm(k) === n || Object.values(v.name ?? {}).some((x) => norm(x) === n) || (v.aliases ?? []).some((a) => norm(a) === n)) return v;
   }
-  return null;
+  const nb = norm(base);
+  const sameBase = Object.entries(cat).filter(([k]) => norm(k.replace(/\s*\(.*\)\s*$/, "")) === nb);
+  return sameBase.length ? sameBase[0][1] : null;
 }
 
 export function displayName(name, lang = "en") {

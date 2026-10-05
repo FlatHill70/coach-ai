@@ -1,0 +1,27 @@
+name: Add an exercise to the catalogue
+description: An exercise from Hevy/Strong (or a common one) is missing from exercises.json
+labels: [catalogue]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name exactly as your app logs it
+      placeholder: Pendulum Squat (Machine)
+    validations:
+      required: true
+  - type: input
+    id: primary
+    attributes:
+      label: Primary muscle groups
+      description: "From: chest, lats, upper_back, traps, front_delts, side_delts, rear_delts, biceps, triceps, forearms, quads, hamstrings, glutes, adductors, calves, lower_back, abs"
+    validations:
+      required: true
+  - type: input
+    id: secondary
+    attributes:
+      label: Secondary muscle groups
+  - type: input
+    id: translations
+    attributes:
+      label: Names in other languages
+      placeholder: "es: Sentadilla péndulo"

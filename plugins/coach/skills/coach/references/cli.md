@@ -1,6 +1,6 @@
 # Engine reference (`scripts/coach.mjs`)
 
-`node "${CLAUDE_SKILL_DIR}/scripts/coach.mjs" <area> <command> [--flag value]` · JSON on stdout · errors as `{"error": "..."}` on stderr with exit code 2 · Node.js 18+ (Health Connect needs 22.13+). Data: `~/.coach/` or `$COACH_HOME`.
+`node "${CLAUDE_SKILL_DIR}/scripts/coach.mjs" <area> <command> [--flag value]` · JSON on stdout · errors as `{"error": "..."}` on stderr with exit code 2 · Node.js 20+ (Health Connect needs 22.13+). Data: `~/.coach/` or `$COACH_HOME`.
 
 ## Files in `~/.coach/`
 

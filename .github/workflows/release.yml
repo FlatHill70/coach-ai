@@ -1,0 +1,70 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Existing tag to (re)build release assets for, e.g. v0.1.0"
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release-please:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
+      tag_name: ${{ steps.release.outputs.tag_name }}
+    steps:
+      - id: release
+        uses: googleapis/release-please-action@v4
+        with:
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+
+  assets:
+    needs: release-please
+    if: always() && (needs.release-please.outputs.release_created == 'true' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    env:
+      TAG: ${{ github.event.inputs.tag || needs.release-please.outputs.tag_name }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.TAG }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm test
+      - name: Check versions match the tag
+        run: |
+          v="${TAG#v}"
+          node -e "
+            const v=process.argv[1];
+            const p=require('./plugins/coach/.claude-plugin/plugin.json').version;
+            const k=require('./package.json').version;
+            const s=require('fs').readFileSync('plugins/coach/skills/coach/SKILL.md','utf8').match(/version: ([\d.]+)/)[1];
+            if([p,k,s].some(x=>x!==v)){console.error('version mismatch',{tag:v,plugin:p,pkg:k,skill:s});process.exit(1)}
+          " "$v"
+      - name: Build zips
+        run: |
+          mkdir -p dist
+          (cd plugins/coach/skills && zip -qr "$GITHUB_WORKSPACE/dist/coach-skill.zip" coach)
+          (cd plugins && zip -qr "$GITHUB_WORKSPACE/dist/coach-plugin.zip" coach)
+          (cd dist && sha256sum coach-skill.zip coach-plugin.zip > SHA256SUMS.txt)
+          ls -la dist
+      - name: Upload to the release
+        run: gh release upload "$TAG" dist/coach-skill.zip dist/coach-plugin.zip dist/SHA256SUMS.txt --clobber
+      - name: Tag for plugin dependency resolution
+        run: |
+          plugin_tag="coach--${TAG}"
+          if ! git ls-remote --exit-code --tags origin "refs/tags/${plugin_tag}" >/dev/null; then
+            git tag "${plugin_tag}" "${TAG}"
+            git push origin "${plugin_tag}"
+          fi

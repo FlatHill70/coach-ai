@@ -1,0 +1,16 @@
+name: Feature or coaching improvement
+description: A new capability, a data source, or better coaching logic
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What do you need
+      description: Describe the situation (your level, goal, how you train) and what Coach should do.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or references
+      description: For coaching logic, link the research, position stand or textbook behind the change.

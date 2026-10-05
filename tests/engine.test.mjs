@@ -68,11 +68,15 @@ test("Strong CSV: semicolons, pounds, warm-up markers and rest timers", () => {
     "2026-09-30 18:00:00;Legs;1h 5m;Squat (Barbell);1;135;5;0;0;;;8",
     "2026-09-30 18:00:00;Legs;1h 5m;Squat (Barbell);2;135;5;0;0;;;8,5",
     "2026-09-30 18:00:00;Legs;1h 5m;Rest Timer;Rest Timer;0;0;0;90;;;",
+    "2026-09-30 18:00:00;Legs;1h 5m;Leg Press;1;270;10;0;0;;;",
+    "2026-09-30 18:00:00;Legs;1h 5m;Bulgarian Split Squat;1;40;8;0;0;;;",
   ].join("\n"));
   const last = run(home, ["workouts", "last"])[0];
   assert.equal(last.minutes, 65);
-  assert.equal(last.exercises.length, 1);
+  assert.equal(last.exercises.length, 3);
   assert.equal(last.exercises[0].sets, "135lb×5@8, 135lb×5@8.5");
+  assert.deepEqual(run(home, ["workouts", "info"]).unmapped, [], "names without the equipment suffix map to the catalogue");
+  assert.equal(run(home, ["workouts", "exercise", "squat"]).logged, "Squat (Barbell)", "an exact base name wins over partial matches");
 });
 
 test("chat logging of sets, reps-only and timed sets", () => {

@@ -1,0 +1,32 @@
+name: Bug report
+description: Something in Coach (the engine or the coaching) doesn't work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you asked, what Coach did, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Engine output or error
+      description: If a command failed, paste its JSON output or error. Remove anything personal.
+      render: json
+  - type: dropdown
+    id: source
+    attributes:
+      label: Data source involved
+      options: [None / chat only, Hevy CSV, Strong CSV, Apple Health shortcut, Health Connect, Hevy API (hevy-mcp), Other]
+  - type: input
+    id: version
+    attributes:
+      label: Coach version
+      description: Run `/coach` and ask "status", or check the `version` in SKILL.md.
+  - type: input
+    id: env
+    attributes:
+      label: OS and Node.js version
+      placeholder: macOS 15, Node 22.13

@@ -28,7 +28,7 @@ const DAYS = {
   "Lower A": [
     ["Squat (Barbell)", 4, [5, 8], 95, 5],
     ["Romanian Deadlift (Barbell)", 3, [8, 10], 80, 5, "stall"],
-    ["Leg Press", 3, [10, 12], 140, 10],
+    ["Leg Press (Machine)", 3, [10, 12], 140, 10],
     ["Standing Calf Raise (Machine)", 4, [10, 15], 60, 5],
   ],
   "Upper B": [

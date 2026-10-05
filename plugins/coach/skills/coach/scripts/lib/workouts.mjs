@@ -276,6 +276,8 @@ export function findExercise(names, query, lang) {
   const q = n(query);
   const exact = names.find((x) => n(x) === q || n(displayName(x, lang)) === q || n(displayName(x, "en")) === q);
   if (exact) return exact;
+  const byBase = names.filter((x) => [x, displayName(x, lang), displayName(x, "en")].some((y) => n(y.replace(/\s*\(.*\)\s*$/, "")) === q));
+  if (byBase.length === 1) return byBase[0];
   const tokens = q.split(/\s+/).filter(Boolean);
   const hay = (x) => `${n(x)} ${n(displayName(x, lang))} ${n(displayName(x, "en"))}`;
   const partial = names.filter((x) => tokens.every((t) => hay(x).includes(t)));
