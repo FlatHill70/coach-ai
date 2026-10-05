@@ -5,7 +5,7 @@ argument-hint: "[check-in | plan | log | nutrition | goals | help]"
 license: MIT
 metadata:
   version: 0.1.0 # x-release-please-version
-  repository: https://github.com/FlatHill70/coach
+  repository: https://github.com/FlatHill70/coach-ai
 ---
 
 # Coach

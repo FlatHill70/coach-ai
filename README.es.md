@@ -6,12 +6,12 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/FlatHill70/coach/releases/latest"><img alt="Última versión" src="https://img.shields.io/github/v/release/FlatHill70/coach?label=versi%C3%B3n&color=1f2328"></a>
-  <a href="https://github.com/FlatHill70/coach/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/FlatHill70/coach/ci.yml?branch=main&label=tests"></a>
+  <a href="https://github.com/FlatHill70/coach-ai/releases/latest"><img alt="Última versión" src="https://img.shields.io/github/v/release/FlatHill70/coach-ai?label=versi%C3%B3n&color=1f2328"></a>
+  <a href="https://github.com/FlatHill70/coach-ai/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/FlatHill70/coach-ai/ci.yml?branch=main&label=tests"></a>
   <a href="https://code.claude.com/docs/en/plugins"><img alt="Plugin de Claude Code" src="https://img.shields.io/badge/Claude%20Code-plugin-d7263d"></a>
   <img alt="Node.js 20+" src="https://img.shields.io/badge/node-%E2%89%A520-1f2328">
   <img alt="Inglés y español" src="https://img.shields.io/badge/idioma-EN%20%7C%20ES-1f2328">
-  <a href="LICENSE"><img alt="Licencia MIT" src="https://img.shields.io/github/license/FlatHill70/coach?label=licencia&color=1f2328"></a>
+  <a href="LICENSE"><img alt="Licencia MIT" src="https://img.shields.io/github/license/FlatHill70/coach-ai?label=licencia&color=1f2328"></a>
 </p>
 
 <p align="center"><a href="README.md">English</a> · <b>Español</b></p>
@@ -29,7 +29,7 @@ Sirve para **cualquiera**: alguien que nunca ha pisado un gimnasio, un chaval qu
 **Desde el marketplace de plugins de Claude Code** (recomendado, se actualiza solo):
 
 ```text
-/plugin marketplace add FlatHill70/coach
+/plugin marketplace add FlatHill70/coach-ai
 /plugin install coach@coach
 ```
 
@@ -41,16 +41,16 @@ Después activa las actualizaciones automáticas: `/plugin` › **Marketplaces**
 macOS / Linux:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/FlatHill70/coach/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/FlatHill70/coach-ai/main/install.sh | bash
 ```
 
 Windows (PowerShell):
 
 ```powershell
-irm https://raw.githubusercontent.com/FlatHill70/coach/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/FlatHill70/coach-ai/main/install.ps1 | iex
 ```
 
-Para actualizar, vuelve a ejecutar el mismo comando. Coach te avisa cuando sale una versión nueva. También puedes descargar `coach-skill.zip` de la [última release](https://github.com/FlatHill70/coach/releases/latest) y descomprimirlo en `~/.claude/skills/`.
+Para actualizar, vuelve a ejecutar el mismo comando. Coach te avisa cuando sale una versión nueva. También puedes descargar `coach-skill.zip` de la [última release](https://github.com/FlatHill70/coach-ai/releases/latest) y descomprimirlo en `~/.claude/skills/`.
 
 </details>
 
@@ -158,7 +158,7 @@ npm run demo                            # datos sintéticos en examples/demo/hom
 npm run media                           # regenerar banner, capturas y GIF
 ```
 
-Consulta [CONTRIBUTING.md](CONTRIBUTING.md). ¿Falta un ejercicio? [Pídelo aquí](https://github.com/FlatHill70/coach/issues/new?template=exercise.yml).
+Consulta [CONTRIBUTING.md](CONTRIBUTING.md). ¿Falta un ejercicio? [Pídelo aquí](https://github.com/FlatHill70/coach-ai/issues/new?template=exercise.yml).
 
 ## Aviso
 

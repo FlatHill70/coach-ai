@@ -1,11 +1,11 @@
-# PROGRESS — publicar la skill como `FlatHill70/coach`
+# PROGRESS — publicar la skill como `FlatHill70/coach-ai`
 
 Origen: skill personal `~/.claude/skills/entrenador` (no se toca). Este repo es la versión universal.
 
 ## Decisiones cerradas
 - Nombre `coach`, cuenta personal FlatHill70, repo público, licencia MIT.
 - Bilingüe: README en inglés + README.es.md; la skill responde en el idioma del usuario.
-- Instalación: marketplace de Claude Code (`/plugin marketplace add FlatHill70/coach`) + instalador manual (install.sh / install.ps1).
+- Instalación: marketplace de Claude Code (`/plugin marketplace add FlatHill70/coach-ai`) + instalador manual (install.sh / install.ps1).
 - Fuentes v1: Hevy CSV, Strong CSV, Apple Salud vía Atajo, Health Connect, Hevy API (hevy-mcp), registro por chat.
 - Nutrición completa: objetivos, TDEE adaptativo, menús, lista de la compra.
 - Seguridad: cribado PAR-Q+; modo adolescente 13–17 (creatina solo 16–17 con consentimiento del tutor); <13 sin plan de gimnasio.
@@ -25,4 +25,4 @@ Origen: skill personal `~/.claude/skills/entrenador` (no se toca). Este repo es 
 - [ ] Fase 3 — media (banner claro/oscuro, social preview, 5 capturas + 2 móvil, GIF). Dirección: "Libreta de entrenamiento" (seed ec6191fb, pick). Ejecuta frontend-designer en docs/media/. Falta: revisión final (finish reviewer) y DESIGN.md.
 
 ## Pendiente
-- [ ] Fase 6 — crear repo FlatHill70/coach, push, permisos de Actions para release-please, release v0.1.0 + assets, topics, social preview (manual en Settings: GitHub no tiene API), probar `/plugin marketplace add` + install desde cero.
+- [ ] Fase 6 — crear repo FlatHill70/coach-ai, push, permisos de Actions para release-please, release v0.1.0 + assets, topics, social preview (manual en Settings: GitHub no tiene API), probar `/plugin marketplace add` + install desde cero.

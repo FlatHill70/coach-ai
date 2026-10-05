@@ -34,12 +34,12 @@ Used in a Claude Code session, often from a phone via Remote Control. Data arriv
 
 - Engine commands: status, sync, profile, workouts (summary/last/exercise/records/stalled/balance/log), body (weight/log/measures), nutrition (targets/days/log/tdee), goals, custom exercises, update check.
 - Bilingual (English/Spanish), replies in the user's language. Units kg or lb.
-- Install via the Claude Code plugin marketplace (`FlatHill70/coach`) or a manual installer. MIT license.
+- Install via the Claude Code plugin marketplace (`FlatHill70/coach-ai`) or a manual installer. MIT license.
 - Not medical advice; it refers to professionals on red flags.
 
 ## Brand Commitments
 
-- Name: **Coach**. Repository: `FlatHill70/coach`.
+- Name: **Coach**. Repository: `FlatHill70/coach-ai`.
 - No purple gradients, no emoji in headlines, no generic "hero + 3 cards" layout (user's standing rule).
 
 ## Evidence on Hand

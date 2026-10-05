@@ -3,7 +3,7 @@
 # Your data in ~/.coach is never touched.
 set -euo pipefail
 
-REPO="FlatHill70/coach"
+REPO="FlatHill70/coach-ai"
 VERSION="${COACH_VERSION:-latest}"
 DEST="${CLAUDE_SKILLS_DIR:-$HOME/.claude/skills}/coach"
 

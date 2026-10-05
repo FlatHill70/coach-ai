@@ -19,7 +19,7 @@ const only = new Set(process.argv.slice(2));
 const want = (k) => only.size === 0 || only.has(k);
 
 const TAGLINE = "A personal training and nutrition coach for every level, from first day to competition.";
-const INSTALL = "/plugin marketplace add FlatHill70/coach";
+const INSTALL = "/plugin marketplace add FlatHill70/coach-ai";
 
 // ---------- real engine data (demo user Alex) ----------
 const home = mkdtempSync(join(tmpdir(), "coach-media-"));

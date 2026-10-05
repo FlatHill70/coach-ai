@@ -8,7 +8,7 @@ import {
 import { detectFormat } from "./workouts.mjs";
 import { SHORTCUT_RE, HC_DB, resetHealthCache } from "./health.mjs";
 
-export const REPO = "FlatHill70/coach";
+export const REPO = "FlatHill70/coach-ai";
 
 export function skillVersion() {
   try {
@@ -172,7 +172,7 @@ export async function checkUpdate({ force = false } = {}) {
     current, latest: latest ?? "unknown", updateAvailable: available, install: kind,
     how: !available ? undefined : kind === "plugin"
       ? "Run `/plugin marketplace update coach` (or `claude plugin update coach@coach`), then /reload-plugins. Turn on auto-update in /plugin › Marketplaces › coach."
-      : "Re-run the installer: macOS/Linux `curl -fsSL https://raw.githubusercontent.com/FlatHill70/coach/main/install.sh | bash` · Windows `irm https://raw.githubusercontent.com/FlatHill70/coach/main/install.ps1 | iex`",
+      : "Re-run the installer: macOS/Linux `curl -fsSL https://raw.githubusercontent.com/FlatHill70/coach-ai/main/install.sh | bash` · Windows `irm https://raw.githubusercontent.com/FlatHill70/coach-ai/main/install.ps1 | iex`",
   };
 }
 

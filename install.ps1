@@ -2,7 +2,7 @@
 # Your data in ~/.coach is never touched.
 $ErrorActionPreference = 'Stop'
 
-$Repo = 'FlatHill70/coach'
+$Repo = 'FlatHill70/coach-ai'
 $Version = if ($env:COACH_VERSION) { $env:COACH_VERSION } else { 'latest' }
 $SkillsDir = if ($env:CLAUDE_SKILLS_DIR) { $env:CLAUDE_SKILLS_DIR } else { Join-Path $HOME '.claude\skills' }
 $Dest = Join-Path $SkillsDir 'coach'
