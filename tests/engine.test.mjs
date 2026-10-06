@@ -94,6 +94,40 @@ test("chat logging of sets, reps-only and timed sets", () => {
   assert.match(runError(home, ["workouts", "log", "--exercise", "X", "--sets", "eight"]), /Could not read set/);
 });
 
+test("Hevy workouts copied by hand give way to the export; latest reports every source", () => {
+  const home = newHome();
+  profile(home, { sex: "male", age: 19, height_cm: 163, language: "es" });
+  run(home, ["workouts", "log", "--exercise", "Bench Press (Barbell)", "--sets", "60x8,60x8", "--title", "Push", "--date", "2026-10-01", "--source", "hevy"]);
+  run(home, ["workouts", "log", "--exercise", "Squat (Barbell)", "--sets", "80x5", "--title", "Legs", "--date", "2026-10-03", "--source", "hevy"]);
+  run(home, ["workouts", "log", "--exercise", "Plank", "--sets", "45s", "--title", "Core", "--date", "2026-10-01"]);
+  let latest = run(home, ["latest"]);
+  assert.equal(latest.workouts.last.date, "2026-10-03");
+  assert.equal(latest.workouts.last.from, "hevy_by_hand");
+  assert.deepEqual(latest.workouts.last.exercises, ["Sentadilla con barra"]);
+
+  mkdirSync(join(home, "imports"), { recursive: true });
+  writeFileSync(join(home, "imports", "hevy.csv"), [HEVY_HEADER,
+    '"Push","1 Oct 2026, 18:00","1 Oct 2026, 19:00","","Bench Press (Barbell)",,"",0,"normal",60,8,,,',
+    '"Push","1 Oct 2026, 18:00","1 Oct 2026, 19:00","","Bench Press (Barbell)",,"",1,"normal",60,8,,,',
+  ].join("\n"));
+  const info = run(home, ["workouts", "info"]);
+  assert.equal(info.workouts, 3, "the hand copy of 1 Oct is replaced by the export; the 3 Oct copy and the extra core session stay");
+  assert.deepEqual(info.duplicatesSkipped.map((d) => d.date), ["2026-10-01"]);
+  assert.equal(run(home, ["workouts", "summary", "--weeks", "1"]).volumeByGroup.chest.avgSets, 2, "the 2 export sets count once, not twice with the hand copy");
+  const again = run(home, ["workouts", "log", "--exercise", "Bench Press (Barbell)", "--sets", "60x8", "--date", "2026-10-01", "--source", "hevy"]);
+  assert.equal(again.logged, 0, "a day already in the export is not copied again");
+  assert.match(runError(home, ["workouts", "log", "--exercise", "Plank", "--sets", "30s", "--source", "strava"]), /--source only accepts hevy/);
+
+  run(home, ["body", "log", "--weight", "54.6", "--date", "2026-09-29"]);
+  run(home, ["nutrition", "log", "--kcal", "650", "--protein", "40", "--date", "2026-10-04"]);
+  latest = run(home, ["latest"]);
+  assert.equal(latest.workouts.last.date, "2026-10-03");
+  assert.equal(latest.workouts.imports[0].lastWorkoutInFile, "2026-10-01");
+  assert.deepEqual(latest.body.weight, { date: "2026-09-29", daysAgo: 6, kg: 54.6, source: "log" });
+  assert.equal(latest.food.kcal, 650);
+  assert.deepEqual(latest.stale.map((s) => s.area), ["weight"]);
+});
+
 test("custom exercises are saved, validated and counted", () => {
   const home = newHome();
   profile(home, { sex: "male", age: 25, height_cm: 180 });

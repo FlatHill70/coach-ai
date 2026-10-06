@@ -3,7 +3,7 @@ import { tmpdir } from "node:os";
 import { join, basename } from "node:path";
 import { execFileSync } from "node:child_process";
 import {
-  SKILL_DIR, paths, readJson, writeJson, loadProfile, inboxDirs, walk, newest, firstBytes, parseCsv, isoDay, today, daysBetween, round, ageOf, num, UserError,
+  SKILL_DIR, paths, readJson, writeJson, loadProfile, inboxDirs, walk, newest, firstBytes, parseCsv, readCsvFile, isoDay, today, daysBetween, round, ageOf, num, UserError,
 } from "./common.mjs";
 import { detectFormat } from "./workouts.mjs";
 import { SHORTCUT_RE, HC_DB, resetHealthCache } from "./health.mjs";
@@ -173,6 +173,60 @@ export async function checkUpdate({ force = false } = {}) {
     how: !available ? undefined : kind === "plugin"
       ? "Run `/plugin marketplace update coach` (or `claude plugin update coach@coach`), then /reload-plugins. Turn on auto-update in /plugin › Marketplaces › coach."
       : "Re-run the installer: macOS/Linux `curl -fsSL https://raw.githubusercontent.com/FlatHill70/coach-ai/main/install.sh | bash` · Windows `irm https://raw.githubusercontent.com/FlatHill70/coach-ai/main/install.ps1 | iex`",
+  };
+}
+
+const ORIGIN = { hevy: "hevy_export", strong: "strong_export", csv: "csv", hevy_manual: "hevy_by_hand", chat: "chat" };
+
+export async function cmdLatest() {
+  const { loadWorkouts, groupWorkouts } = await import("./workouts.mjs");
+  const { displayName } = await import("./exercises.mjs");
+  const { firstPerDay } = await import("./body.mjs");
+  const { healthRows } = await import("./health.mjs");
+  const { dailyFood } = await import("./nutrition.mjs");
+  const profile = loadProfile();
+  const lang = profile?.language ?? "en";
+  const now = today();
+  const ago = (day) => daysBetween(new Date(`${day}T12:00:00`), now);
+  const stale = [];
+
+  const data = loadWorkouts();
+  const workouts = groupWorkouts(data.sets);
+  const describe = (w) => w && {
+    date: isoDay(w.start), daysAgo: daysBetween(w.start, now), title: w.title, from: ORIGIN[w.sets[0].origin] ?? ORIGIN[w.source] ?? w.source,
+    exercises: [...new Set(w.sets.map((s) => s.exercise))].map((e) => displayName(e, lang)),
+    workingSets: w.sets.filter((s) => s.type !== "warmup").length,
+  };
+  const imports = data.meta.filter((m) => m.source !== "log").map((m) => {
+    const last = workouts.filter((w) => w.source === m.source).at(-1);
+    const fileDaysOld = daysBetween(m.modified, now);
+    if (fileDaysOld > 7) stale.push({ area: "workouts", source: m.source, daysAgo: fileDaysOld, action: `export a fresh ${m.source === "strong" ? "Strong" : "Hevy"} CSV, or copy the missing workouts by hand` });
+    return { source: m.source, fileDaysOld, lastWorkoutInFile: last ? isoDay(last.start) : null };
+  });
+
+  const { rows } = await healthRows();
+  const weight = firstPerDay(rows.filter((r) => r.kind === "weight")).at(-1);
+  const fat = firstPerDay(rows.filter((r) => r.kind === "bodyfat")).at(-1);
+  if (weight && ago(weight.day) > 4) stale.push({ area: "weight", daysAgo: ago(weight.day), action: "weigh in, or check the automation if you are weighing" });
+  const measures = readCsvFile(paths.bodyLog).records.filter((r) => ["waist_cm", "hips_cm", "chest_cm", "arm_cm", "thigh_cm", "calf_cm", "neck_cm"].some((k) => r[k])).at(-1);
+
+  const food = (await dailyFood(3650)).at(-1);
+
+  return {
+    today: isoDay(now),
+    workouts: {
+      last: describe(workouts.at(-1)) ?? null,
+      lastByHand: describe(workouts.filter((w) => w.source === "log").at(-1)) ?? null,
+      imports,
+      duplicatesSkipped: data.duplicatesSkipped.length || undefined,
+    },
+    body: {
+      weight: weight ? { date: weight.day, daysAgo: ago(weight.day), kg: round(weight.value, 1), source: weight.source } : null,
+      bodyfat: fat ? { date: fat.day, daysAgo: ago(fat.day), pct: round(fat.value, 1) } : null,
+      measurements: measures ? { date: measures.date, daysAgo: ago(measures.date) } : null,
+    },
+    food: food ? { date: food.day, daysAgo: ago(food.day), kcal: round(food.kcal, 0), protein_g: round(food.protein, 0), sources: food.sources } : null,
+    stale,
   };
 }
 

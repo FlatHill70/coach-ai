@@ -5,6 +5,7 @@ const USAGE = `coach — data engine for the Coach skill. Every command prints J
 
   init                                   create ~/.coach (or $COACH_HOME)
   status                                 freshness of every data source + update check
+  latest                                 the most recent record of each kind (workout, weigh-in, food) and what is stale
   profile show | set key=value ...       read / edit profile.json
   sync [--from <file>]                   import new Hevy/Strong CSV, iOS Shortcut file, Health Connect export from the inbox
   workouts info|summary|last|exercise|records|stalled|balance|log
@@ -22,6 +23,7 @@ async function run() {
   switch (area) {
     case "init": return (await import("./lib/system.mjs")).cmdInit();
     case "status": return (await import("./lib/system.mjs")).cmdStatus();
+    case "latest": return (await import("./lib/system.mjs")).cmdLatest();
     case "sync": return (await import("./lib/system.mjs")).cmdSync(args);
     case "profile": return (await import("./lib/system.mjs")).cmdProfile({ ...args, _: ["profile", ...args._] });
     case "update": return (await import("./lib/system.mjs")).checkUpdate({ force: Boolean(args.force) });

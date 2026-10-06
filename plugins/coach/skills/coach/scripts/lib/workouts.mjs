@@ -55,7 +55,7 @@ function fromHevy(records, header, source) {
     sets.push({
       workout: `${source}|${r.start_time}|${r.title}`, title: r.title || "Workout", start, end: parseDate(r.end_time),
       exercise: r.exercise_title, type: (r.set_type || "normal").toLowerCase(), kg, reps: num(r.reps),
-      rpe: num(r.rpe), seconds: num(r.duration_seconds), km: num(r.distance_km), source,
+      rpe: num(r.rpe), seconds: num(r.duration_seconds), km: num(r.distance_km), source, origin: r.source || source,
     });
   }
   return { sets, badDates: [...badDates] };
@@ -107,7 +107,34 @@ export function loadWorkouts(args = {}) {
     sets.push(...parsed.sets);
     meta.push({ source: f.source, file: f.path, format: parsed.format, sets: parsed.sets.length, modified: statSync(f.path).mtime, unreadDates: parsed.badDates.slice(0, 5) });
   }
-  return { sets, meta, profile, unit: unitOf(profile), lang: profile?.language ?? "en" };
+  const { kept, skipped } = dropImportedDuplicates(sets);
+  return { sets: kept, meta, duplicatesSkipped: skipped, profile, unit: unitOf(profile), lang: profile?.language ?? "en" };
+}
+
+// A workout typed into the chat is dropped once an app export holds the same day: always when it was copied
+// from Hevy by hand (origin hevy_manual), otherwise only when both share an exercise (a real second session survives).
+export function dropImportedDuplicates(sets) {
+  const imported = new Map();
+  for (const s of sets) {
+    if (s.source === "log") continue;
+    const day = isoDay(s.start);
+    if (!imported.has(day)) imported.set(day, new Set());
+    imported.get(day).add(s.exercise);
+  }
+  const logged = new Map();
+  for (const s of sets) if (s.source === "log") (logged.get(s.workout) ?? logged.set(s.workout, []).get(s.workout)).push(s);
+  const drop = new Set(), skipped = [];
+  for (const [id, ws] of logged) {
+    const day = isoDay(ws[0].start);
+    const sameDay = imported.get(day);
+    if (!sameDay) continue;
+    const manual = ws.some((s) => s.origin === "hevy_manual");
+    if (manual || ws.some((s) => sameDay.has(s.exercise))) {
+      drop.add(id);
+      skipped.push({ date: day, title: ws[0].title, origin: ws[0].origin, reason: manual ? "copied from Hevy by hand; the export now has this day" : "same exercise already in the app export for this day" });
+    }
+  }
+  return { kept: drop.size ? sets.filter((s) => !drop.has(s.workout)) : sets, skipped };
 }
 
 const effective = (s) => s.type !== "warmup";
@@ -228,6 +255,7 @@ function cmdInfo(data) {
     lastWorkout: last && isoDay(last.start),
     daysSinceLastWorkout: last ? daysBetween(last.start, today()) : null,
     unmapped: [...new Set(data.sets.map((s) => s.exercise))].filter((e) => !entryFor(e)),
+    duplicatesSkipped: data.duplicatesSkipped.length ? data.duplicatesSkipped : undefined,
     hint: data.meta.length ? undefined : "No workout data yet. Import a Hevy/Strong CSV (sync) or log sets with: workouts log",
   };
 }
@@ -468,16 +496,26 @@ function cmdLog(data, args) {
   const endDate = args.minutes ? new Date(parseDate(start).getTime() + Number(args.minutes) * 60000) : null;
   const end = endDate ? `${isoDay(endDate)} ${endDate.toTimeString().slice(0, 5)}` : "";
   const unit = args.unit === "lb" || (args.unit !== "kg" && data.unit === "lb") ? "lb" : "kg";
+  if (args.source && args.source !== "hevy") throw new UserError("--source only accepts hevy (a workout copied by hand from the Hevy app)");
+  const origin = args.source === "hevy" ? "hevy_manual" : "chat";
+  if (origin === "hevy_manual") {
+    const inExport = data.sets.find((s) => s.source === "hevy" && isoDay(s.start) === date);
+    if (inExport) return { logged: 0, exercise: displayName(exercise, data.lang), date, alreadyImported: { title: inExport.title, date }, hint: "This day is already in the Hevy export: nothing was saved." };
+  }
   const existing = data.sets.filter((s) => s.source === "log" && s.exercise === exercise && isoDay(s.start) === date).length;
   const rows = [];
   const push = (list, type) => list.forEach((s) => rows.push({
     title: args.title ?? "Workout", start_time: start, end_time: end, exercise_title: exercise, set_index: existing + rows.length, set_type: type,
-    weight_kg: s.weight != null ? round((s.unit ?? unit) === "lb" ? s.weight * LB : s.weight, 3) : "", reps: s.reps ?? "", distance_km: "", duration_seconds: s.seconds ?? "", rpe: s.rpe ?? "", notes: args.notes ?? "", source: "chat",
+    weight_kg: s.weight != null ? round((s.unit ?? unit) === "lb" ? s.weight * LB : s.weight, 3) : "", reps: s.reps ?? "", distance_km: "", duration_seconds: s.seconds ?? "", rpe: s.rpe ?? "", notes: args.notes ?? "", source: origin,
   }));
   if (args.warmup) push(parseSetSpec(args.warmup), "warmup");
   if (args.sets) push(parseSetSpec(args.sets), "normal");
   appendCsv(paths.workoutLog, LOG_HEADER, rows);
-  return { logged: rows.length, exercise: displayName(exercise, data.lang), known: Boolean(entryFor(exercise)), date, file: paths.workoutLog, hint: entryFor(exercise) ? undefined : "Exercise not in the catalogue: add it with `exercises add` so it counts towards muscle volume." };
+  return {
+    logged: rows.length, exercise: displayName(exercise, data.lang), known: Boolean(entryFor(exercise)), date, origin, file: paths.workoutLog,
+    replacedByExport: origin === "hevy_manual" ? "When a Hevy export with this day is imported, it replaces this copy automatically (no duplicates)." : undefined,
+    hint: entryFor(exercise) ? undefined : "Exercise not in the catalogue: add it with `exercises add` so it counts towards muscle volume.",
+  };
 }
 
 export function cmdWorkouts(args) {
