@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.2.0 (2026-10-06)
+
+### Features
+
+* `/coach update`: a guided pass that brings workouts, weight, profile and goals up to date, one numbered question at a time, and checks for a new Coach version.
+* Check for Coach updates and install them: `update --install` downloads the latest release, verifies its checksum and keeps the previous version; optional automatic updates (`auto_update`).
+* Cook with what I have: new recipes for air fryer, griddle or oven from the ingredients at home, with quantities, times, food-safety checks, nutrition per ingredient and a summary against your targets. A recipe history keeps every proposal new.
+* What data do you have: `latest` shows the newest workout, weigh-in, body fat, measurements and meal, and what is stale.
+* Copy Hevy workouts by hand (pasted text, screenshot or dictated); the next export replaces the copy, so nothing is counted twice.
+* `profile review` compares the profile with the last 4 weeks of data; `sync --from` accepts a folder such as Downloads.
+
 ## 0.1.0 (2026-10-05)
 
 ### Features

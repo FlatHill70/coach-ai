@@ -23,6 +23,7 @@ Origen: skill personal `~/.claude/skills/entrenador` (no se toca). Este repo es 
 
 - [x] Media en español (2026-10-06): conversaciones grabadas en castellano (`record-conversations.mjs --lang es`), `build.mjs` renderiza EN en `docs/media/` y ES en `docs/media/es/`; README.es usa la media ES. Badges rehechas (`for-the-badge`, logos, versión leída de `plugin.json`).
 - [x] Modos guiados (2026-10-06): `latest` (último registro de cada tipo + qué está desactualizado) y pasar entrenos de Hevy a mano (`workouts log --source hevy`, deduplicados contra el export). 11 tests en verde.
+- [x] v1.2.0 (2026-10-06): `/coach update` guiado, buscar e instalar actualizaciones (`update --install` con checksum, `auto_update`), recetas con lo que hay en la cocina (`references/recipes.md`, historial en `~/.coach/recipes.md`), `profile review`, `sync --from <carpeta>`. 13 tests en verde. Versión subida a mano a 1.2.0 (manifest de release-please incluido).
 
 ## En curso
 - [ ] Fase 3 — media (banner claro/oscuro, social preview, 5 capturas + 2 móvil, GIF). Dirección: "Libreta de entrenamiento" (seed ec6191fb, pick). Ejecuta frontend-designer en docs/media/. Falta: revisión final (finish reviewer) y DESIGN.md.

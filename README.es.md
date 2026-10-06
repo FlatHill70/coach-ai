@@ -68,6 +68,8 @@ Requisitos: Claude Code y Node.js 20 o superior (22.13+ para leer exportaciones 
 | "Menú para mañana, sin setas" | Comidas que cuadran con tus objetivos, con alternativas y lista de la compra |
 | "Banca 60x8, 60x8, 57,5x7" · "Peso 72,4" | Lo apunta si no usas ninguna app |
 | "¿Qué es lo último que tienes?" | Tu último entreno, pesada y comida, de dónde salen y qué está desactualizado, con una pregunta para ponerlo al día |
+| "/coach update" | Lo pone todo al día paso a paso: entrenos (también desde Descargas), peso, perfil frente a tus datos reales, objetivos y versión de Coach |
+| "Tengo pollo, arroz y pimientos" | Te pregunta aparato (airfryer, plancha u horno) y objetivo, y te propone recetas siempre nuevas con cantidades, tiempos, el valor nutricional de cada ingrediente y un resumen |
 | "Te paso un entreno de Hevy" | Te guía con preguntas para pasarlo a mano (texto copiado, captura o dictado) y lo sustituye solo cuando llega el export, sin duplicados |
 | "Objetivo: 100 kg en banca para junio" | Comprueba que es realista para tu nivel y sigue el progreso con fecha estimada |
 
@@ -148,7 +150,7 @@ Las versiones se publican solas con [release-please](https://github.com/googleap
 1. Cada cambio con mensaje `feat:` o `fix:` acaba en una PR de release.
 2. Al fusionarla, se sube la versión, se actualiza el [changelog](CHANGELOG.md), se etiqueta la release y se adjuntan los zips.
 3. Las instalaciones del marketplace la reciben automáticamente (con auto-update activado) o con `/plugin marketplace update coach`.
-4. En las instalaciones manuales, Coach avisa con una línea y basta con volver a ejecutar el instalador.
+4. En las instalaciones manuales, di "busca actualizaciones": Coach descarga la nueva versión, comprueba su checksum y la instala, guardando la anterior. Si eliges que se actualice solo, lo hace al empezar la sesión.
 
 ## Desarrollo
 

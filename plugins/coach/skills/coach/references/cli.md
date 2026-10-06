@@ -9,6 +9,7 @@
 | `profile.json` | Profile (schema below) |
 | `goals.json` | Goals |
 | `journal.md` | Check-in log you write by hand (template in SKILL.md) |
+| `recipes.md` | History of the recipes you generated (`## <date> · <title>` + ingredients · method · flavour · kcal/protein), so new ones never repeat |
 | `exercises.custom.json` | User's custom exercises (override the catalogue) |
 | `imports/` | `hevy.csv`, `strong.csv`, `apple_health.txt`, `health_connect.db` (written by `sync`) |
 | `logs/` | `workouts.csv`, `body.csv`, `food.csv` (written by the `log` commands) |
@@ -21,8 +22,9 @@
 | `status` | Profile summary, last workout / weigh-in / food, goals, update check |
 | `latest` | Newest record of each kind: workout (date, title, exercises, `from` hevy_export / hevy_by_hand / chat / strong_export), weigh-in, body fat, measurements, food day, import ages, and a `stale` list with the fix |
 | `profile show` | Profile + computed `age` and `adolescent` |
+| `profile review` | Profile next to the last 4 weeks of data: `last28Days` (sessions, per week, weekdays, average minutes) and `mismatches` (weight, training days and weekdays, session length, vetoed exercises done recently; `safeToApply` + `set` for the body weight) |
 | `profile set k=v …` | Set fields; dots for nesting (`nutrition.diet=vegan`), JSON for lists (`injuries=["knee"]`), `null` to clear |
-| `sync [--from <file>]` | Import the newest Hevy/Strong CSV, iOS Shortcut file and Health Connect export from the inbox (or one file) |
+| `sync [--from <file or folder>]` | Import the newest Hevy/Strong CSV, iOS Shortcut file and Health Connect export from the inbox, plus that file or the newest export in that folder (e.g. `~/Downloads`) |
 | `workouts info` | Sources, dates, `unmapped` exercises |
 | `workouts summary [--weeks 4]` | Sessions, minutes, hard sets per muscle group per week, status vs target |
 | `workouts last [--n 1]` | Last N sessions, each exercise vs the previous time (`change` in %) |
@@ -46,7 +48,7 @@
 | `exercises groups` | Valid muscle-group ids |
 | `exercises add "<logged name>" --primary a,b [--secondary c] [--en] [--es] [--<lang> "name"] [--bodyweight] [--cardio] [--alias "x,y"]` | Custom exercise |
 | `exercises list` / `exercises remove "<name>"` | Manage custom exercises |
-| `update [--force]` | Compare installed version with the latest GitHub release |
+| `update [--force] [--install]` | Compare the installed version with the latest GitHub release. `--install` (manual installs) downloads `coach-skill.zip`, checks it against `SHA256SUMS.txt`, replaces the skill folder and keeps the old one in `<folder>.previous`. Answers `reason`: `up_to_date`, `no_release`, `plugin` (update via /plugin) or `dev_checkout` (git pull) |
 
 ## Metrics
 
@@ -64,15 +66,15 @@
   "level": "novice|beginner|intermediate|advanced|elite", "training_age_years": 0.5,
   "goal": "muscle_gain|fat_loss|recomp|strength|general_health|endurance|performance|maintenance",
   "secondary_goals": [], "sport": null,
-  "training_days": 4, "session_minutes": 60, "location": "gym|home|both|outdoors", "equipment": ["barbell", "dumbbells", "cables", "machines"],
+  "training_days": 4, "training_weekdays": ["mon", "tue", "thu", "fri"], "session_minutes": 60, "location": "gym|home|both|outdoors", "equipment": ["barbell", "dumbbells", "cables", "machines"],
   "injuries": [], "avoid_exercises": [], "preferred_exercises": [],
   "weak_points": ["side_delts"], "priorities": ["upper_back"], "volume_targets": { "side_delts": [10, 16] },
   "activity": "sedentary|light|moderate|very|extreme|null", "daily_steps": 8000, "sleep_hours": 7.5,
   "rate_pct_per_week": null,
-  "nutrition": { "tracking": "none|rough|precise", "diet": "omnivore", "allergies": [], "dislikes": [], "budget": "low|medium|high", "cooking": "15 min, basic", "meals_per_day": 4, "cuisine": "Spanish", "supplements": ["creatine"] },
+  "nutrition": { "tracking": "none|rough|precise", "diet": "omnivore", "allergies": [], "dislikes": [], "budget": "low|medium|high", "cooking": "15 min, basic", "meals_per_day": 4, "cuisine": "Spanish", "supplements": ["creatine"], "kitchen": ["airfryer", "griddle", "oven"] },
   "screening": { "parq_flags": [], "cleared_by_professional": null, "eating_disorder": false, "notes": null },
   "guardian_consent": null, "pregnant": false,
-  "inbox": "~/iCloudDrive/Coach", "sources": ["hevy", "apple_health"], "strong_unit": null,
+  "auto_update": false, "inbox": "~/iCloudDrive/Coach", "sources": ["hevy", "apple_health"], "strong_unit": null,
   "updated": "2026-10-05"
 }
 ```

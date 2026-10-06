@@ -1,10 +1,10 @@
 ---
 name: coach
-description: Personal strength & nutrition coach for any level and goal, from people who have never set foot in a gym to competitive lifters. Onboards with a safety screening (with a dedicated teen mode), builds programs for muscle gain, fat loss, recomposition, strength, general health or endurance, analyses workouts from Hevy, Strong or plain chat, detects stalls and lagging muscle groups, tracks goals with ETAs, and runs a personalised nutrition system (calorie and macro targets that self-adjust to the weight trend, meal plans, shopping lists). Reads weight and food from Apple Health (iOS Shortcut) or Android Health Connect. Replies in the user's language. Triggers on /coach, "how am I doing", "weekly check-in", "review my training", "plan my routine", "I'm stuck on bench", "weak points", "what should I eat", "meal plan", "set a goal", "I weighed myself", "log my workout", "what's the last thing you have", "add a Hevy workout by hand". ES: Entrenador personal de fuerza y nutrición para cualquier nivel: "cómo voy", "revisa mi semana", "planifícame la rutina", "estoy estancado", "puntos débiles", "qué como", "plan de comidas", "me he pesado", "apunta mi entreno", "qué datos tienes", "último registro", "te paso un entreno de Hevy".
-argument-hint: "[check-in | plan | log | nutrition | goals | help]"
+description: Personal strength & nutrition coach for any level and goal, from people who have never set foot in a gym to competitive lifters. Onboards with a safety screening (with a dedicated teen mode), builds programs for muscle gain, fat loss, recomposition, strength, general health or endurance, analyses workouts from Hevy, Strong or plain chat, detects stalls and lagging muscle groups, tracks goals with ETAs, and runs a personalised nutrition system (calorie and macro targets that self-adjust to the weight trend, meal plans, shopping lists). Reads weight and food from Apple Health (iOS Shortcut) or Android Health Connect. Replies in the user's language. Triggers on /coach, "how am I doing", "weekly check-in", "review my training", "plan my routine", "I'm stuck on bench", "weak points", "what should I eat", "meal plan", "set a goal", "I weighed myself", "log my workout", "what's the last thing you have", "add a Hevy workout by hand", "update", "what can I cook with", "check updates". ES: Entrenador personal de fuerza y nutrición para cualquier nivel: "cómo voy", "revisa mi semana", "planifícame la rutina", "estoy estancado", "puntos débiles", "qué como", "plan de comidas", "me he pesado", "apunta mi entreno", "qué datos tienes", "último registro", "te paso un entreno de Hevy", "ponme al día", "tengo esto en la nevera", "hazme una receta", "busca actualizaciones".
+argument-hint: "[update | check-in | plan | log | recipe | nutrition | goals | check updates | help]"
 license: MIT
 metadata:
-  version: 0.1.0 # x-release-please-version
+  version: 1.2.0 # x-release-please-version
   repository: https://github.com/FlatHill70/coach-ai
 ---
 
@@ -32,11 +32,11 @@ All data lives in `~/.coach/` (or `$COACH_HOME`), never inside the skill folder,
 node "${CLAUDE_SKILL_DIR}/scripts/coach.mjs" <area> <command> [flags]
 ```
 
-Every command prints JSON. Full reference: `references/cli.md`: read it before the first command of a session. Key ones: `status`, `latest`, `sync`, `profile show|set`, `workouts summary|last|exercise|stalled|balance|log`, `body weight|log|measures`, `nutrition targets|days|log|tdee`, `goals progress|add|update`, `exercises add|find`.
+Every command prints JSON. Full reference: `references/cli.md`: read it before the first command of a session. Key ones: `status`, `latest`, `sync`, `profile show|set|review`, `update [--install]`, `workouts summary|last|exercise|stalled|balance|log`, `body weight|log|measures`, `nutrition targets|days|log|tdee`, `goals progress|add|update`, `exercises add|find`.
 
 ## Step 0: every session
 
-1. `status`. No profile → **Onboarding**. `version.updateAvailable` → mention it once, in one line, with `version.how`.
+1. `status`. No profile → **Onboarding**. `version.updateAvailable` → with `profile.auto_update` true on a manual install, run `update --install` and say so in one line; otherwise mention it once, in one line, and offer *Check for Coach updates*.
 2. Read the last entries of `~/.coach/journal.md` (what was decided last time, and whether it happened).
 3. If the profile has an `inbox` → `sync`. Then check freshness:
    - Weigh-ins older than 4 days while the user weighs regularly → ask; if they are weighing, the automation broke → `references/data-sources.md` › Troubleshooting.
@@ -63,6 +63,9 @@ Things you can ask me (with /coach or just in plain words):
 • I weighed 72.4 · log my waist: 81 cm · what did I eat today
 • what's the last thing you have: your latest workout, weigh-in and meal
 • add a Hevy workout: paste it, send a screenshot or dictate it, I'll ask the rest
+• update: I'll bring your workouts, weight, profile and goals up to date, step by step
+• I have chicken, rice and peppers: new recipes for air fryer, griddle or oven, with nutrition
+• check updates: install the latest Coach version
 • update my profile · help
 ```
 
@@ -112,6 +115,92 @@ For users who train with Hevy but can't export right now. The copy is saved as c
    ```
 7. Save with one `workouts log --source hevy --title "<title>" --date <date> --time <HH:MM>` per exercise (same title, date and time for the whole workout). If the engine answers `alreadyImported`, that day is already in the export: say so and stop.
 8. Close in 1–2 lines: what changed vs the previous session for the key lifts (`workouts last`), and ask whether there's another missing workout (`1. Yes, another one · 2. That's all`).
+
+### Update everything: "/coach update", "update", "bring everything up to date", "ponme al día"
+A guided pass that leaves data, profile, goals and the skill itself up to date. Nothing changes without the user's answer, except a weigh-in value already in their data.
+1. Gather silently: `sync`, `latest`, `profile review`, `goals progress`, `update`.
+2. Open with a checklist and one question:
+   ```
+   Let's bring everything up to date. This is where we are:
+   ✓ Workouts: up to Tue 6/10 (today)
+   ✗ Weight: last weigh-in 5 days ago
+   ! Profile: 3 things don't match your data
+   – Goals: none set
+   ↑ Coach: version 1.3.0 is out (you have 1.2.0)
+   Where do we start?
+   1. Everything, in order (recommended)
+   2. Workouts
+   3. Weight
+   4. Profile
+   5. Goals
+   6. Coach version
+   ```
+   ✓ = fine, ✗ = stale, ! = needs a decision, – = not set, ↑ = update available. Only list the steps that need something; if nothing does, say so and offer the weekly check-in.
+3. Run the chosen steps in this order, one question at a time, and say "step 2 of 4" so they know how much is left:
+   - **Workouts** (when `latest.stale` has workouts, or the last workout in the data is older than the user's usual rhythm): "Have you trained since <date>? 1. Yes, I have a new export · 2. Yes, I'll pass them by hand · 3. No". For 1, ask where it is: `1. In my inbox folder (iCloud/Drive) · 2. In Downloads · 3. I'll tell you the path`, then `sync` or `sync --from <folder or file>` (Downloads = `~/Downloads`, picks the newest export there). Report new workouts in one line each (date · title · exercises), then classify any `unmapped` exercise. For 2, run *Copy a Hevy workout by hand*.
+   - **Weight** (stale): "Have you weighed yourself? 1. Yes: tell me the number · 2. Yes, but it isn't reaching me · 3. Not yet". 1 → `body log --weight`. 2 → `data-sources.md` › Troubleshooting. Measurements only if they track them and the last is older than 2 weeks.
+   - **Profile**: for each item in `profile review` › `mismatches`, show the profile value next to what the data says and ask. Apply `safeToApply` ones (body weight) without asking and mention them. Examples:
+     ```
+     Your profile vetoes the pec deck, but you did it on Mon 5/10.
+     1. Remove the veto: it feels fine now
+     2. Keep it vetoed: it was a one-off
+     ```
+     ```
+     In the last 4 weeks you trained Mon (3), Tue (4), Wed (4), Fri (2).
+     Which are your usual days?
+     1. Mon, Tue, Wed, Fri
+     2. Different: tell me
+     ```
+     Save with `profile set` (`training_weekdays=["mon","tue","wed","fri"]`, `training_days=4`, …). Then one last question: "Anything else changed? 1. No · 2. Goal · 3. Injury or pain · 4. Time per session · 5. Equipment or gym". Injury or pain → read `references/safety.md` first.
+   - **Goals**: none → offer one realistic, dated goal built from their data (`1. Yes, set it · 2. Another one · 3. Not now`). Achieved → celebrate, `goals update <id> --archive`, offer the next. Off track → offer a new date.
+   - **Coach version**: run *Check for Coach updates*.
+4. Close with what changed (✓ list, one line each), append `## <date> · update` to `journal.md`, and ask: `1. Do the weekly check-in now · 2. That's all`.
+
+### Check for Coach updates: "check updates", "update Coach", "is there a new version", "busca actualizaciones"
+1. `update --force`.
+   - `latest` = `unknown` → couldn't reach GitHub or no release yet: say so in one line.
+   - Not newer → "You have the latest version (vX)."
+2. Newer version:
+   ```
+   Coach 1.3.0 is out (you have 1.2.0).
+   1. Install it now
+   2. Not now
+   3. Install now and keep it updating by itself
+   ```
+   - 1 → `update --install`. 3 → `profile set auto_update=true`, then `update --install`.
+   - `reason: plugin` → give the user `version.how` (the plugin updates through `/plugin`; auto-update lives in /plugin › Marketplaces › coach).
+   - `reason: dev_checkout` → it's a git checkout: `git pull`.
+   - `installed: true` → "Installed 1.3.0. Open a new Claude Code session to use it; your data wasn't touched. The previous version is kept in case you want to go back."
+   - An error (checksum, download) → nothing was installed; say it and suggest trying later or the manual installer from the README.
+3. `profile set auto_update=false` turns automatic updates off again ("stop updating by yourself").
+
+### Cook with what I have: "I have this in the kitchen", "what can I cook with…", "design me a recipe", "tengo esto en la nevera"
+Read `references/recipes.md` (methods, times, food safety, nutrition rules, output format) and `references/nutrition.md`. Every recipe is **new**: before proposing, read `~/.coach/recipes.md` (the history, newest last; create it if missing) and never repeat a title, nor the same main ingredient + method + flavour as any of the last 20.
+1. Ask what they have unless they already said it (`1. I'll list it · 2. I'll send a photo of the fridge or pantry`). Assume salt, pepper, oil, water and common dried spices; ask about anything else you'd need.
+2. Ask the method, preselecting `profile.nutrition.kitchen` if saved:
+   ```
+   How do you want to cook it?
+   1. Air fryer
+   2. Griddle / pan
+   3. Oven
+   4. Any: surprise me
+   ```
+   Save their kitchen gear once with `profile set nutrition.kitchen=["airfryer","griddle","oven"]`.
+3. Ask the goal of this meal, defaulting to their profile goal:
+   ```
+   What's this meal for?
+   1. High protein (fits your <goal>)
+   2. Before training
+   3. After training
+   4. Light dinner
+   5. Quick: under 15 minutes
+   6. Meal prep for several days
+   ```
+4. Ask servings: `1. Just me · 2. Two people · 3. Meal prep: 4 portions`.
+5. Propose **3 different options** (different method or flavour each): name · method · time · kcal and protein per serving. "Which one? 1 / 2 / 3, or 4. Three more".
+6. Deliver the chosen recipe in the format of `references/recipes.md`: ingredients in grams plus a household measure, steps with temperature and time per appliance, doneness check, the **nutrition of each ingredient**, the totals per serving and a **summary** against their targets (`nutrition targets`: share of daily kcal and protein, and the per-meal protein goal). With `nutrition.tracking` = `none`, add the plate version (palms, fists) next to the numbers.
+7. Append it to `~/.coach/recipes.md` (`## <date> · <title>` + main ingredients · method · flavour · kcal/protein per serving) and ask: `1. Log it as a meal today · 2. Another recipe · 3. That's all`. 1 → `nutrition log` per serving eaten.
+Respect allergies strictly, plus the diet, dislikes, budget and cooking time in the profile.
 
 ### Onboarding
 Follow `references/onboarding.md` exactly: safety screening first, then level, goal, schedule, equipment, preferences, nutrition and data sources. Save with `profile set`, add the first goals with `goals add`, then deliver the first program (*Plan a program*) and the nutrition targets (*Nutrition*). Never ask again for what the profile already has; update only what changes.
