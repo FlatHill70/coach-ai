@@ -36,7 +36,7 @@ Sirve para **cualquiera**: alguien que nunca ha pisado un gimnasio, un chaval qu
 Después activa las actualizaciones automáticas: `/plugin` › **Marketplaces** › **coach** › **Enable auto-update**. Empieza con `/coach` o diciendo sin más "planifícame la rutina".
 
 <details>
-<summary>Instalación manual (copia la skill en <code>~/.claude/skills/coach-ai</code>)</summary>
+<summary>Instalación manual (copia la skill en <code>~/.claude/skills/coach</code>)</summary>
 
 macOS / Linux:
 
@@ -50,7 +50,7 @@ Windows (PowerShell):
 irm https://raw.githubusercontent.com/FlatHill70/coach-ai/main/install.ps1 | iex
 ```
 
-Para actualizar, vuelve a ejecutar el mismo comando. Coach te avisa cuando sale una versión nueva. También puedes descargar `coach-skill.zip` de la [última release](https://github.com/FlatHill70/coach-ai/releases/latest) y descomprimirlo en `~/.claude/skills/coach-ai/`.
+Para actualizar, vuelve a ejecutar el mismo comando. Coach te avisa cuando sale una versión nueva. También puedes descargar `coach-skill.zip` de la [última release](https://github.com/FlatHill70/coach-ai/releases/latest) y descomprimirlo en `~/.claude/skills/` (crea la carpeta `coach`).
 
 </details>
 
