@@ -67,6 +67,8 @@ Requirements: Claude Code and Node.js 20 or newer (22.13+ to read Android Health
 | "I'm stuck on bench" | Runs the stall checklist (energy, recovery, volume, technique, load jumps) before touching the exercise |
 | "Meal plan for tomorrow, no mushrooms" | Meals that hit your targets, with swaps and a shopping list |
 | "Bench 60x8, 60x8, 57.5x7" · "I weighed 72.4" | Logs it when you don't use an app |
+| "What's the last thing you have?" | Your latest workout, weigh-in and meal, where each came from, what's stale, and one question to bring it up to date |
+| "I'll pass you a Hevy workout" | Guides you with questions to copy it by hand (shared text, screenshot or dictated) and swaps it for the export when that arrives, without duplicates |
 | "Set a goal: 100 kg bench by June" | Checks it's realistic for your level, then tracks progress and ETA |
 
 ### See it on real output

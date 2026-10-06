@@ -67,6 +67,8 @@ Requisitos: Claude Code y Node.js 20 o superior (22.13+ para leer exportaciones 
 | "Estoy estancado en banca" | Repasa la lista de causas (energía, recuperación, volumen, técnica, saltos de carga) antes de cambiar el ejercicio |
 | "Menú para mañana, sin setas" | Comidas que cuadran con tus objetivos, con alternativas y lista de la compra |
 | "Banca 60x8, 60x8, 57,5x7" · "Peso 72,4" | Lo apunta si no usas ninguna app |
+| "¿Qué es lo último que tienes?" | Tu último entreno, pesada y comida, de dónde salen y qué está desactualizado, con una pregunta para ponerlo al día |
+| "Te paso un entreno de Hevy" | Te guía con preguntas para pasarlo a mano (texto copiado, captura o dictado) y lo sustituye solo cuando llega el export, sin duplicados |
 | "Objetivo: 100 kg en banca para junio" | Comprueba que es realista para tu nivel y sigue el progreso con fecha estimada |
 
 ### Funcionando de verdad

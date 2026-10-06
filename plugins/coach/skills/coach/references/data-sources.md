@@ -26,6 +26,8 @@ Save it with `profile set inbox="<path>"` (a list is fine: `inbox=["path1","path
 ## Hevy (CSV)
 Phone: Hevy → Profile → ⚙️ Settings → **Export & Import Data** → **Export Workouts** → Save to Files / Drive → inbox. Then run `sync`. Each export is the full history, and `sync` keeps only the newest. Hevy logs the weight of dumbbell and unilateral exercises **per side**. Remember that when comparing with barbell numbers.
 
+No time to export? Workouts can be passed by hand (pasted share text, a screenshot or dictated): they are saved with `--source hevy` and the next export replaces them, so nothing is counted twice.
+
 ## Strong (CSV)
 Phone: Strong → Profile → ⚙️ Settings → **Export Data** (Export strong.csv) → save to the inbox → `sync`. Strong's CSV has no unit column: set `profile set strong_unit=lb` if the app is in pounds. Warm-up, drop and failure sets (W/D/F) are recognised.
 

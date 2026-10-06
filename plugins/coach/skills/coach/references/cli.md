@@ -19,6 +19,7 @@
 |---|---|
 | `init` | Create the folder, empty profile and goals |
 | `status` | Profile summary, last workout / weigh-in / food, goals, update check |
+| `latest` | Newest record of each kind: workout (date, title, exercises, `from` hevy_export / hevy_by_hand / chat / strong_export), weigh-in, body fat, measurements, food day, import ages, and a `stale` list with the fix |
 | `profile show` | Profile + computed `age` and `adolescent` |
 | `profile set k=v …` | Set fields; dots for nesting (`nutrition.diet=vegan`), JSON for lists (`injuries=["knee"]`), `null` to clear |
 | `sync [--from <file>]` | Import the newest Hevy/Strong CSV, iOS Shortcut file and Health Connect export from the inbox (or one file) |
@@ -29,7 +30,7 @@
 | `workouts records` | Best score per exercise |
 | `workouts stalled [--sessions 3]` | Exercises with no new best in N sessions |
 | `workouts balance [--weeks 4]` | Weak-point signals (see `weak-points.md`) |
-| `workouts log --exercise "<key>" --sets "60x8,60x8@9" [--warmup "40x10"] [--date] [--time] [--title] [--minutes] [--unit] [--notes]` | Log sets by chat. Sets: `60x8`, `60kgx8`, `135lbx5`, `@RPE`, `12` (reps only), `45s`, `2:30` |
+| `workouts log --exercise "<key>" --sets "60x8,60x8@9" [--warmup "40x10"] [--date] [--time] [--title] [--minutes] [--unit] [--notes] [--source hevy]` | Log sets by chat. Sets: `60x8`, `60kgx8`, `135lbx5`, `@RPE`, `12` (reps only), `45s`, `2:30`. `--source hevy` marks a workout copied by hand from Hevy: it is replaced by the export once that day is imported, and refused (`alreadyImported`) if the export already has it. Chat workouts sharing an exercise with an export on the same day are dropped too (`workouts info` › `duplicatesSkipped`) |
 | `body weight [--days 42]` | Last weigh-in, weekly averages, weekly change, 28-day trend, body fat, lean mass |
 | `body log [--weight] [--bodyfat] [--lean] [--waist] [--hips] [--chest] [--arm] [--thigh] [--calf] [--neck] [--date] [--time] [--note] [--length-unit cm\|in]` | Log a weigh-in and/or measurements |
 | `body measures [--last 8]` | Measurement history and change |
