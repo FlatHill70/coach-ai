@@ -7,7 +7,7 @@ related_targets: []
 
 # Surface brief — README media (docs/media)
 
-Scope: GitHub README media for Coach: hero banner 1280×640 (light + dark, also the social preview), 5 conversation screenshots (check-in, weak points, program, meal plan, teen onboarding) in a terminal and a mobile framing, one demo GIF. Mode: Persuade.
+Scope: GitHub README media for Coach: hero banner 1280×640 (light + dark, also the social preview), 5 conversation screenshots (check-in, weak points, program, meal plan, teen onboarding) in a terminal and a mobile framing, one demo GIF. Mode: Persuade. Every piece exists in English (`docs/media/`) and Spanish (`docs/media/es/`, from conversations recorded in Spanish in `conversations/es/`); the social preview is English only.
 
 Audience: gym people arriving by link (maybe non-technical) and Claude Code users evaluating the repo, equally. Job: understand in seconds that Coach coaches *anyone*, from first gym visit to competitor, using their own numbers.
 

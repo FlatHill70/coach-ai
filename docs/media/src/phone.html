@@ -34,6 +34,8 @@
 (async () => {
   const W = World;
   const M = window.__MEDIA__;
+  const UI = { demo: "demo data", continues: "continues…", reply: "Reply to Claude…", cols: ["Date", "Exercise", "Sets", "Notes"], ...M.ui };
+  if (M.lang) document.documentElement.lang = M.lang;
   W.theme();
   await W.ready();
   const frame = document.getElementById("frame");
@@ -48,7 +50,7 @@
   const sheet = document.createElement("div");
   sheet.className = "sheet capture";
   const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
-  sheet.innerHTML = `<div class="phone"><div class="chat"><div class="you">${esc(M.prompt)}</div><div class="reply">${W.markdownBlocks(M.reply).join("")}</div></div><div class="composer"><div>Reply to Claude…</div></div></div>`;
+  sheet.innerHTML = `<div class="phone"><div class="chat"><div class="you">${esc(M.prompt)}</div><div class="reply">${W.markdownBlocks(M.reply).join("")}</div></div><div class="composer"><div>${UI.reply}</div></div></div>`;
   page.appendChild(sheet);
 
   const H = SHEET_TOP + sheet.offsetHeight + 74;
@@ -64,13 +66,13 @@
     page.appendChild(el);
     return el;
   };
-  ["Date", "Exercise", "Sets", "Notes"].forEach((t, i) => put("printed", t, cols[i] + 6, 30, 12));
+  UI.cols.forEach((t, i) => put("printed", t, cols[i] + 6, 30, 12));
   put("pencil", M.date, cols[0] + 6, 58, 17);
   put("pencil", M.label, cols[1] + 8, 58, 17);
-  put("pencil soft", "demo data", cols[3] + 8, 60, 14);
+  put("pencil soft", UI.demo, cols[3] + 8, 60, 14);
   W.tape(page, 40, SHEET_TOP - 10, -10, 80, 21);
   W.tape(page, 56 + 408 - 66, SHEET_TOP - 12, 8, 80, 22);
-  put("pencil", "continues…", 56 + 408 - 110, SHEET_TOP + sheet.offsetHeight + 24, 17);
+  put("pencil", UI.continues, 56 + 408 - 110, SHEET_TOP + sheet.offsetHeight + 24, 17);
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("class", "ink");

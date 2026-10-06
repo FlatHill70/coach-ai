@@ -22,6 +22,7 @@
 (async () => {
   const W = World;
   const M = window.__MEDIA__;
+  if (M.lang) document.documentElement.lang = M.lang;
   const theme = W.theme();
   await W.ready();
   const frame = document.getElementById("frame");

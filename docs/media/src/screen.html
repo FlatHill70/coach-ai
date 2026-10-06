@@ -20,6 +20,8 @@
 (async () => {
   const W = World;
   const M = window.__MEDIA__;
+  const UI = { demo: "demo data", continues: "continues…", cols: ["Date", "Exercise", "Sets", "Notes"], ...M.ui };
+  if (M.lang) document.documentElement.lang = M.lang;
   W.theme();
   await W.ready();
   const frame = document.getElementById("frame");
@@ -69,16 +71,16 @@
     page.appendChild(el);
     return el;
   };
-  ["Date", "Exercise", "Sets", "Notes"].forEach((t, i) => put("printed", t, cols[i] + 6, 64, 12.5));
+  UI.cols.forEach((t, i) => put("printed", t, cols[i] + 6, 64, 12.5));
   put("pencil", M.date, cols[0] + 6, 26, 19);
   put("pencil", M.label, cols[1] + 8, 26, 19);
-  put("pencil soft", "demo data", cols[3] + 18, 28, 16);
+  put("pencil soft", UI.demo, cols[3] + 18, 28, 16);
 
   sheet.style.transform = `rotate(${M.tilt || -0.5}deg)`;
   W.tape(page, 52, SHEET_TOP - 12, -9, 86, 11);
   W.tape(page, 70 + 572 - 70, SHEET_TOP - 10, 7, 86, 12);
   if (truncated) {
-    const c = put("pencil", "continues…", 70 + 572 - 120, SHEET_TOP + sheet.offsetHeight + 22, 19);
+    const c = put("pencil", UI.continues, 70 + 572 - 120, SHEET_TOP + sheet.offsetHeight + 22, 19);
     c.classList.add("cont");
   }
 

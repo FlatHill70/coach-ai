@@ -1,17 +1,17 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/media/banner-dark.png">
-    <img src="docs/media/banner-light.png" alt="Coach: página de una libreta de entrenamiento con una semana de series a lápiz y las correcciones del entrenador en rojo: banca +2,5 kg, deltoides laterales +4 series, 2.760 kcal" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="docs/media/es/banner-dark.png">
+    <img src="docs/media/es/banner-light.png" alt="Coach: página de una libreta de entrenamiento con una semana de series a lápiz y las correcciones del entrenador en rojo: sentadilla 100 × 7, laterales +4 series, mantén 2.590 kcal" width="100%">
   </picture>
 </p>
 
 <p align="center">
-  <a href="https://github.com/FlatHill70/coach-ai/releases/latest"><img alt="Última versión" src="https://img.shields.io/github/v/release/FlatHill70/coach-ai?label=versi%C3%B3n&color=1f2328"></a>
-  <a href="https://github.com/FlatHill70/coach-ai/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/FlatHill70/coach-ai/ci.yml?branch=main&label=tests"></a>
-  <a href="https://code.claude.com/docs/en/plugins"><img alt="Plugin de Claude Code" src="https://img.shields.io/badge/Claude%20Code-plugin-d7263d"></a>
-  <img alt="Node.js 20+" src="https://img.shields.io/badge/node-%E2%89%A520-1f2328">
-  <img alt="Inglés y español" src="https://img.shields.io/badge/idioma-EN%20%7C%20ES-1f2328">
-  <a href="LICENSE"><img alt="Licencia MIT" src="https://img.shields.io/github/license/FlatHill70/coach-ai?label=licencia&color=1f2328"></a>
+  <a href="https://github.com/FlatHill70/coach-ai/releases/latest"><img alt="Versión" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FFlatHill70%2Fcoach-ai%2Fmain%2Fplugins%2Fcoach%2F.claude-plugin%2Fplugin.json&query=%24.version&prefix=v&label=versi%C3%B3n&color=d7263d&style=for-the-badge&labelColor=1f2328&logo=github&logoColor=white"></a>
+  <a href="https://github.com/FlatHill70/coach-ai/actions/workflows/ci.yml"><img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/FlatHill70/coach-ai/ci.yml?branch=main&label=tests&style=for-the-badge&labelColor=1f2328&logo=githubactions&logoColor=white"></a>
+  <a href="https://code.claude.com/docs/en/plugins"><img alt="Plugin de Claude Code" src="https://img.shields.io/badge/Claude_Code-plugin-d7263d?style=for-the-badge&labelColor=1f2328&logo=claude&logoColor=white"></a>
+  <a href="https://nodejs.org"><img alt="Node.js 20 o superior" src="https://img.shields.io/badge/Node.js-%E2%89%A5%2020-f1efe8?style=for-the-badge&labelColor=1f2328&logo=nodedotjs&logoColor=white"></a>
+  <a href="README.md"><img alt="Español e inglés" src="https://img.shields.io/badge/idioma-ES%20%C2%B7%20EN-f1efe8?style=for-the-badge&labelColor=1f2328&logo=googletranslate&logoColor=white"></a>
+  <a href="LICENSE"><img alt="Licencia MIT" src="https://img.shields.io/badge/licencia-MIT-f1efe8?style=for-the-badge&labelColor=1f2328&logo=opensourceinitiative&logoColor=white"></a>
 </p>
 
 <p align="center"><a href="README.md">English</a> · <b>Español</b></p>
@@ -21,7 +21,7 @@
 Sirve para **cualquiera**: alguien que nunca ha pisado un gimnasio, un chaval que empieza para rendir en el fútbol, quien persigue los 200 kg de peso muerto o un competidor preparando un campeonato. Cada recomendación se apoya en tus propios números, nunca en consejos genéricos.
 
 <p align="center">
-  <img src="docs/media/demo.gif" alt="Animación: una semana de entreno se escribe a lápiz en una libreta y el entrenador rodea los ejercicios estancados y apunta los ajustes en rojo" width="100%">
+  <img src="docs/media/es/demo.gif" alt="Animación: una semana de entreno se escribe a lápiz en una libreta y el entrenador rodea los ejercicios estancados y apunta los ajustes en rojo" width="100%">
 </p>
 
 ## Instalación
@@ -71,12 +71,12 @@ Requisitos: Claude Code y Node.js 20 o superior (22.13+ para leer exportaciones 
 
 ### Funcionando de verdad
 
-Estas respuestas se grabaron con la skill funcionando sobre un conjunto de datos sintético de 12 semanas ("Alex"). No se ha reescrito nada. Las capturas están en inglés; Coach responde en el idioma en el que le hables.
+Estas respuestas se grabaron con la skill funcionando sobre un conjunto de datos sintético de 12 semanas ("Alex"). Se le habló en español y no se ha reescrito nada: Coach responde en el idioma en el que le hables.
 
 <table>
   <tr>
-    <td width="50%"><img src="docs/media/screens/checkin.png" alt="Revisión semanal: peso en rango, deltoides laterales a 3,5 series por semana, sentadilla estancada, tres ajustes"></td>
-    <td width="50%"><img src="docs/media/screens/weak-points.png" alt="Puntos débiles: primero deltoides laterales, después posteriores; sentadilla y peso muerto rumano estancados pero no rezagados"></td>
+    <td width="50%"><img src="docs/media/es/screens/checkin.png" alt="Repaso semanal: peso en rango a +0,27 % por semana, deltoides laterales a 3,5 series semanales, sentadilla estancada en 100 kg × 6"></td>
+    <td width="50%"><img src="docs/media/es/screens/weak-points.png" alt="Puntos débiles: deltoides laterales a 3,5 series directas por semana con tendencia de −0,5 %, y sentadilla estancada en 100 kg × 6 a RPE 8"></td>
   </tr>
   <tr>
     <td><b>Revisión semanal.</b> Lo que va bien, lo que falla con sus números y tres cambios para la semana siguiente.</td>
@@ -87,12 +87,12 @@ Estas respuestas se grabaron con la skill funcionando sobre un conjunto de datos
 <details>
 <summary>Más: un bloque de 6 semanas, un menú, el primer plan de un adolescente y la vista en el móvil</summary>
 
-<p><img src="docs/media/screens/program.png" alt="Bloque de 6 semanas para subir los deltoides laterales, con superseries para no pasar de 75 minutos y reglas de progresión exactas"></p>
-<p><img src="docs/media/screens/meal-plan.png" alt="Un día de comidas con 2.560 kcal y 165 g de proteína, 20 minutos de cocina, con alternativas y lista de la compra"></p>
-<p><img src="docs/media/screens/teen.png" alt="Un principiante de 16 años: sin creatina sin permiso de un tutor, sin dieta, tres sesiones de cuerpo completo centradas en la técnica"></p>
+<p><img src="docs/media/es/screens/program.png" alt="Bloque de 6 semanas para subir los deltoides laterales: de 2 a 8 series semanales y luego 10, un 3 % más de volumen total para no pasar de 75 minutos"></p>
+<p><img src="docs/media/es/screens/meal-plan.png" alt="Un día de comidas con unas 2.590 kcal y 165 g de proteína, 20 minutos de cocina, con alternativas y lista de la compra"></p>
+<p><img src="docs/media/es/screens/teen.png" alt="Un principiante de 16 años: sin creatina sin permiso de un tutor, sin dieta, tres sesiones de cuerpo completo centradas en la técnica"></p>
 <p align="center">
-  <img src="docs/media/screens/checkin-phone.png" alt="La revisión semanal en el móvil" width="45%">
-  <img src="docs/media/screens/teen-phone.png" alt="El plan del adolescente en el móvil" width="45%">
+  <img src="docs/media/es/screens/checkin-phone.png" alt="La revisión semanal en el móvil" width="45%">
+  <img src="docs/media/es/screens/teen-phone.png" alt="El plan del adolescente en el móvil" width="45%">
 </p>
 
 </details>

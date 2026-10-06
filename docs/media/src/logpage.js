@@ -31,13 +31,14 @@
     };
 
     const labelY = headTop - L.rowH * 0.95;
-    put("printed", "Name", cols[0], labelY + 6, L.printSize);
-    const nm = put("pencil", data.name, cols[0] + L.printSize * 3.4, labelY - 2, L.font * 1.05);
-    put("printed", "Week of", cols[2] - 40, labelY + 6, L.printSize);
-    const wk = put("pencil", data.weekOf, cols[2] - 40 + L.printSize * 5, labelY - 2, L.font * 1.05);
-    const demo = put("pencil soft", "demo data", L.w - L.font * 5.6, labelY - 2, L.font * 0.82);
+    const ui = { name: "Name", weekOf: "Week of", demo: "demo data", cols: ["Date", "Exercise", "Sets", "Notes"], ...data.ui };
+    const nameLabel = put("printed", ui.name, cols[0], labelY + 6, L.printSize);
+    const nm = put("pencil", data.name, cols[0] + Math.max(L.printSize * 3.4, nameLabel.offsetWidth + 6), labelY - 2, L.font * 1.05);
+    const weekLabel = put("printed", ui.weekOf, cols[2] - 40, labelY + 6, L.printSize);
+    const wk = put("pencil", data.weekOf, cols[2] - 40 + Math.max(L.printSize * 5, weekLabel.offsetWidth + 6), labelY - 2, L.font * 1.05);
+    const demo = put("pencil soft", ui.demo, L.w - L.font * 5.6, labelY - 2, L.font * 0.82);
 
-    ["Date", "Exercise", "Sets", "Notes"].forEach((t, i) => {
+    ui.cols.forEach((t, i) => {
       put("printed", t, cols[i] + 6, headTop + (L.headH - L.printSize) / 2 + 1, L.printSize);
     });
 

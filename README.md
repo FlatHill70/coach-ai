@@ -1,17 +1,17 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/media/banner-dark.png">
-    <img src="docs/media/banner-light.png" alt="Coach: a training log page with a week of sets in pencil and the coach's red corrections: bench +2.5 kg, side delts +4 sets, 2,760 kcal" width="100%">
+    <img src="docs/media/banner-light.png" alt="Coach: a training log page with a week of sets in pencil and the coach's red corrections: squat +2.5 kg, side delts +4 sets, keep 2,590 kcal" width="100%">
   </picture>
 </p>
 
 <p align="center">
-  <a href="https://github.com/FlatHill70/coach-ai/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/FlatHill70/coach-ai?label=release&color=1f2328"></a>
-  <a href="https://github.com/FlatHill70/coach-ai/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/FlatHill70/coach-ai/ci.yml?branch=main&label=tests"></a>
-  <a href="https://code.claude.com/docs/en/plugins"><img alt="Claude Code plugin" src="https://img.shields.io/badge/Claude%20Code-plugin-d7263d"></a>
-  <img alt="Node.js 20+" src="https://img.shields.io/badge/node-%E2%89%A520-1f2328">
-  <img alt="English and Spanish" src="https://img.shields.io/badge/lang-EN%20%7C%20ES-1f2328">
-  <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/github/license/FlatHill70/coach-ai?color=1f2328"></a>
+  <a href="https://github.com/FlatHill70/coach-ai/releases/latest"><img alt="Version" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FFlatHill70%2Fcoach-ai%2Fmain%2Fplugins%2Fcoach%2F.claude-plugin%2Fplugin.json&query=%24.version&prefix=v&label=version&color=d7263d&style=for-the-badge&labelColor=1f2328&logo=github&logoColor=white"></a>
+  <a href="https://github.com/FlatHill70/coach-ai/actions/workflows/ci.yml"><img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/FlatHill70/coach-ai/ci.yml?branch=main&label=tests&style=for-the-badge&labelColor=1f2328&logo=githubactions&logoColor=white"></a>
+  <a href="https://code.claude.com/docs/en/plugins"><img alt="Claude Code plugin" src="https://img.shields.io/badge/Claude_Code-plugin-d7263d?style=for-the-badge&labelColor=1f2328&logo=claude&logoColor=white"></a>
+  <a href="https://nodejs.org"><img alt="Node.js 20 or newer" src="https://img.shields.io/badge/Node.js-%E2%89%A5%2020-f1efe8?style=for-the-badge&labelColor=1f2328&logo=nodedotjs&logoColor=white"></a>
+  <a href="README.es.md"><img alt="English and Spanish" src="https://img.shields.io/badge/lang-EN%20%C2%B7%20ES-f1efe8?style=for-the-badge&labelColor=1f2328&logo=googletranslate&logoColor=white"></a>
+  <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-f1efe8?style=for-the-badge&labelColor=1f2328&logo=opensourceinitiative&logoColor=white"></a>
 </p>
 
 <p align="center"><b>English</b> · <a href="README.es.md">Español</a></p>
