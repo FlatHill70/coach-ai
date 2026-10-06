@@ -6,14 +6,14 @@ const USAGE = `coach — data engine for the Coach skill. Every command prints J
   init                                   create ~/.coach (or $COACH_HOME)
   status                                 freshness of every data source + update check
   latest                                 the most recent record of each kind (workout, weigh-in, food) and what is stale
-  profile show | set key=value ...       read / edit profile.json
-  sync [--from <file>]                   import new Hevy/Strong CSV, iOS Shortcut file, Health Connect export from the inbox
+  profile show | set key=value ... | review   read / edit profile.json; review compares it with the last 4 weeks of data
+  sync [--from <file|folder>]            import new Hevy/Strong CSV, iOS Shortcut file, Health Connect export from the inbox (or that file / folder)
   workouts info|summary|last|exercise|records|stalled|balance|log
   body weight|log|measures|info
   nutrition targets|days|log|tdee
   goals progress|add|update
   exercises list|find|groups|add|remove
-  update [--force]                       check GitHub for a newer release
+  update [--force] [--install]            check GitHub for a newer release; --install replaces a manual install with it
 `;
 
 const [area, ...rest] = process.argv.slice(2);
@@ -26,7 +26,7 @@ async function run() {
     case "latest": return (await import("./lib/system.mjs")).cmdLatest();
     case "sync": return (await import("./lib/system.mjs")).cmdSync(args);
     case "profile": return (await import("./lib/system.mjs")).cmdProfile({ ...args, _: ["profile", ...args._] });
-    case "update": return (await import("./lib/system.mjs")).checkUpdate({ force: Boolean(args.force) });
+    case "update": return args.install ? (await import("./lib/system.mjs")).installUpdate({ force: Boolean(args.force) }) : (await import("./lib/system.mjs")).checkUpdate({ force: Boolean(args.force) });
     case "workouts": return (await import("./lib/workouts.mjs")).cmdWorkouts(args);
     case "body": return (await import("./lib/body.mjs")).cmdBody(args);
     case "nutrition": return (await import("./lib/nutrition.mjs")).cmdNutrition(args);

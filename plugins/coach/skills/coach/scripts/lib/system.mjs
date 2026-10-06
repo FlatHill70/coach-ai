@@ -1,5 +1,5 @@
 import { existsSync, mkdirSync, copyFileSync, statSync, readFileSync, utimesSync, rmSync } from "node:fs";
-import { tmpdir } from "node:os";
+import { tmpdir, homedir } from "node:os";
 import { join, basename } from "node:path";
 import { execFileSync } from "node:child_process";
 import {
@@ -9,6 +9,8 @@ import { detectFormat } from "./workouts.mjs";
 import { SHORTCUT_RE, HC_DB, resetHealthCache } from "./health.mjs";
 
 export const REPO = "FlatHill70/coach-ai";
+const GITHUB_API = process.env.COACH_GITHUB_API ?? "https://api.github.com";
+const GITHUB = process.env.COACH_GITHUB ?? "https://github.com";
 
 export function skillVersion() {
   try {
@@ -62,10 +64,11 @@ function importHealthConnect(files) {
 export function cmdSync(args) {
   const profile = loadProfile();
   const dirs = inboxDirs(profile);
-  const extra = typeof args.from === "string" ? [args.from] : [];
+  const extra = typeof args.from === "string" ? [args.from.replace(/^~(?=$|[\\/])/, homedir())] : [];
+  if (extra.length && !existsSync(extra[0])) throw new UserError(`Not found: ${extra[0]}`);
   const files = [
     ...dirs.flatMap((d) => walk(d, 2)),
-    ...extra.filter(existsSync).map((p) => ({ path: p, name: basename(p), mtime: statSync(p).mtime })),
+    ...extra.flatMap((p) => (statSync(p).isDirectory() ? walk(p, 1) : [{ path: p, name: basename(p), mtime: statSync(p).mtime }])),
   ];
   if (!dirs.length && !extra.length) return { error: "No inbox configured", hint: "Set profile.inbox (e.g. ~/iCloudDrive/Coach or a Google Drive folder) or pass --from <file>." };
   const missing = dirs.filter((d) => !existsSync(d));
@@ -87,7 +90,7 @@ export function cmdSync(args) {
 const PROFILE_TEMPLATE = {
   schema: 1, name: null, language: "en", units: "kg", sex: null, birth_date: null, age: null, height_cm: null, weight_kg: null, bodyfat_pct: null,
   level: null, training_age_years: null, goal: null, secondary_goals: [], sport: null,
-  training_days: null, session_minutes: null, location: null, equipment: [],
+  training_days: null, training_weekdays: [], session_minutes: null, location: null, equipment: [],
   injuries: [], avoid_exercises: [], preferred_exercises: [], weak_points: [], priorities: [], volume_targets: {},
   activity: null, daily_steps: null, sleep_hours: null,
   nutrition: { tracking: null, diet: null, allergies: [], dislikes: [], budget: null, cooking: null, meals_per_day: null, cuisine: null, supplements: [] },
@@ -138,7 +141,67 @@ export function cmdProfile(args) {
     writeJson(paths.profile, p);
     return { changed };
   }
-  throw new UserError("Usage: profile <show|set>");
+  if (sub === "review") return profileReview(profile);
+  throw new UserError("Usage: profile <show|set|review>");
+}
+
+const WEEKDAYS = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+
+// What the profile says next to what the last 4 weeks of data say, so an update only asks about real changes.
+async function profileReview(profile) {
+  if (!profile) return { exists: false, hint: "Run `init` and then onboarding." };
+  const { loadWorkouts, groupWorkouts } = await import("./workouts.mjs");
+  const { displayName } = await import("./exercises.mjs");
+  const { dailyWeights } = await import("./body.mjs");
+  const now = today();
+  const lang = profile.language ?? "en";
+  const all = groupWorkouts(loadWorkouts().sets);
+  const recent = all.filter((w) => daysBetween(w.start, now) <= 28);
+  const span = all.length ? Math.min(28, daysBetween(all[0].start, now)) : 0;
+  const weekdays = {};
+  for (const w of recent) weekdays[WEEKDAYS[w.start.getDay()]] = (weekdays[WEEKDAYS[w.start.getDay()]] ?? 0) + 1;
+  const minutes = recent.filter((w) => w.end).map((w) => (w.end - w.start) / 60000);
+  const perWeek = span >= 14 ? round(recent.length / (span / 7), 1) : null;
+  const avgMinutes = minutes.length ? Math.round(minutes.reduce((a, b) => a + b, 0) / minutes.length) : null;
+  const weight = (await dailyWeights()).at(-1);
+
+  const mismatches = [];
+  if (weight && profile.weight_kg != null && Math.abs(weight.value - profile.weight_kg) >= 0.5) {
+    mismatches.push({ field: "weight_kg", profile: profile.weight_kg, data: round(weight.value, 1), set: `weight_kg=${round(weight.value, 1)}`, safeToApply: true });
+  }
+  if (perWeek != null && profile.training_days != null && Math.abs(perWeek - profile.training_days) >= 1) {
+    mismatches.push({ field: "training_days", profile: profile.training_days, data: perWeek, note: "sessions per week over the last 4 weeks" });
+  }
+  const regular = Object.entries(weekdays).filter(([, n]) => n >= 2).map(([d]) => d);
+  const planned = profile.training_weekdays ?? [];
+  if (planned.length && recent.length >= 4) {
+    const extra = regular.filter((d) => !planned.includes(d));
+    const unused = planned.filter((d) => !weekdays[d]);
+    if (extra.length || unused.length) mismatches.push({ field: "training_weekdays", profile: planned, data: weekdays, trainedButNotPlanned: extra, plannedButNotTrained: unused });
+  } else if (!planned.length && regular.length) {
+    mismatches.push({ field: "training_weekdays", profile: [], data: weekdays, note: "not set: confirm the user's usual days" });
+  }
+  if (avgMinutes != null && profile.session_minutes && Math.abs(avgMinutes - profile.session_minutes) / profile.session_minutes > 0.2) {
+    mismatches.push({ field: "session_minutes", profile: profile.session_minutes, data: avgMinutes });
+  }
+  const avoid = (profile.avoid_exercises ?? []).map((a) => a.toLowerCase());
+  const done = [...new Set(recent.flatMap((w) => w.sets.map((s) => s.exercise)))];
+  const vetoed = done.filter((e) => [e, displayName(e, "en"), displayName(e, lang)].some((n) => avoid.includes(String(n).toLowerCase())));
+  if (vetoed.length) {
+    const last = (e) => isoDay(recent.filter((w) => w.sets.some((s) => s.exercise === e)).at(-1).start);
+    mismatches.push({ field: "avoid_exercises", profile: profile.avoid_exercises, data: vetoed.map((e) => ({ exercise: displayName(e, lang), lastDone: last(e) })), note: "vetoed but done recently" });
+  }
+  const daysSinceUpdate = profile.updated ? daysBetween(new Date(`${profile.updated}T12:00:00`), now) : null;
+  return {
+    updated: profile.updated ?? null, daysSinceUpdate, reOnboard: daysSinceUpdate != null && daysSinceUpdate > 180,
+    current: {
+      goal: profile.goal, rate_pct_per_week: profile.rate_pct_per_week, level: profile.level, training_days: profile.training_days, training_weekdays: planned,
+      session_minutes: profile.session_minutes, location: profile.location, equipment: profile.equipment, injuries: profile.injuries,
+      avoid_exercises: profile.avoid_exercises, weak_points: profile.weak_points, nutrition_tracking: profile.nutrition?.tracking ?? null, auto_update: profile.auto_update ?? false,
+    },
+    last28Days: { sessions: recent.length, perWeek, weekdays, avgMinutes },
+    mismatches,
+  };
 }
 
 const cmpVersions = (a, b) => {
@@ -159,7 +222,7 @@ export async function checkUpdate({ force = false } = {}) {
   let latest = fresh && !force ? state.update.latest : null;
   if (!latest && process.env.COACH_NO_UPDATE_CHECK !== "1") {
     try {
-      const res = await fetch(`https://api.github.com/repos/${REPO}/releases/latest`, { headers: { "User-Agent": "coach-skill", Accept: "application/vnd.github+json" }, signal: AbortSignal.timeout(4000) });
+      const res = await fetch(`${GITHUB_API}/repos/${REPO}/releases/latest`, { headers: { "User-Agent": "coach-skill", Accept: "application/vnd.github+json" }, signal: AbortSignal.timeout(4000) });
       if (res.ok) {
         latest = (await res.json()).tag_name?.replace(/^v/, "") ?? null;
         writeJson(paths.state, { ...state, update: { checkedAt: Date.now(), latest } });
@@ -228,6 +291,52 @@ export async function cmdLatest() {
     food: food ? { date: food.day, daysAgo: ago(food.day), kcal: round(food.kcal, 0), protein_g: round(food.protein, 0), sources: food.sources } : null,
     stale,
   };
+}
+
+// Manual installs replace the skill folder with the latest release zip (checksum verified); the old one stays in <dir>.previous.
+export async function installUpdate({ force = false } = {}) {
+  const info = await checkUpdate({ force: true });
+  if (existsSync(join(SKILL_DIR, "..", "..", "..", "..", ".git"))) return { ...info, installed: false, reason: "dev_checkout", hint: "This copy runs from a git checkout: update it with git pull." };
+  if (info.install === "plugin") return { ...info, installed: false, reason: "plugin", hint: info.how ?? "Plugin installs update from /plugin (turn on auto-update in /plugin › Marketplaces › coach)." };
+  if (info.latest === "unknown") return { ...info, installed: false, reason: "no_release", hint: "Could not reach GitHub, or no release has been published yet." };
+  if (!info.updateAvailable && !force) return { ...info, installed: false, reason: "up_to_date" };
+
+  const base = `${GITHUB}/${REPO}/releases/download/v${info.latest}`;
+  const get = async (url) => {
+    const res = await fetch(url, { headers: { "User-Agent": "coach-skill" }, redirect: "follow", signal: AbortSignal.timeout(30000) });
+    if (!res.ok) throw new UserError(`Download failed (${res.status}): ${url}`);
+    return Buffer.from(await res.arrayBuffer());
+  };
+  const zip = await get(`${base}/coach-skill.zip`);
+  const sums = (await get(`${base}/SHA256SUMS.txt`)).toString("utf8");
+  const expected = sums.match(/^([a-f0-9]{64})\s+\*?coach-skill\.zip$/m)?.[1];
+  const { createHash } = await import("node:crypto");
+  const actual = createHash("sha256").update(zip).digest("hex");
+  if (!expected || expected !== actual) throw new UserError("Checksum mismatch: the downloaded zip was not installed.");
+
+  const { writeFileSync, renameSync, cpSync } = await import("node:fs");
+  const tmp = join(tmpdir(), `coach-update-${Date.now()}`);
+  mkdirSync(tmp, { recursive: true });
+  try {
+    const file = join(tmp, "coach-skill.zip");
+    writeFileSync(file, zip);
+    if (!unzip(file, tmp)) throw new UserError("Could not extract the zip (no tar/unzip/python3 available).");
+    const fresh = join(tmp, "coach");
+    if (!existsSync(join(fresh, "SKILL.md"))) throw new UserError("The download does not look like the Coach skill.");
+    const previous = `${SKILL_DIR}.previous`;
+    rmSync(previous, { recursive: true, force: true });
+    try {
+      renameSync(SKILL_DIR, previous);
+      renameSync(fresh, SKILL_DIR);
+    } catch {
+      if (!existsSync(previous)) cpSync(SKILL_DIR, previous, { recursive: true });
+      cpSync(fresh, SKILL_DIR, { recursive: true, force: true });
+    }
+    writeJson(paths.state, { ...readJson(paths.state, {}), update: { checkedAt: Date.now(), latest: info.latest } });
+    return { installed: true, from: info.current, to: info.latest, previous, note: "Your data in ~/.coach was not touched. The new version loads in the next Claude Code session." };
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
 }
 
 export async function cmdStatus() {

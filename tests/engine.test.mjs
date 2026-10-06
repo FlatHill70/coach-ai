@@ -1,7 +1,10 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { execFileSync, spawnSync } from "node:child_process";
-import { mkdtempSync, writeFileSync, mkdirSync, readFileSync } from "node:fs";
+import { execFileSync, spawnSync, execFile } from "node:child_process";
+import { mkdtempSync, writeFileSync, mkdirSync, readFileSync, cpSync, existsSync, utimesSync } from "node:fs";
+import { createServer } from "node:http";
+import { createHash } from "node:crypto";
+import { crc32 } from "node:zlib";
 import { tmpdir } from "node:os";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -237,6 +240,91 @@ test("sync picks the newest Hevy and Strong exports from the inbox by header", (
   assert.equal(s.strong.status, "imported");
   assert.equal(run(home, ["sync"]).hevy.status, "up_to_date");
   assert.equal(run(home, ["workouts", "info"]).workouts, 2);
+});
+
+test("sync --from a folder takes the newest export; profile review compares the profile with the data", () => {
+  const home = newHome();
+  profile(home, { sex: "male", age: 19, height_cm: 163, weight_kg: 80, training_days: 2, training_weekdays: ["mon", "wed"], avoid_exercises: ["Butterfly (Pec Deck)"], language: "es" });
+  const downloads = join(home, "Downloads");
+  mkdirSync(downloads);
+  const old = join(downloads, "workouts.csv"), recent = join(downloads, "workouts (1).csv");
+  writeFileSync(old, `${HEVY_HEADER}
+"Old","1 Sep 2026, 10:00","1 Sep 2026, 11:00","","Squat (Barbell)",,"",0,"normal",100,5,,,
+`);
+  utimesSync(old, new Date("2026-09-01"), new Date("2026-09-01"));
+  writeFileSync(recent, [HEVY_HEADER,
+    ...["14 Sep", "21 Sep", "28 Sep", "17 Sep", "24 Sep", "1 Oct"].map((d) => `"Push","${d} 2026, 18:00","${d} 2026, 19:00","","Bench Press (Barbell)",,"",0,"normal",60,8,,,`),
+    '"Push","1 Oct 2026, 18:00","1 Oct 2026, 19:00","","Butterfly (Pec Deck)",,"",1,"normal",30,12,,,',
+  ].join("\n"));
+  assert.equal(run(home, ["sync", "--from", downloads]).hevy.from, recent);
+  assert.match(runError(home, ["sync", "--from", join(home, "nope")]), /Not found/);
+  run(home, ["body", "log", "--weight", "78", "--date", "2026-10-04"]);
+  const review = run(home, ["profile", "review"]);
+  const by = Object.fromEntries(review.mismatches.map((m) => [m.field, m]));
+  assert.equal(review.last28Days.sessions, 6);
+  assert.equal(by.weight_kg.set, "weight_kg=78");
+  assert.equal(by.training_days, undefined, "2 sessions a week, as planned");
+  assert.deepEqual(by.training_weekdays.trainedButNotPlanned, ["thu"]);
+  assert.deepEqual(by.training_weekdays.plannedButNotTrained, ["wed"]);
+  assert.deepEqual(by.avoid_exercises.data, [{ exercise: "Contractor de pecho (pec deck)", lastDone: "2026-10-01" }]);
+});
+
+function zipStore(files) {
+  const parts = [], central = [];
+  let offset = 0;
+  for (const f of files) {
+    const name = Buffer.from(f.name), data = Buffer.from(f.data), crc = crc32(data);
+    const local = Buffer.alloc(30);
+    local.writeUInt32LE(0x04034b50, 0); local.writeUInt16LE(20, 4); local.writeUInt32LE(crc, 14);
+    local.writeUInt32LE(data.length, 18); local.writeUInt32LE(data.length, 22); local.writeUInt16LE(name.length, 26);
+    const entry = Buffer.alloc(46);
+    entry.writeUInt32LE(0x02014b50, 0); entry.writeUInt16LE(20, 4); entry.writeUInt16LE(20, 6); entry.writeUInt32LE(crc, 16);
+    entry.writeUInt32LE(data.length, 20); entry.writeUInt32LE(data.length, 24); entry.writeUInt16LE(name.length, 28); entry.writeUInt32LE(offset, 42);
+    parts.push(local, name, data);
+    central.push(entry, name);
+    offset += 30 + name.length + data.length;
+  }
+  const dir = Buffer.concat(central), end = Buffer.alloc(22);
+  end.writeUInt32LE(0x06054b50, 0); end.writeUInt16LE(files.length, 8); end.writeUInt16LE(files.length, 10); end.writeUInt32LE(dir.length, 12); end.writeUInt32LE(offset, 16);
+  return Buffer.concat([...parts, dir, end]);
+}
+
+test("update --install replaces a manual install with the verified release zip", async () => {
+  const zip = zipStore([
+    { name: "coach/SKILL.md", data: "---\nname: coach\nmetadata:\n  version: 9.9.9\n---\n" },
+    { name: "coach/scripts/marker.txt", data: "new" },
+  ]);
+  let sums = `${createHash("sha256").update(zip).digest("hex")}  coach-skill.zip
+`;
+  const server = createServer((req, res) => {
+    if (req.url.endsWith("/releases/latest")) return res.end(JSON.stringify({ tag_name: "v9.9.9" }));
+    if (req.url.endsWith("/v9.9.9/coach-skill.zip")) return res.end(zip);
+    if (req.url.endsWith("/v9.9.9/SHA256SUMS.txt")) return res.end(sums);
+    res.statusCode = 404; res.end();
+  });
+  await new Promise((r) => server.listen(0, "127.0.0.1", r));
+  const url = `http://127.0.0.1:${server.address().port}`;
+  const call = (cli, home) => new Promise((resolve, reject) => execFile(process.execPath, [cli, "update", "--install"], { env: { ...env(home), COACH_NO_UPDATE_CHECK: "", COACH_GITHUB_API: url, COACH_GITHUB: url } }, (e, out, err) => (e ? reject(new Error(err || e.message)) : resolve(JSON.parse(out)))));
+  try {
+    const skill = join(newHome(), "skills", "coach");
+    cpSync(join(ROOT, "plugins", "coach", "skills", "coach"), skill, { recursive: true });
+    const cli = join(skill, "scripts", "coach.mjs");
+    assert.equal((await call(CLI, newHome())).reason, "dev_checkout", "the repo copy is never replaced");
+
+    sums = sums.replace(/^./, (c) => (c === "0" ? "1" : "0"));
+    await assert.rejects(call(cli, newHome()), /Checksum mismatch/);
+    assert.ok(!existsSync(join(skill, "scripts", "marker.txt")), "nothing installed on a bad checksum");
+
+    sums = `${createHash("sha256").update(zip).digest("hex")}  coach-skill.zip
+`;
+    const done = await call(cli, newHome());
+    assert.equal(done.installed, true);
+    assert.equal(done.to, "9.9.9");
+    assert.equal(readFileSync(join(skill, "scripts", "marker.txt"), "utf8"), "new");
+    assert.ok(existsSync(join(`${skill}.previous`, "scripts", "coach.mjs")), "the previous version is kept");
+  } finally {
+    server.close();
+  }
 });
 
 test("SKILL.md frontmatter and manifests stay consistent", () => {
