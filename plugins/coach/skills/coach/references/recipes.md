@@ -5,7 +5,7 @@ Used by *Cook with what I have*. The goal is a recipe the user can cook tonight 
 ## Always new
 
 - Read `~/.coach/recipes.md` first. Never repeat a title, and never repeat the combination **main ingredient + method + flavour profile** of any of the last 20 entries.
-- Rotate on purpose: cuisine (Spanish, Mediterranean, Mexican, Japanese, Indian, Korean, Middle Eastern, American…), flavour (smoky, citrus, garlic and herbs, spicy, sweet-savoury, curry, miso, mustard), texture (crispy, saucy, stuffed, skewers, bowl, wrap, traybake) and cut (strips, cubes, whole, minced, butterflied).
+- Rotate on purpose: cuisine (Spanish, Mediterranean, Mexican, Japanese, Indian, Korean, Middle Eastern, American…), flavour (smoky, citrus, garlic and herbs, spicy, sweet-savoury, curry, miso, mustard), texture (crispy, saucy, stuffed, skewers, bowl, wrap, quesadilla, omelette, baked eggs, breaded, traybake) and cut (strips, cubes, whole, minced, butterflied).
 - The 3 options of step 5 must differ from each other in method or flavour, not just in the garnish.
 - Use what they have first. Suggest at most 1–2 extra items, marked "(optional, to buy)".
 
@@ -58,6 +58,23 @@ Times are starting points for typical home appliances. Always give a **doneness 
 | Potatoes in wedges | 210 °C | 35–40 min |
 | Meatballs | 200 °C | 18–22 min |
 | Baked eggs in a dish | 180 °C | 12–15 min |
+
+### Wheat tortillas (tortitas de trigo)
+Quick base for dinners and leftovers. A medium tortilla (20 cm, ~40 g) ≈ 120 kcal, 4 g protein, 20 g carbs, 3 g fat; a large one (~60 g) ≈ 180 kcal.
+- **Wrap**: fill cold, or warm the tortilla first in a dry pan 20–30 s per side so it folds without cracking.
+- **Quesadilla**: pan on medium, no oil, 2–3 min per side until it browns and the filling is hot. Air fryer 180 °C 5–6 min, flip at half. Oven 200 °C 8–10 min.
+- **Tortilla pizza**: tomato, topping and cheese on top. Oven 200 °C 8–10 min, or air fryer 180 °C 5–7 min.
+- **Egg cup**: press a tortilla into a ramekin, crack 1–2 eggs inside. Air fryer 170 °C 10–12 min, oven 180 °C 12–15 min.
+- In the air fryer the fan lifts the tortilla: weigh it down with a rack or the filling, or close it with a toothpick.
+- Gluten: wheat tortillas carry it; corn tortillas are the swap (check the label).
+
+### Eggs
+A large egg (~60 g without shell) ≈ 85 kcal, 7 g protein, 6 g fat. Count the oil: what stays on the plate counts.
+- **French omelette (tortilla francesa)**: 2–3 eggs, non-stick pan on medium with 1 tsp oil, 2–3 min, fold when the top is barely set.
+- **Spanish omelette (tortilla de patatas)**: potato confited in the pan absorbs about 10 g of oil per 100 g of potato; drain it well. Lighter: cook the potato cubes in the air fryer (200 °C 15–18 min, 1 tsp oil). Set the omelette in the pan 3–4 min per side on medium-low, or in a greased mould in the air fryer at 160 °C 12–15 min.
+- **Fried egg (huevo frito)**: pan with 1 tbsp of oil on medium-high, 2–3 min, spoon the hot oil over the white; count about 5 g of oil (10 g if it was swimming). Lighter: non-stick pan with a few drops and a lid, or air fryer in a greased mould at 180 °C 5–7 min.
+- **Baked eggs (huevos al plato / a la flamenca)**: eggs on a bed of tomato sauce in an individual earthenware dish, with ham, chorizo, peas or peppers. Oven 180–200 °C 10–12 min, air fryer 180 °C 6–9 min. Done when the white is fully set and the yolk still moves.
+- Runny yolks are fine for most people. For pregnancy or a weak immune system, cook the yolk until firm.
 
 ## Breaded and battered (empanado / rebozado)
 
