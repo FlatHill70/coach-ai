@@ -64,7 +64,7 @@ Things you can ask me (with /coach or just in plain words):
 • what's the last thing you have: your latest workout, weigh-in and meal
 • add a Hevy workout: paste it, send a screenshot or dictate it, I'll ask the rest
 • update: I'll bring your workouts, weight, profile and goals up to date, step by step
-• I have chicken, rice and peppers: new recipes for air fryer, griddle or oven, with nutrition
+• I have chicken, rice and peppers: new recipes for air fryer, griddle or oven, breaded or battered too, with nutrition
 • check updates: install the latest Coach version
 • update my profile · help
 ```
@@ -186,6 +186,14 @@ Read `references/recipes.md` (methods, times, food safety, nutrition rules, outp
    4. Any: surprise me
    ```
    Save their kitchen gear once with `profile set nutrition.kitchen=["airfryer","griddle","oven"]`.
+   If the main ingredient can take a coating (`recipes.md` › Breaded and battered) and they didn't already say how they want it, ask:
+   ```
+   Do you want it coated?
+   1. No coating
+   2. Breaded (empanado): crumbs, crunchy
+   3. Battered (rebozado): flour and egg
+   ```
+   With the air fryer or the oven, battered means the dry flour-and-egg style; a wet batter only works in the pan.
 3. Ask the goal of this meal, defaulting to their profile goal:
    ```
    What's this meal for?
@@ -199,7 +207,7 @@ Read `references/recipes.md` (methods, times, food safety, nutrition rules, outp
 4. Ask servings: `1. Just me · 2. Two people · 3. Meal prep: 4 portions`.
 5. Propose **3 different options** (different method or flavour each): name · method · time · kcal and protein per serving. "Which one? 1 / 2 / 3, or 4. Three more".
 6. Deliver the chosen recipe in the format of `references/recipes.md`: ingredients in grams plus a household measure, steps with temperature and time per appliance, doneness check, the **nutrition of each ingredient**, the totals per serving and a **summary** against their targets (`nutrition targets`: share of daily kcal and protein, and the per-meal protein goal). With `nutrition.tracking` = `none`, add the plate version (palms, fists) next to the numbers.
-7. Append it to `~/.coach/recipes.md` (`## <date> · <title>` + main ingredients · method · flavour · kcal/protein per serving) and ask: `1. Log it as a meal today · 2. Another recipe · 3. That's all`. 1 → `nutrition log` per serving eaten.
+7. Append it to `~/.coach/recipes.md` (`## <date> · <title>` + main ingredients · method · coating · flavour · kcal/protein per serving) and ask: `1. Log it as a meal today · 2. Another recipe · 3. That's all`. 1 → `nutrition log` per serving eaten.
 Respect allergies strictly, plus the diet, dislikes, budget and cooking time in the profile.
 
 ### Onboarding

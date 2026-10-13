@@ -59,6 +59,29 @@ Times are starting points for typical home appliances. Always give a **doneness 
 | Meatballs | 200 °C | 18–22 min |
 | Baked eggs in a dish | 180 °C | 12–15 min |
 
+## Breaded and battered (empanado / rebozado)
+
+A coating on top of the method, not a method of its own. Offer it when the main ingredient takes one: fillets, strips or cubes of chicken, turkey, pork or fish, prawns, pressed tofu, slices of courgette or aubergine, onion rings. Skip it for saucy dishes, stews and sauced leftovers.
+
+- **Breaded (empanado)**: flour → beaten egg → crumbs. Crumbs: breadcrumbs, panko (crunchier), crushed corn flakes, oats, or breadcrumbs mixed with grated cheese. Higher-protein, lighter glue: egg white, or Greek yoghurt with mustard, and no flour.
+- **Battered (rebozado)**: Spanish style is flour then beaten egg (dry dredge). Wet batter is flour + very cold sparkling water or beer, or tempura.
+- Season the flour or the egg, not only the crumbs.
+
+By appliance:
+- **Air fryer**: breaded and dry-dredge battered, yes. Wet batter, no: it drips and glues to the basket, so switch to breaded. Spray or brush 1 tsp (5 g) of oil over the coating or it stays pale and floury. Single layer, flip at half. Chicken strips 200 °C 10–12 min · fish fillet 190 °C 8–10 min · vegetables 190 °C 8–10 min · prawns 200 °C 6–8 min.
+- **Pan**: 1 cm of oil at 170–180 °C (a crumb sizzles at once). Thin fillets 2–4 min per side, then drain on kitchen paper. The only method that suits wet batter.
+- **Oven**: breaded only, on baking paper or a rack, oil sprayed over. 200 °C, chicken strips 15–20 min, fish 12–15 min, turn at half.
+
+Safety and allergies:
+- The coating browns before the inside of a thick piece is done: keep pieces 2 cm thick at most, or finish them in the oven, and still check the core temperature.
+- Throw away the flour, egg and crumbs that touched raw meat or fish; don't reuse them.
+- Coatings carry **gluten** (flour, breadcrumbs, beer) and **egg**. Gluten-free swaps: corn flour, chickpea-flour batter, gluten-free crumbs, corn flakes labelled gluten-free.
+
+Nutrition:
+- Count only what sticks, not what you set out. Per 100 g of raw food, breaded ≈ 10 g flour + 15 g egg + 15 g breadcrumbs ≈ 110 kcal, 5 g protein, 17 g carbs, 2 g fat.
+- Oil: air fryer and oven = only the oil sprayed. Pan = count 10 g of oil absorbed per 100 g of coated food (range 5–15 g; wet batter sits at the top of it).
+- The lighter swap to offer: air fryer instead of pan saves about 90 kcal per 100 g.
+
 ## Food safety
 
 - Safe core temperatures: poultry 74 °C · minced meat 71 °C · pork 63 °C + 3 min rest (minced pork 71 °C) · fish 63 °C or flakes easily · whole beef/lamb cuts 63 °C + rest. Without a thermometer, give the visual check (juices clear, no pink in the centre for chicken and mince).
