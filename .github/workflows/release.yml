@@ -18,10 +18,30 @@ jobs:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     outputs:
-      release_created: ${{ steps.release.outputs.release_created }}
-      tag_name: ${{ steps.release.outputs.tag_name }}
+      release_created: ${{ steps.release_after_merge.outputs.release_created || steps.release.outputs.release_created }}
+      tag_name: ${{ steps.release_after_merge.outputs.tag_name || steps.release.outputs.tag_name }}
     steps:
       - id: release
+        uses: googleapis/release-please-action@v5
+        with:
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+
+      # A merge made with GITHUB_TOKEN doesn't trigger a new push run, so the
+      # release is created in this same job by running release-please again.
+      - id: merge
+        name: Merge the release PR
+        if: steps.release.outputs.release_created != 'true' && steps.release.outputs.pr != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_JSON: ${{ steps.release.outputs.pr }}
+        run: |
+          number=$(jq -r '.number' <<<"$PR_JSON")
+          gh pr merge "$number" --squash --repo "$GITHUB_REPOSITORY"
+          sleep 10
+
+      - id: release_after_merge
+        if: steps.merge.outcome == 'success'
         uses: googleapis/release-please-action@v5
         with:
           config-file: release-please-config.json
