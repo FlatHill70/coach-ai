@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/FlatHill70/coach-ai/compare/v1.4.0...v1.5.0) (2026-10-13)
+
+
+### Features
+
+* BMI and body type ([c27e30f](https://github.com/FlatHill70/coach-ai/commit/c27e30f1ee66ff2977234bc9655f22ef449f646a))
+
 ## [1.4.0](https://github.com/FlatHill70/coach-ai/compare/v1.3.0...v1.4.0) (2026-10-13)
 
 

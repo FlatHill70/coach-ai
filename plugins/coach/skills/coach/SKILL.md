@@ -4,7 +4,7 @@ description: Personal strength & nutrition coach for any level and goal, from pe
 argument-hint: "[update | check-in | plan | log | recipe | nutrition | goals | check updates | help]"
 license: MIT
 metadata:
-  version: 1.4.0 # x-release-please-version
+  version: 1.5.0 # x-release-please-version
   repository: https://github.com/FlatHill70/coach-ai
 ---
 
