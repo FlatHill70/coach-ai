@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.3.0](https://github.com/FlatHill70/coach-ai/compare/v1.2.0...v1.3.0) (2026-10-13)
+
+
+### Features
+
+* breaded and battered options for recipes ([65bcddb](https://github.com/FlatHill70/coach-ai/commit/65bcddb01ecb806071ff5e5a0c69758a3521a170))
+* fish, spices and techniques to discover in recipes ([74e0a88](https://github.com/FlatHill70/coach-ai/commit/74e0a8893fffe0634744d748ea6bc6b76e4fb096))
+* wheat tortillas and egg dishes in recipes ([37f5793](https://github.com/FlatHill70/coach-ai/commit/37f5793c965912e787b00934a630fac66aadf11c))
+
 ## 1.2.0 (2026-10-06)
 
 ### Features
