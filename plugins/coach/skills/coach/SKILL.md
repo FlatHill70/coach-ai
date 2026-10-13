@@ -64,7 +64,7 @@ Things you can ask me (with /coach or just in plain words):
 • what's the last thing you have: your latest workout, weigh-in and meal
 • add a Hevy workout: paste it, send a screenshot or dictate it, I'll ask the rest
 • update: I'll bring your workouts, weight, profile and goals up to date, step by step
-• I have chicken, rice and peppers: new recipes for air fryer, griddle or oven, breaded or battered too, with nutrition
+• I have chicken, rice and peppers: new recipes for air fryer, griddle or oven (fish too, breaded or battered), with a spice or technique to discover and the nutrition
 • check updates: install the latest Coach version
 • update my profile · help
 ```
@@ -175,7 +175,7 @@ A guided pass that leaves data, profile, goals and the skill itself up to date. 
 3. `profile set auto_update=false` turns automatic updates off again ("stop updating by yourself").
 
 ### Cook with what I have: "I have this in the kitchen", "what can I cook with…", "design me a recipe", "tengo esto en la nevera"
-Read `references/recipes.md` (methods, times, food safety, nutrition rules, output format) and `references/nutrition.md`. Every recipe is **new**: before proposing, read `~/.coach/recipes.md` (the history, newest last; create it if missing) and never repeat a title, nor the same main ingredient + method + flavour as any of the last 20.
+Read `references/recipes.md` (methods, times, food safety, nutrition rules, output format) and `references/nutrition.md`, plus `references/fish-and-seafood.md` when there is fish or seafood and `references/flavours-and-techniques.md` for spices, herbs and techniques. Every recipe is **new**: before proposing, read `~/.coach/recipes.md` (the history, newest last; create it if missing) and never repeat a title, nor the same main ingredient + method + flavour as any of the last 20.
 1. Ask what they have unless they already said it (`1. I'll list it · 2. I'll send a photo of the fridge or pantry`). Assume salt, pepper, oil, water and common dried spices; ask about anything else you'd need.
 2. Ask the method, preselecting `profile.nutrition.kitchen` if saved:
    ```
@@ -205,7 +205,7 @@ Read `references/recipes.md` (methods, times, food safety, nutrition rules, outp
    6. Meal prep for several days
    ```
 4. Ask servings: `1. Just me · 2. Two people · 3. Meal prep: 4 portions`.
-5. Propose **3 different options** (different method or flavour each): name · method · time · kcal and protein per serving. "Which one? 1 / 2 / 3, or 4. Three more".
+5. Propose **3 different options** (different method or flavour each): name · method · time · kcal and protein per serving. At least one brings a spice, herb or technique new to the user, marked "New for you:" with one plain line (`recipes.md` › Discover something). "Which one? 1 / 2 / 3, or 4. Three more".
 6. Deliver the chosen recipe in the format of `references/recipes.md`: ingredients in grams plus a household measure, steps with temperature and time per appliance, doneness check, the **nutrition of each ingredient**, the totals per serving and a **summary** against their targets (`nutrition targets`: share of daily kcal and protein, and the per-meal protein goal). With `nutrition.tracking` = `none`, add the plate version (palms, fists) next to the numbers.
 7. Append it to `~/.coach/recipes.md` (`## <date> · <title>` + main ingredients · method · coating · flavour · kcal/protein per serving) and ask: `1. Log it as a meal today · 2. Another recipe · 3. That's all`. 1 → `nutrition log` per serving eaten.
 Respect allergies strictly, plus the diet, dislikes, budget and cooking time in the profile.

@@ -69,7 +69,7 @@ Requisitos: Claude Code y Node.js 20 o superior (22.13+ para leer exportaciones 
 | "Banca 60x8, 60x8, 57,5x7" · "Peso 72,4" | Lo apunta si no usas ninguna app |
 | "¿Qué es lo último que tienes?" | Tu último entreno, pesada y comida, de dónde salen y qué está desactualizado, con una pregunta para ponerlo al día |
 | "/coach update" | Lo pone todo al día paso a paso: entrenos (también desde Descargas), peso, perfil frente a tus datos reales, objetivos y versión de Coach |
-| "Tengo pollo, arroz y pimientos" | Te pregunta aparato (airfryer, plancha u horno), si lo quieres empanado o rebozado, y objetivo, y te propone recetas siempre nuevas con cantidades, tiempos, el valor nutricional de cada ingrediente y un resumen |
+| "Tengo pollo, arroz y pimientos" | Te pregunta aparato (airfryer, plancha u horno), si lo quieres empanado o rebozado, y objetivo, y te propone recetas siempre nuevas (también pescado y marisco) que te descubren una especia, hierba o técnica, con cantidades, tiempos, el valor nutricional de cada ingrediente y un resumen |
 | "Te paso un entreno de Hevy" | Te guía con preguntas para pasarlo a mano (texto copiado, captura o dictado) y lo sustituye solo cuando llega el export, sin duplicados |
 | "Objetivo: 100 kg en banca para junio" | Comprueba que es realista para tu nivel y sigue el progreso con fecha estimada |
 

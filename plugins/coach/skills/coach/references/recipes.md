@@ -9,6 +9,13 @@ Used by *Cook with what I have*. The goal is a recipe the user can cook tonight 
 - The 3 options of step 5 must differ from each other in method or flavour, not just in the garnish.
 - Use what they have first. Suggest at most 1–2 extra items, marked "(optional, to buy)".
 
+## Discover something
+
+- Fish or seafood in the recipe → read `fish-and-seafood.md` (times, doneness, anisakis, mercury). Spices, herbs and techniques → `flavours-and-techniques.md`.
+- Of the 3 options, at least one brings something the user hasn't had in `~/.coach/recipes.md`: a spice or blend (ras el hanout, curry, za'atar…), a herb used well (parsley at the end, dill with salmon…) or a technique (papillote, glaze, escabeche, stir-fry…). Mark it with one plain line: "New for you: papillote, the fish steams in a paper parcel, no oil needed".
+- Keep it cookable tonight: discovery uses what they have, or one item to buy at most.
+- When they like a discovery, the history keeps it; next time build on it (same spice with another protein) instead of repeating it.
+
 ## Methods, temperatures and times
 
 Times are starting points for typical home appliances. Always give a **doneness check** as well as a time, because appliances vary.
