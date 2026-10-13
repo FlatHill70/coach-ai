@@ -202,13 +202,58 @@ async function cmdTargets(args) {
   return computeTargets(loadProfile(), overrides);
 }
 
+async function cmdRemaining(args) {
+  const profile = loadProfile();
+  const date = typeof args.date === "string" ? args.date : isoDay(today());
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) throw new UserError("--date must be YYYY-MM-DD");
+  const told = { kcal: num(args.kcal), protein: num(args.protein), carbs: num(args.carbs), fat_g: num(args.fat) };
+  const fromChat = Object.values(told).some((v) => v != null);
+  let eaten = { kcal: 0, protein: 0, carbs: 0, fat_g: 0 };
+  if (fromChat) eaten = Object.fromEntries(Object.entries(told).map(([k, v]) => [k, v ?? null]));
+  else {
+    const day = (await dailyFood(Math.max(1, daysBetween(new Date(`${date}T12:00:00`), today()) + 1))).find((d) => d.day === date);
+    if (day) eaten = { kcal: day.kcal, protein: day.protein, carbs: day.carbs, fat_g: day.fat_g };
+  }
+  const t = await computeTargets(profile);
+  const mealsLeft = Math.max(1, Math.round(num(args["meals-left"]) ?? 1));
+  const left = (target, had) => (had == null ? null : Math.max(0, target - had));
+  const per = (v) => (v == null ? null : Math.round(v / mealsLeft));
+  const remaining = {
+    kcal: left(t.calories.target, eaten.kcal),
+    kcal_range: eaten.kcal == null ? null : t.calories.range.map((x) => Math.max(0, x - eaten.kcal)),
+    protein_g: eaten.protein == null ? null : t.macros.protein_g.map((x) => Math.max(0, x - eaten.protein)),
+    carbs_g: left(t.macros.carbs_g, eaten.carbs),
+    fat_g_min: left(t.macros.fat_g_min, eaten.fat_g),
+  };
+  const flags = [...t.flags];
+  if (eaten.kcal != null && eaten.kcal > t.calories.range[1]) flags.push("over the calorie target already: offer a normal, light, protein-led meal; never suggest skipping meals or compensating tomorrow.");
+  if (eaten.protein != null && eaten.protein >= t.macros.protein_g[0]) flags.push("daily protein minimum already reached.");
+  const proteinPerMeal = remaining.protein_g && Math.round(remaining.protein_g[0] / mealsLeft);
+  if (proteinPerMeal > Math.max(60, t.macros.proteinPerMeal_g * 2)) flags.push(`${proteinPerMeal} g of protein in one meal is a lot: get close, and move the rest to a shake or tomorrow's habits.`);
+  const r = (o) => Object.fromEntries(Object.entries(o).map(([k, v]) => [k, v == null ? null : Math.round(v)]));
+  return {
+    date, source: fromChat ? "told in chat" : eaten.kcal ? "food log" : "nothing logged",
+    eaten: r(eaten),
+    targets: { kcal: t.calories.target, kcal_range: t.calories.range, protein_g: t.macros.protein_g, carbs_g: t.macros.carbs_g, fat_g_min: t.macros.fat_g_min },
+    remaining,
+    mealsLeft,
+    nextMeal: {
+      kcal: per(remaining.kcal),
+      protein_g: remaining.protein_g && remaining.protein_g.map(per),
+      carbs_g: per(remaining.carbs_g),
+      fat_g: remaining.kcal == null ? null : [per(remaining.fat_g_min ?? 0), per(Math.max(remaining.fat_g_min ?? 0, (remaining.kcal * 0.35) / 9))],
+    },
+    flags,
+  };
+}
+
 async function cmdTdee() {
   return (await adaptiveTdee()) ?? { error: "Not enough data", needs: "≥10 fully logged days and ≥8 weigh-ins in the last 28 days" };
 }
 
 export async function cmdNutrition(args) {
   const sub = args._[0];
-  const commands = { targets: cmdTargets, days: cmdDays, log: cmdLog, tdee: cmdTdee };
+  const commands = { targets: cmdTargets, days: cmdDays, log: cmdLog, remaining: cmdRemaining, tdee: cmdTdee };
   if (!commands[sub]) throw new UserError(`Usage: nutrition <${Object.keys(commands).join("|")}>`);
   return commands[sub](args);
 }

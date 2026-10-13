@@ -209,6 +209,35 @@ test("nutrition safety rules: teens, low BMI and deficit caps", () => {
   assert.ok(b.macros.protein_g[1] < 2.4 * 130);
 });
 
+test("nutrition remaining: what is left of today's targets, from the log or from the chat", () => {
+  const home = newHome();
+  profile(home, { sex: "male", age: 25, height_cm: 178, weight_kg: 75, goal: "muscle_gain", level: "beginner", training_days: 4 });
+  const t = run(home, ["nutrition", "targets"]);
+
+  const empty = run(home, ["nutrition", "remaining"]);
+  assert.equal(empty.source, "nothing logged");
+  assert.equal(empty.remaining.kcal, t.calories.target);
+
+  run(home, ["nutrition", "log", "--kcal", "900", "--protein", "50", "--carbs", "100", "--fat", "30"]);
+  run(home, ["nutrition", "log", "--kcal", "700", "--protein", "40", "--carbs", "80", "--fat", "20", "--date", "2026-10-04"]);
+  const logged = run(home, ["nutrition", "remaining", "--meals-left", "2"]);
+  assert.equal(logged.source, "food log");
+  assert.equal(logged.eaten.kcal, 900);
+  assert.equal(logged.remaining.kcal, t.calories.target - 900);
+  assert.deepEqual(logged.remaining.protein_g, t.macros.protein_g.map((p) => p - 50));
+  assert.equal(logged.nextMeal.kcal, Math.round((t.calories.target - 900) / 2));
+
+  const told = run(home, ["nutrition", "remaining", "--kcal", "1800", "--protein", "130"]);
+  assert.equal(told.source, "told in chat");
+  assert.equal(told.eaten.carbs, null);
+  assert.equal(told.remaining.carbs_g, null);
+  assert.ok(told.flags.some((f) => /protein minimum already reached/.test(f)));
+
+  const over = run(home, ["nutrition", "remaining", "--kcal", "4000", "--protein", "60"]);
+  assert.equal(over.remaining.kcal, 0);
+  assert.ok(over.flags.some((f) => /never suggest skipping/.test(f)));
+});
+
 test("demo dataset: status, weak points, goals and adaptive TDEE", () => {
   const home = newHome();
   execFileSync(process.execPath, [join(ROOT, "examples", "demo", "generate.mjs")], { env: env(home) });

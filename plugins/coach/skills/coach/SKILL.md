@@ -32,7 +32,7 @@ All data lives in `~/.coach/` (or `$COACH_HOME`), never inside the skill folder,
 node "${CLAUDE_SKILL_DIR}/scripts/coach.mjs" <area> <command> [flags]
 ```
 
-Every command prints JSON. Full reference: `references/cli.md`: read it before the first command of a session. Key ones: `status`, `latest`, `sync`, `profile show|set|review`, `update [--install]`, `workouts summary|last|exercise|stalled|balance|log`, `body weight|log|measures`, `nutrition targets|days|log|tdee`, `goals progress|add|update`, `exercises add|find`.
+Every command prints JSON. Full reference: `references/cli.md`: read it before the first command of a session. Key ones: `status`, `latest`, `sync`, `profile show|set|review`, `update [--install]`, `workouts summary|last|exercise|stalled|balance|log`, `body weight|log|measures`, `nutrition targets|days|remaining|log|tdee`, `goals progress|add|update`, `exercises add|find`.
 
 ## Step 0: every session
 
@@ -59,7 +59,7 @@ Things you can ask me (with /coach or just in plain words):
 • analyse my last workout · how is my squat going
 • I'm stuck on <exercise> · what are my weak points
 • set a goal: 100 kg bench by June · how are my goals
-• my calories and macros · meal plan for the week · shopping list
+• my calories and macros · what do I eat to reach my macros today · meal plan for the week · shopping list
 • I weighed 72.4 · log my waist: 81 cm · what did I eat today
 • what's the last thing you have: your latest workout, weigh-in and meal
 • add a Hevy workout: paste it, send a screenshot or dictate it, I'll ask the rest
@@ -174,7 +174,7 @@ A guided pass that leaves data, profile, goals and the skill itself up to date. 
    - An error (checksum, download) → nothing was installed; say it and suggest trying later or the manual installer from the README.
 3. `profile set auto_update=false` turns automatic updates off again ("stop updating by yourself").
 
-### Cook with what I have: "I have this in the kitchen", "what can I cook with…", "design me a recipe", "tengo esto en la nevera"
+### Cook with what I have: "I have this in the kitchen", "what can I cook with…", "design me a recipe", "tengo esto en la nevera", "what do I eat to reach my macros", "me faltan 40 g de proteína"
 Read `references/recipes.md` (methods, times, food safety, nutrition rules, output format) and `references/nutrition.md`, plus `references/fish-and-seafood.md` when there is fish or seafood and `references/flavours-and-techniques.md` for spices, herbs and techniques. Every recipe is **new**: before proposing, read `~/.coach/recipes.md` (the history, newest last; create it if missing) and never repeat a title, nor the same main ingredient + method + flavour as any of the last 20.
 1. Ask what they have unless they already said it (`1. I'll list it · 2. I'll send a photo of the fridge or pantry`). Assume salt, pepper, oil, water and common dried spices; ask about anything else you'd need.
 2. Ask the method, preselecting `profile.nutrition.kitchen` if saved:
@@ -203,12 +203,34 @@ Read `references/recipes.md` (methods, times, food safety, nutrition rules, outp
    4. Light dinner
    5. Quick: under 15 minutes
    6. Meal prep for several days
+   7. Complete what I still need today (calories and macros)
    ```
+   Go straight to 7 when the user already speaks in those terms ("I've had 1,800 kcal and 90 g of protein", "I'm missing 40 g of protein", "what do I eat to reach my macros"). See *Fill what's left of the day* below.
 4. Ask servings: `1. Just me · 2. Two people · 3. Meal prep: 4 portions`.
 5. Propose **3 different options** (different method or flavour each): name · method · time · kcal and protein per serving. At least one brings a spice, herb or technique new to the user, marked "New for you:" with one plain line (`recipes.md` › Discover something). "Which one? 1 / 2 / 3, or 4. Three more".
 6. Deliver the chosen recipe in the format of `references/recipes.md`: ingredients in grams plus a household measure, steps with temperature and time per appliance, doneness check, the **nutrition of each ingredient**, the totals per serving and a **summary** against their targets (`nutrition targets`: share of daily kcal and protein, and the per-meal protein goal). With `nutrition.tracking` = `none`, add the plate version (palms, fists) next to the numbers.
 7. Append it to `~/.coach/recipes.md` (`## <date> · <title>` + main ingredients · method · coating · flavour · kcal/protein per serving) and ask: `1. Log it as a meal today · 2. Another recipe · 3. That's all`. 1 → `nutrition log` per serving eaten.
 Respect allergies strictly, plus the diet, dislikes, budget and cooking time in the profile.
+
+#### Fill what's left of the day
+The recipe is built to close the gap between what they've eaten today and their targets.
+1. `nutrition remaining`. If today has food logged, show it in one line ("Today so far: 1,650 kcal · 95 g protein · 180 g carbs · 55 g fat") and ask `1. That's right · 2. There's more I didn't log`. If nothing is logged, ask:
+   ```
+   What have you eaten today?
+   1. I'll give you the totals (kcal, protein, carbs, fat)
+   2. I'll tell you the meals and you estimate
+   3. A screenshot of my food app
+   ```
+   With 2, estimate each meal (say how sure you are) and log it with `nutrition log` so the day stays recorded. With 1 or 3, pass what they gave: `nutrition remaining --kcal 1650 --protein 95 [--carbs 180] [--fat 55]`. Partial numbers are fine: use what they gave and say what's missing. If they also mention fibre, sugar or salt, take it into account in the recipe.
+2. Ask `Is this your last meal today? 1. Yes · 2. No, one more after · 3. Two more`, then re-run with `--meals-left <n>` (1, 2 or 3). Skip it when they already said ("for dinner" = last).
+3. Show the gap before cooking: "You still need ~900 kcal and 45–75 g of protein; for this meal: ~900 kcal, 45 g protein, 110 g carbs, up to 35 g fat".
+4. Build the options and the recipe to land on `nextMeal`, in this order: protein at least the low end · kcal within ±10 % · fat within its range · carbs fill the rest. Tune the grams (protein, carb portion, oil) instead of changing the dish. Close the summary with the result: "You needed 45 g protein and ~900 kcal; this gives 48 g and 880 kcal: your day ends at 2,530 of 2,550 kcal and 98 g of protein".
+5. Flags from the engine come first:
+   - Already over calories: a normal, light, protein-led meal. Never suggest skipping a meal, fasting or "making up for it" tomorrow.
+   - Protein minimum already reached: no need to push more; build around the other gaps.
+   - A protein gap too big for one meal: get close and suggest a simple extra (yoghurt, milk, their whey if `supplements` has it) rather than a 400 g chicken breast.
+   - Eating-disorder history or teen mode: no gap maths; a balanced plate instead (`references/safety.md`).
+6. In step 7 of the recipe, logging it as a meal closes the day; offer it first.
 
 ### Onboarding
 Follow `references/onboarding.md` exactly: safety screening first, then level, goal, schedule, equipment, preferences, nutrition and data sources. Save with `profile set`, add the first goals with `goals add`, then deliver the first program (*Plan a program*) and the nutrition targets (*Nutrition*). Never ask again for what the profile already has; update only what changes.

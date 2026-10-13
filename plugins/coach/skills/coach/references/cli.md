@@ -40,6 +40,7 @@
 | `nutrition targets [--goal] [--rate] [--activity] [--weight]` | BMR, maintenance (formula + adaptive), calories, macros, fibre, water, safety `flags`. Flags let you simulate other goals |
 | `nutrition days [--days 14]` | Daily totals, 7-day average of complete days, targets |
 | `nutrition log --kcal --protein [--carbs] [--fat] [--fiber] [--meal] [--desc] [--date] [--time]` | Log a meal |
+| `nutrition remaining [--date] [--kcal --protein --carbs --fat] [--meals-left 1]` | What is left of the day: eaten (from the log, or the totals given in chat), targets, `remaining`, `nextMeal` split over the meals left, and safety `flags` (over target, protein reached, gap too big for one meal) |
 | `nutrition tdee` | Adaptive maintenance from intake + weight trend |
 | `goals progress` | Each goal: start, current, target, % done, trend/week, ETA, on track |
 | `goals add --type lift\|reps\|bodyweight\|bodyfat\|measure\|sessions\|custom --target N [--exercise] [--measure waist] [--by YYYY-MM-DD] [--title]` | Add a goal (start value captured automatically) |
