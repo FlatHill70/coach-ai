@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/FlatHill70/coach-ai/compare/v1.3.0...v1.4.0) (2026-10-13)
+
+
+### Features
+
+* recipes that fill what is left of the day's calories and macros ([bde291c](https://github.com/FlatHill70/coach-ai/commit/bde291cafb13b7d35649933c1f7ac16979d170f5))
+
 ## [1.3.0](https://github.com/FlatHill70/coach-ai/compare/v1.2.0...v1.3.0) (2026-10-13)
 
 
