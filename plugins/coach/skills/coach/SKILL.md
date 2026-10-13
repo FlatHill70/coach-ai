@@ -32,7 +32,7 @@ All data lives in `~/.coach/` (or `$COACH_HOME`), never inside the skill folder,
 node "${CLAUDE_SKILL_DIR}/scripts/coach.mjs" <area> <command> [flags]
 ```
 
-Every command prints JSON. Full reference: `references/cli.md`: read it before the first command of a session. Key ones: `status`, `latest`, `sync`, `profile show|set|review`, `update [--install]`, `workouts summary|last|exercise|stalled|balance|log`, `body weight|log|measures`, `nutrition targets|days|remaining|log|tdee`, `goals progress|add|update`, `exercises add|find`.
+Every command prints JSON. Full reference: `references/cli.md`: read it before the first command of a session. Key ones: `status`, `latest`, `sync`, `profile show|set|review`, `update [--install]`, `workouts summary|last|exercise|stalled|balance|log`, `body weight|log|measures|bmi`, `nutrition targets|days|remaining|log|tdee`, `goals progress|add|update`, `exercises add|find`.
 
 ## Step 0: every session
 
@@ -275,6 +275,9 @@ Read `references/nutrition.md`. Targets come from `nutrition targets` (the engin
 
 ### Weigh-in: "I weighed myself"
 `body weight --days 14`: place today's weigh-in against the 7-day average and answer in 2–3 lines. Don't change the plan for one day.
+
+### BMI and body type: "what's my BMI", "calculate my BMI", "what body type am I", "IMC", "estado corporal"
+`body bmi` (add `--weight`, `--height`, `--bodyfat`, `--sex`, `--age` for someone else or a what-if). Answer in 3–4 lines: BMI and its class, the body type (`label` is already in the profile language), the healthy weight range and the healthy body-fat range. Say plainly that BMI alone can't tell fat from muscle, which is why the body type needs body fat; with no body fat, give the BMI class and say how to get a reading. Under 18 there is no adult class: say so. Pass on every `flag`; BMI under 17 → recommend a doctor and never suggest losing weight. Neutral tone: a category is a snapshot, not a verdict.
 
 ### Free question
 Answer from their data and the references. If the data can't answer it, say so.

@@ -9,7 +9,7 @@ const USAGE = `coach — data engine for the Coach skill. Every command prints J
   profile show | set key=value ... | review   read / edit profile.json; review compares it with the last 4 weeks of data
   sync [--from <file|folder>]            import new Hevy/Strong CSV, iOS Shortcut file, Health Connect export from the inbox (or that file / folder)
   workouts info|summary|last|exercise|records|stalled|balance|log
-  body weight|log|measures|info
+  body weight|log|measures|bmi|info
   nutrition targets|days|log|tdee
   goals progress|add|update
   exercises list|find|groups|add|remove

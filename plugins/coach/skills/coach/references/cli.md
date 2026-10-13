@@ -36,6 +36,7 @@
 | `body weight [--days 42]` | Last weigh-in, weekly averages, weekly change, 28-day trend, body fat, lean mass |
 | `body log [--weight] [--bodyfat] [--lean] [--waist] [--hips] [--chest] [--arm] [--thigh] [--calf] [--neck] [--date] [--time] [--note] [--length-unit cm\|in]` | Log a weigh-in and/or measurements |
 | `body measures [--last 8]` | Measurement history and change |
+| `body bmi [--weight] [--height] [--bodyfat] [--sex] [--age]` | BMI, WHO class, healthy weight range and body type. Defaults: last weigh-in, profile height, last body-fat reading, profile sex and age; flags override them (for someone else, or a what-if). See Body type below |
 | `body info` | What health data was found, and its age |
 | `nutrition targets [--goal] [--rate] [--activity] [--weight]` | BMR, maintenance (formula + adaptive), calories, macros, fibre, water, safety `flags`. Flags let you simulate other goals |
 | `nutrition days [--days 14]` | Daily totals, 7-day average of complete days, targets |
@@ -57,6 +58,15 @@
 - **Hard sets** exclude warm-ups. Primary muscles count 1, secondary 0.5.
 - **Weeks** start on Monday. Averages use complete weeks only.
 - **Weight trend** = linear regression over 28 days of daily first weigh-ins.
+- **Body type** (`body bmi`, adults only) crosses the BMI band with the body-fat band. Healthy body fat by sex and age (Gallagher 2000): men 8–20 % (20–39 y), 11–22 % (40–59), 13–25 % (60+); women 21–33 %, 23–34 %, 24–36 %. BMI under 17 is always `thinness`.
+
+  | Body fat \ BMI | < 18.5 | 18.5–25 | 25–30 | ≥ 30 |
+  |---|---|---|---|---|
+  | High | `hidden_obese` | `hidden_obese` | `overweight` | `obese` |
+  | Healthy | `underweight` | `fit` | `athletic` | `athletic` |
+  | Low | `thin` | `thin_muscular` | `muscular` | `muscular` |
+
+  Spanish labels: Delgadez, Bajo peso, Delgado, Obesidad oculta, En forma, Delgadez y buena forma muscular, Con sobrepeso, Obeso, Atlético, Musculoso. Without body fat only the BMI class is given.
 
 ## `profile.json` schema
 

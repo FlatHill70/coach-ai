@@ -209,6 +209,50 @@ test("nutrition safety rules: teens, low BMI and deficit caps", () => {
   assert.ok(b.macros.protein_g[1] < 2.4 * 130);
 });
 
+test("body bmi: BMI class and body type from the last weigh-in and body fat", () => {
+  const home = newHome();
+  profile(home, { sex: "male", age: 30, height_cm: 180, weight_kg: 90, language: "es" });
+  const noFat = run(home, ["body", "bmi"]);
+  assert.equal(noFat.bmi, 27.8);
+  assert.equal(noFat.bmiClass.code, "overweight");
+  assert.equal(noFat.bodyType, null);
+  assert.equal(noFat.inputs.weightFrom, "profile");
+  assert.deepEqual(noFat.healthyWeight, { min: 59.9, max: 80.7, unit: "kg" });
+
+  run(home, ["body", "log", "--weight", "88", "--bodyfat", "14", "--date", "2026-10-04"]);
+  const athlete = run(home, ["body", "bmi"]);
+  assert.equal(athlete.inputs.weightFrom, "weigh-in 2026-10-04");
+  assert.equal(athlete.bodyfat.band, "healthy");
+  assert.equal(athlete.bodyType.code, "athletic");
+  assert.equal(athlete.label.bodyType, "Atlético");
+
+  const cases = [
+    [["--weight", "70", "--bodyfat", "28"], "hidden_obese"],
+    [["--weight", "70", "--bodyfat", "15"], "fit"],
+    [["--weight", "70", "--bodyfat", "6"], "thin_muscular"],
+    [["--weight", "95", "--bodyfat", "6"], "muscular"],
+    [["--weight", "88", "--bodyfat", "26"], "overweight"],
+    [["--weight", "110", "--bodyfat", "30"], "obese"],
+    [["--weight", "58", "--bodyfat", "12"], "underweight"],
+    [["--weight", "58", "--bodyfat", "6"], "thin"],
+    [["--weight", "52", "--bodyfat", "6"], "thinness"],
+    [["--weight", "60", "--bodyfat", "30", "--sex", "female", "--height", "165"], "fit"],
+    [["--weight", "60", "--bodyfat", "30", "--sex", "male", "--height", "165"], "hidden_obese"],
+    [["--weight", "75", "--bodyfat", "21", "--age", "55"], "fit"],
+  ];
+  for (const [args, code] of cases) assert.equal(run(home, ["body", "bmi", ...args]).bodyType.code, code, args.join(" "));
+  assert.ok(run(home, ["body", "bmi", "--weight", "52"]).flags.some((f) => /below 17/.test(f)));
+
+  const teen = newHome();
+  profile(teen, { sex: "female", birth_date: "2011-03-01", height_cm: 160, weight_kg: 50 });
+  const t = run(teen, ["body", "bmi", "--bodyfat", "25"]);
+  assert.equal(t.bmiClass, null);
+  assert.equal(t.bodyType, null);
+  assert.ok(t.flags.some((f) => /under 18/.test(f)));
+
+  assert.match(runError(newHome(), ["body", "bmi"]), /Missing weight, height_cm/);
+});
+
 test("nutrition remaining: what is left of today's targets, from the log or from the chat", () => {
   const home = newHome();
   profile(home, { sex: "male", age: 25, height_cm: 178, weight_kg: 75, goal: "muscle_gain", level: "beginner", training_days: 4 });

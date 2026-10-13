@@ -1,6 +1,6 @@
 import {
   paths, appendCsv, readCsvFile, num, round, mean, isoDay, today, daysBetween, slopePerDay, LB, DAY,
-  loadProfile, unitOf, toUnit, UserError,
+  loadProfile, unitOf, toUnit, ageOf, UserError,
 } from "./common.mjs";
 import { healthRows } from "./health.mjs";
 
@@ -109,6 +109,112 @@ function cmdMeasures(args) {
   return { unit: inches ? "in" : "cm", note: "Measure same time of day, relaxed, same tape position. Compare over 4+ weeks.", measures: out };
 }
 
+const BMI_CLASSES = [
+  [16, "severe_thinness", "Severe thinness", "Delgadez severa"],
+  [17, "moderate_thinness", "Moderate thinness", "Delgadez moderada"],
+  [18.5, "underweight", "Underweight", "Bajo peso"],
+  [25, "normal", "Normal weight", "Peso normal"],
+  [30, "overweight", "Overweight", "Sobrepeso"],
+  [35, "obese_1", "Obesity class I", "Obesidad grado I"],
+  [40, "obese_2", "Obesity class II", "Obesidad grado II"],
+  [Infinity, "obese_3", "Obesity class III", "Obesidad grado III"],
+];
+
+const BODY_TYPES = {
+  thinness: ["Thinness", "Delgadez"],
+  underweight: ["Underweight", "Bajo peso"],
+  thin: ["Thin", "Delgado"],
+  hidden_obese: ["Hidden obesity", "Obesidad oculta"],
+  fit: ["Fit", "En forma"],
+  thin_muscular: ["Lean and muscular", "Delgadez y buena forma muscular"],
+  overweight: ["Overweight", "Con sobrepeso"],
+  obese: ["Obese", "Obeso"],
+  athletic: ["Athletic", "Atlético"],
+  muscular: ["Muscular", "Musculoso"],
+};
+
+// Rows: body-fat band (high, healthy, low). Columns: BMI < 18.5, 18.5–25, 25–30, ≥ 30.
+const BODY_TYPE_GRID = {
+  high: ["hidden_obese", "hidden_obese", "overweight", "obese"],
+  healthy: ["underweight", "fit", "athletic", "athletic"],
+  low: ["thin", "thin_muscular", "muscular", "muscular"],
+};
+
+// Healthy body-fat ranges by sex and age (Gallagher et al. 2000, Am J Clin Nutr 72:694).
+const FAT_RANGES = {
+  male: [[40, 8, 20], [60, 11, 22], [Infinity, 13, 25]],
+  female: [[40, 21, 33], [60, 23, 34], [Infinity, 24, 36]],
+};
+
+export function healthyFatRange(sex, age) {
+  const pick = (s) => FAT_RANGES[s].find(([upTo]) => age < upTo).slice(1);
+  if (sex === "male" || sex === "female") return pick(sex);
+  const [m, f] = [pick("male"), pick("female")];
+  return [(m[0] + f[0]) / 2, (m[1] + f[1]) / 2];
+}
+
+export function classifyBody({ weightKg, heightCm, bodyfatPct = null, sex = null, age = null }) {
+  const bmi = weightKg / (heightCm / 100) ** 2;
+  const bmiClass = BMI_CLASSES.find(([upTo]) => bmi < upTo);
+  const out = { bmi: round(bmi, 1), bmiClass: { code: bmiClass[1], en: bmiClass[2], es: bmiClass[3] }, bodyfat: null, bodyType: null, flags: [] };
+  if (age != null && age < 18) {
+    out.bmiClass = null;
+    out.flags.push("under 18: adult BMI cut-offs and body types don't apply; use WHO BMI-for-age percentiles.");
+    return out;
+  }
+  const label = (code) => ({ code, en: BODY_TYPES[code][0], es: BODY_TYPES[code][1] });
+  if (bmi < 17) {
+    out.bodyType = label("thinness");
+    out.flags.push(`BMI ${out.bmi} is below 17: health risk, refer to a doctor. No deficit, no body-composition goals.`);
+  }
+  if (bodyfatPct == null) return out;
+  const [lo, hi] = healthyFatRange(sex, age ?? 30);
+  const band = bodyfatPct < lo ? "low" : bodyfatPct > hi ? "high" : "healthy";
+  out.bodyfat = { pct: round(bodyfatPct, 1), band, healthyRange: [round(lo, 1), round(hi, 1)] };
+  if (sex !== "male" && sex !== "female") out.flags.push("sex not set: the healthy body-fat range is the average of the male and female ranges.");
+  if (age == null) out.flags.push("age not set: body-fat range for ages 20–39 used.");
+  if (!out.bodyType) out.bodyType = label(BODY_TYPE_GRID[band][bmi < 18.5 ? 0 : bmi < 25 ? 1 : bmi < 30 ? 2 : 3]);
+  return out;
+}
+
+async function cmdBmi(args) {
+  const profile = loadProfile();
+  const unit = unitOf(profile);
+  const { rows } = await healthRows();
+  const lastWeight = firstPerDay(rows.filter((r) => r.kind === "weight")).at(-1);
+  const lastFat = firstPerDay(rows.filter((r) => r.kind === "bodyfat")).at(-1);
+  const end = today();
+  const ago = (day) => daysBetween(new Date(`${day}T12:00:00`), end);
+
+  let weightKg = null, weightFrom = null;
+  if (num(args.weight) != null) [weightKg, weightFrom] = [unit === "lb" ? num(args.weight) * LB : num(args.weight), "argument"];
+  else if (lastWeight) [weightKg, weightFrom] = [lastWeight.value, `weigh-in ${lastWeight.day}`];
+  else if (profile?.weight_kg) [weightKg, weightFrom] = [profile.weight_kg, "profile"];
+  const heightCm = num(args.height) ?? profile?.height_cm ?? null;
+  let bodyfatPct = null, fatFrom = null;
+  if (num(args.bodyfat) != null) [bodyfatPct, fatFrom] = [num(args.bodyfat), "argument"];
+  else if (lastFat) [bodyfatPct, fatFrom] = [lastFat.value, `reading ${lastFat.day}`];
+  else if (profile?.bodyfat_pct != null) [bodyfatPct, fatFrom] = [profile.bodyfat_pct, "profile"];
+  const sex = typeof args.sex === "string" ? args.sex : profile?.sex ?? null;
+  const age = num(args.age) ?? ageOf(profile);
+
+  const missing = [["weight", weightKg], ["height_cm", heightCm]].filter(([, v]) => v == null).map(([k]) => k);
+  if (missing.length) throw new UserError(`Missing ${missing.join(", ")}: pass --weight / --height or set them in the profile.`);
+
+  const result = classifyBody({ weightKg, heightCm, bodyfatPct, sex, age });
+  if (bodyfatPct == null) result.flags.push("no body-fat % yet: body type needs it (smart scale, `body log --bodyfat`, or --bodyfat).");
+  if (fatFrom?.startsWith("reading") && ago(lastFat.day) > 60) result.flags.push(`body-fat reading is ${ago(lastFat.day)} days old.`);
+  const lang = profile?.language === "es" ? "es" : "en";
+  const m = heightCm / 100;
+  return {
+    inputs: { weight: toUnit(weightKg, unit, 1), unit, weightFrom, heightCm, bodyfatPct: round(bodyfatPct, 1), bodyfatFrom: fatFrom, sex, age },
+    ...result,
+    label: { bmiClass: result.bmiClass?.[lang] ?? null, bodyType: result.bodyType?.[lang] ?? null },
+    healthyWeight: result.bmiClass ? { min: toUnit(18.5 * m * m, unit, 1), max: toUnit(24.9 * m * m, unit, 1), unit } : null,
+    note: "BMI can't tell fat from muscle: the body type crosses it with body-fat %. Smart-scale body fat (bioimpedance) varies ±3–5 points with hydration; read it as a trend.",
+  };
+}
+
 async function cmdInfo() {
   const h = await healthRows();
   const kinds = {};
@@ -123,7 +229,7 @@ async function cmdInfo() {
 
 export async function cmdBody(args) {
   const sub = args._[0];
-  const commands = { weight: cmdWeight, log: cmdLog, measures: cmdMeasures, info: cmdInfo };
+  const commands = { weight: cmdWeight, log: cmdLog, measures: cmdMeasures, bmi: cmdBmi, info: cmdInfo };
   if (!commands[sub]) throw new UserError(`Usage: body <${Object.keys(commands).join("|")}>`);
   return commands[sub](args);
 }
