@@ -67,6 +67,7 @@ Requirements: Claude Code and Node.js 20 or newer (22.13+ to read Android Health
 | "I'm stuck on bench" | Runs the stall checklist (energy, recovery, volume, technique, load jumps) before touching the exercise |
 | "Meal plan for tomorrow, no mushrooms" | Meals that hit your targets, with swaps and a shopping list |
 | "Bench 60x8, 60x8, 57.5x7" · "I weighed 72.4" | Logs it when you don't use an app |
+| "What's my BMI?" | BMI, its WHO class and your healthy weight range, plus a body type (fit, athletic, hidden obesity, lean and muscular…) that crosses BMI with your body fat for your sex and age, because BMI alone can't tell fat from muscle |
 | "What's the last thing you have?" | Your latest workout, weigh-in and meal, where each came from, what's stale, and one question to bring it up to date |
 | "/coach update" | Brings everything up to date step by step: workouts (also from Downloads), weight, your profile against your real data, goals and the Coach version |
 | "I have chicken, rice and peppers" | Asks for the appliance (air fryer, griddle or oven), whether to bread or batter it, and the goal (including "fill what I still need today": it reads what you have eaten and sizes the recipe to close your calories and macros), then proposes always-new recipes (fish and seafood too) that each teach a spice, herb or technique, with quantities, times, the nutrition of each ingredient and a summary |

@@ -67,6 +67,7 @@ Requisitos: Claude Code y Node.js 20 o superior (22.13+ para leer exportaciones 
 | "Estoy estancado en banca" | Repasa la lista de causas (energía, recuperación, volumen, técnica, saltos de carga) antes de cambiar el ejercicio |
 | "Menú para mañana, sin setas" | Comidas que cuadran con tus objetivos, con alternativas y lista de la compra |
 | "Banca 60x8, 60x8, 57,5x7" · "Peso 72,4" | Lo apunta si no usas ninguna app |
+| "¿Cuál es mi IMC?" | Tu IMC, su clase según la OMS y tu rango de peso sano, más tu estado corporal (en forma, atlético, obesidad oculta, delgadez y buena forma muscular…), que cruza el IMC con tu % de grasa según tu sexo y edad, porque el IMC solo no distingue grasa de músculo |
 | "¿Qué es lo último que tienes?" | Tu último entreno, pesada y comida, de dónde salen y qué está desactualizado, con una pregunta para ponerlo al día |
 | "/coach update" | Lo pone todo al día paso a paso: entrenos (también desde Descargas), peso, perfil frente a tus datos reales, objetivos y versión de Coach |
 | "Tengo pollo, arroz y pimientos" | Te pregunta aparato (airfryer, plancha u horno), si lo quieres empanado o rebozado, y objetivo (también "completar lo que me falta hoy": mira lo que llevas comido y ajusta la receta para cerrar tus calorías y macros), y te propone recetas siempre nuevas (también pescado y marisco) que te descubren una especia, hierba o técnica, con cantidades, tiempos, el valor nutricional de cada ingrediente y un resumen |
