@@ -13,6 +13,7 @@ const USAGE = `coach — data engine for the Coach skill. Every command prints J
   nutrition targets|days|log|tdee
   goals progress|add|update
   exercises list|find|groups|add|remove
+  recipes find|show|import|add|remove|list   recipe catalogue; import reads a TikTok/Instagram/web recipe page (caption + subtitles, no video download)
   update [--force] [--install]            check GitHub for a newer release; --install replaces a manual install with it
 `;
 
@@ -32,6 +33,7 @@ async function run() {
     case "nutrition": return (await import("./lib/nutrition.mjs")).cmdNutrition(args);
     case "goals": return (await import("./lib/goals.mjs")).cmdGoals(args);
     case "exercises": return (await import("./lib/exercises.mjs")).cmdExercises({ ...args, _: ["exercises", ...args._] });
+    case "recipes": return (await import("./lib/recipes.mjs")).cmdRecipes(args);
     default:
       process.stdout.write(USAGE);
       process.exit(area ? 1 : 0);

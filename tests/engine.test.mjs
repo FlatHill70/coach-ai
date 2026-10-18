@@ -400,6 +400,75 @@ test("update --install replaces a manual install with the verified release zip",
   }
 });
 
+test("recipe catalogue: valid entries, filters by method, dislikes, allergies and recent history, custom recipes", () => {
+  const home = newHome();
+  profile(home, { sex: "male", age: 25, height_cm: 175, language: "es" });
+  const list = run(home, ["recipes", "list"]);
+  assert.deepEqual(list.invalid, []);
+  assert.ok(list.base >= 100, `catalogue has ${list.base} recipes`);
+
+  const air = run(home, ["recipes", "find", "--method", "airfryer", "--limit", "50"]);
+  assert.ok(air.recipes.length > 10);
+  assert.ok(air.recipes.every((r) => r.methods.includes("airfryer")));
+  const lean = run(home, ["recipes", "find", "--min-protein", "35", "--max-kcal", "700", "--limit", "50"]);
+  assert.ok(lean.recipes.every((r) => r.perServing.protein >= 35 && r.perServing.kcal <= 700));
+
+  const withEgg = run(home, ["recipes", "find", "--q", "huevo", "--limit", "200"]).matches;
+  assert.ok(withEgg > 0);
+  run(home, ["profile", "set", 'nutrition.allergies=["huevo"]', 'nutrition.dislikes=["atún"]']);
+  const safe = run(home, ["recipes", "find", "--limit", "200"]);
+  for (const r of safe.recipes) {
+    const full = run(home, ["recipes", "show", r.id]);
+    const text = JSON.stringify(full.ingredients).toLowerCase();
+    assert.ok(!text.includes("atún") && !(full.allergens ?? []).includes("huevo"), `${r.id} breaks a dislike or allergy`);
+  }
+
+  const first = air.recipes[0];
+  writeFileSync(join(home, "recipes.md"), `# Historial\n\n## 2026-10-01 · ${first.title}\n- x\n`);
+  const again = run(home, ["recipes", "find", "--method", "airfryer", "--limit", "200"]);
+  assert.ok(!again.recipes.some((r) => r.id === first.id), "a recipe from the recent history is not offered again");
+
+  const mine = { id: "mi-tortilla", title: "Mi tortilla", methods: ["pan"], main: ["huevo"], ingredients: [{ item: "huevo", g: 120 }], steps: ["Batir y cuajar."], servings: 1, minutes: 10, perServing: { kcal: 180, protein: 14, carbs: 1, fat: 13 } };
+  writeFileSync(join(home, "mine.json"), JSON.stringify([mine, { id: "Bad Id", title: "x" }]));
+  const added = run(home, ["recipes", "add", "--file", join(home, "mine.json")]);
+  assert.deepEqual(added.saved, ["mi-tortilla"]);
+  assert.equal(added.rejected[0].id, "Bad Id");
+  assert.equal(run(home, ["recipes", "show", "mi-tortilla"]).custom, true);
+});
+
+test("recipes import reads TikTok captions and subtitles, and schema.org recipes, without downloading video", async () => {
+  const item = { desc: "Pollo crujiente 🍗 Ingredientes: 200 g de pollo, 1 huevo, pan rallado. Freidora 200 ºC 12 minutos", author: { uniqueId: "cocinera", nickname: "Cocinera" }, video: { duration: 40, subtitleInfos: [{ LanguageCodeName: "eng-US", Format: "webvtt", Source: "ASR", Url: "" }, { LanguageCodeName: "spa-ES", Format: "webvtt", Source: "ASR", Url: "" }] } };
+  const server = createServer((req, res) => {
+    const base = `http://127.0.0.1:${server.address().port}`;
+    if (req.url === "/@cocinera/video/1") {
+      item.video.subtitleInfos[1].Url = `${base}/sub.vtt`;
+      return res.end(`<html><script id="__UNIVERSAL_DATA_FOR_REHYDRATION__" type="application/json">${JSON.stringify({ __DEFAULT_SCOPE__: { "webapp.video-detail": { itemInfo: { itemStruct: item } } } })}</script></html>`);
+    }
+    if (req.url === "/sub.vtt") return res.end("WEBVTT\n\n00:00:00.000 --> 00:00:02.000\nPrimero sazona el pollo\n\n00:00:02.000 --> 00:00:04.000\nPrimero sazona el pollo\n\n00:00:04.000 --> 00:00:06.000\ny a la freidora 12 minutos\n");
+    if (req.url === "/blog") return res.end(`<html><head><meta property="og:title" content="Lentejas"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Recipe","name":"Lentejas","recipeIngredient":["200 g lentejas"],"recipeInstructions":[{"@type":"HowToStep","text":"Cocer 20 min"}]}]}</script></head></html>`);
+    res.statusCode = 404; res.end();
+  });
+  await new Promise((r) => server.listen(0, "127.0.0.1", r));
+  const base = `http://127.0.0.1:${server.address().port}`;
+  const call = (...a) => new Promise((resolve, reject) => execFile(process.execPath, [CLI, "recipes", "import", ...a], { env: env(newHome()) }, (e, out, err) => (e ? reject(new Error(err || e.message)) : resolve(JSON.parse(out)))));
+  try {
+    const tt = await call(`${base}/@cocinera/video/1`);
+    assert.equal(tt.platform, "tiktok");
+    assert.equal(tt.creator, "@cocinera");
+    assert.equal(tt.subtitleLanguage, "spa-ES");
+    assert.equal(tt.transcript, "Primero sazona el pollo y a la freidora 12 minutos");
+    assert.equal(tt.hasRecipeText, true);
+    const blog = await call(`${base}/blog`);
+    assert.equal(blog.platform, "web");
+    assert.deepEqual(blog.recipe.steps, ["Cocer 20 min"]);
+    const both = await call(`${base}/blog`, `${base}/missing`);
+    assert.equal(both.pages, 2);
+    assert.equal(both.ok, 1);
+  } finally {
+    server.close();
+  }
+});
+
 test("SKILL.md frontmatter and manifests stay consistent", () => {
   const skill = readFileSync(join(ROOT, "plugins", "coach", "skills", "coach", "SKILL.md"), "utf8");
   const fm = skill.match(/^---\n([\s\S]*?)\n---/)[1];

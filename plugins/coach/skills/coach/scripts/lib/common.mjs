@@ -14,6 +14,7 @@ export const paths = {
   goals: join(HOME, "goals.json"),
   journal: join(HOME, "journal.md"),
   customExercises: join(HOME, "exercises.custom.json"),
+  customRecipes: join(HOME, "recipes.custom.json"),
   imports: join(HOME, "imports"),
   logs: join(HOME, "logs"),
   workoutLog: join(HOME, "logs", "workouts.csv"),

@@ -1,0 +1,8142 @@
+[
+ {
+  "id": "burger-fajita-pollo-freidora",
+  "title": "Burger fajita de pollo en freidora",
+  "source": {
+   "creator": "@latoneira",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@latoneira/video/7305111769335336224"
+  },
+  "cuisine": "mexicana",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "pollo picado",
+   "tortilla de trigo"
+  ],
+  "ingredients": [
+   {
+    "item": "pechuga de pollo picada",
+    "g": 300,
+    "household": "1 pechuga grande"
+   },
+   {
+    "item": "tortillas de trigo integrales grandes",
+    "g": 120,
+    "household": "2 tortillas"
+   },
+   {
+    "item": "cebolla morada",
+    "g": 120,
+    "household": "1 pequeña, en juliana"
+   },
+   {
+    "item": "pimientos rojo, verde y amarillo",
+    "g": 200,
+    "household": "medio de cada, en tiras"
+   },
+   {
+    "item": "mozzarella rallada",
+    "g": 60,
+    "household": "2 puñados"
+   },
+   {
+    "item": "aceite de oliva en spray",
+    "g": 5,
+    "household": "unas pulverizaciones"
+   },
+   {
+    "item": "sazonador mexicano (comino, pimentón, ajo, orégano), sal y pimienta",
+    "g": 5,
+    "household": "2 cucharaditas"
+   }
+  ],
+  "steps": [
+   "Mezcla la cebolla y los pimientos con la mitad del sazonador, sal y un poco de aceite. Freidora a 160 °C, 15 min, removiendo a mitad.",
+   "Sazona el pollo picado con el resto de las especias y extiéndelo en una capa muy fina sobre cada tortilla, hasta el borde.",
+   "Freidora a 200 °C, 4 min con la carne hacia arriba.",
+   "Reparte la mozzarella y gratina 2 min más. Pon las verduras encima, dobla y sirve."
+  ],
+  "doneness": "La capa de pollo pierde todo el rosa y está firme al tocarla (74 °C).",
+  "minutes": 30,
+  "servings": 2,
+  "perServing": {
+   "kcal": 510,
+   "protein": 49,
+   "carbs": 39,
+   "fat": 15
+  },
+  "tags": [
+   "alta en proteína",
+   "cena"
+  ],
+  "allergens": [
+   "gluten",
+   "lácteos"
+  ],
+  "flavour": "especiado tex-mex"
+ },
+ {
+  "id": "salmon-noquis-verduras-freidora",
+  "title": "Salmón a la naranja y soja con ñoquis y verduras",
+  "source": {
+   "creator": "@latoneira",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@latoneira/video/7326923687645515040"
+  },
+  "cuisine": "fusión",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "salmón",
+   "ñoquis"
+  ],
+  "ingredients": [
+   {
+    "item": "lomo de salmón fresco",
+    "g": 150,
+    "household": "1 lomo"
+   },
+   {
+    "item": "zumo de naranja",
+    "g": 50,
+    "household": "media naranja"
+   },
+   {
+    "item": "salsa de soja",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "ñoquis de patata",
+    "g": 150,
+    "household": "medio paquete"
+   },
+   {
+    "item": "mezcla congelada de coliflor, brócoli y zanahoria",
+    "g": 200,
+    "household": "2 puñados"
+   },
+   {
+    "item": "aceite de oliva en spray",
+    "g": 5,
+    "household": "unas pulverizaciones"
+   },
+   {
+    "item": "hierbas mediterráneas y sal",
+    "g": 2,
+    "household": "1 cucharadita"
+   }
+  ],
+  "steps": [
+   "Marina el salmón 30 min con el zumo de naranja, la soja y la mitad de las hierbas.",
+   "Mezcla los ñoquis con las verduras congeladas, sal, el resto de las hierbas y el aceite.",
+   "Precalienta la freidora 4 min a 200 °C. Mete la guarnición y el salmón, y cocina a 180 °C 15 min.",
+   "A los 8 min da la vuelta al salmón y remueve los ñoquis. Si el lomo es fino (cola), mete primero la guarnición 5 min y luego el salmón 10."
+  ],
+  "doneness": "El salmón se separa en láminas y está opaco en el centro (63 °C).",
+  "minutes": 25,
+  "servings": 1,
+  "perServing": {
+   "kcal": 665,
+   "protein": 40,
+   "carbs": 63,
+   "fat": 27
+  },
+  "tags": [
+   "alta en proteína",
+   "cena",
+   "un solo recipiente"
+  ],
+  "allergens": [
+   "pescado",
+   "soja",
+   "gluten"
+  ],
+  "flavour": "cítrico dulce con soja"
+ },
+ {
+  "id": "lubina-patatas-freidora",
+  "title": "Lubina con patatas en freidora",
+  "source": {
+   "creator": "@latoneira",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@latoneira/video/7462053222962810144"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "lubina",
+   "patata"
+  ],
+  "ingredients": [
+   {
+    "item": "lomos de lubina limpios",
+    "g": 300,
+    "household": "2 filetes"
+   },
+   {
+    "item": "patatas cocidas en conserva",
+    "g": 400,
+    "household": "1 bote, escurridas"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "ajo granulado, sal y pimienta",
+    "g": 3,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Parte las patatas por la mitad, salpimiéntalas y riégalas con la mitad del aceite. Freidora a 200 °C, 10 min.",
+   "Sazona la lubina con ajo granulado, sal y pimienta, y colócala sobre las patatas con la piel hacia abajo.",
+   "Un hilo del resto del aceite y freidora a 190 °C, 7 min."
+  ],
+  "doneness": "La carne está blanca y se separa en láminas con el tenedor.",
+  "minutes": 20,
+  "servings": 2,
+  "perServing": {
+   "kcal": 330,
+   "protein": 31,
+   "carbs": 30,
+   "fat": 9
+  },
+  "tags": [
+   "ligera",
+   "cena",
+   "rápida"
+  ],
+  "allergens": [
+   "pescado"
+  ],
+  "flavour": "ajo y pimienta"
+ },
+ {
+  "id": "tirabeques-jamon-huevo",
+  "title": "Tirabeques salteados con jamón y huevo",
+  "source": {
+   "creator": "@latoneira",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@latoneira/video/7512546721365314838"
+  },
+  "cuisine": "española",
+  "methods": [
+   "pan"
+  ],
+  "coating": null,
+  "main": [
+   "tirabeques",
+   "huevo",
+   "jamón serrano"
+  ],
+  "ingredients": [
+   {
+    "item": "tirabeques",
+    "g": 250,
+    "household": "1 bandeja"
+   },
+   {
+    "item": "taquitos de jamón serrano",
+    "g": 40,
+    "household": "1 sobre pequeño"
+   },
+   {
+    "item": "huevos",
+    "g": 120,
+    "household": "2 huevos"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "ajo picado y sal",
+    "g": 5,
+    "household": "1 diente"
+   }
+  ],
+  "steps": [
+   "Quita la hebra lateral de los tirabeques y escáldalos 3 min en agua hirviendo con sal. Escurre.",
+   "En una sartén con el aceite dora el ajo, añade el jamón y saltea 1 min.",
+   "Incorpora los tirabeques y saltea 1 min más a fuego fuerte.",
+   "Haz dos huecos, casca los huevos, tapa y deja 3–4 min hasta que cuaje la clara."
+  ],
+  "doneness": "Tirabeques verdes y crujientes; clara de huevo totalmente cuajada.",
+  "minutes": 15,
+  "servings": 1,
+  "perServing": {
+   "kcal": 460,
+   "protein": 33,
+   "carbs": 14,
+   "fat": 28
+  },
+  "tags": [
+   "ligera",
+   "cena",
+   "rápida",
+   "verdura de temporada"
+  ],
+  "allergens": [
+   "huevo"
+  ],
+  "flavour": "ajo y jamón"
+ },
+ {
+  "id": "merluza-empanada-copos-maiz-freidora",
+  "title": "Merluza empanada con copos de maíz y salsa de yogur",
+  "source": {
+   "creator": "@latoneira",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@latoneira/video/7327283765481360672"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": "breaded",
+  "main": [
+   "merluza",
+   "patata"
+  ],
+  "ingredients": [
+   {
+    "item": "filetes de merluza",
+    "g": 400,
+    "household": "4 filetes"
+   },
+   {
+    "item": "aceite de oliva virgen extra para el majado",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "ajo, perejil y sal",
+    "g": 5,
+    "household": "1 diente y un puñadito"
+   },
+   {
+    "item": "harina integral",
+    "g": 20,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "leche",
+    "g": 50,
+    "household": "un chorro"
+   },
+   {
+    "item": "copos de maíz sin azúcar triturados",
+    "g": 40,
+    "household": "1 taza"
+   },
+   {
+    "item": "aceite de oliva en spray",
+    "g": 5,
+    "household": "unas pulverizaciones"
+   },
+   {
+    "item": "patatas cocidas",
+    "g": 300,
+    "household": "2 medianas"
+   },
+   {
+    "item": "yogur natural",
+    "g": 125,
+    "household": "1 yogur"
+   }
+  ],
+  "steps": [
+   "Machaca el ajo con el perejil, la sal y el aceite, y pinta los filetes con ese majado.",
+   "Pásalos por harina, luego por leche y por último por los copos de maíz triturados.",
+   "Pulveriza aceite y freidora a 190 °C, 9 min, dándoles la vuelta a los 6.",
+   "Sirve con las patatas cocidas y el yogur con sal, pimienta y unas gotas de limón si te gusta."
+  ],
+  "doneness": "El empanado está dorado y la merluza se separa en láminas.",
+  "minutes": 20,
+  "servings": 2,
+  "perServing": {
+   "kcal": 475,
+   "protein": 41,
+   "carbs": 50,
+   "fat": 15
+  },
+  "tags": [
+   "alta en proteína",
+   "cena"
+  ],
+  "allergens": [
+   "pescado",
+   "gluten",
+   "lácteos"
+  ],
+  "flavour": "ajo y perejil"
+ },
+ {
+  "id": "pizza-base-pollo-sarten",
+  "title": "Pizza sin harina con base de pollo",
+  "source": {
+   "creator": "@jonenutricion",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@jonenutricion/video/7391415048649870625"
+  },
+  "cuisine": "italiana",
+  "methods": [
+   "pan"
+  ],
+  "coating": null,
+  "main": [
+   "pollo",
+   "huevo"
+  ],
+  "ingredients": [
+   {
+    "item": "pechuga de pollo cruda",
+    "g": 200,
+    "household": "1 pechuga mediana"
+   },
+   {
+    "item": "huevos",
+    "g": 120,
+    "household": "2 huevos"
+   },
+   {
+    "item": "tomate natural triturado",
+    "g": 60,
+    "household": "3 cucharadas"
+   },
+   {
+    "item": "mozzarella rallada",
+    "g": 50,
+    "household": "1 puñado grande"
+   },
+   {
+    "item": "tomates cherry",
+    "g": 60,
+    "household": "6 unidades"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 3,
+    "household": "unas gotas"
+   },
+   {
+    "item": "orégano y sal",
+    "g": 1,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Tritura el pollo con los huevos y una pizca de sal hasta tener una crema homogénea.",
+   "Extiéndela en una sartén antiadherente con unas gotas de aceite, a fuego medio, como una base de pizza fina. Tapa.",
+   "Cuando la base esté firme (6–8 min), dale la vuelta con ayuda de un plato.",
+   "Cubre con el tomate, la mozzarella, los cherrys en mitades y el orégano. Tapa hasta que funda el queso."
+  ],
+  "doneness": "La base está cuajada y firme en el centro, sin zonas líquidas (74 °C).",
+  "minutes": 20,
+  "servings": 1,
+  "perServing": {
+   "kcal": 595,
+   "protein": 72,
+   "carbs": 7,
+   "fat": 29
+  },
+  "tags": [
+   "alta en proteína",
+   "baja en hidratos",
+   "cena",
+   "sin gluten"
+  ],
+  "allergens": [
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "pizza clásica con orégano"
+ },
+ {
+  "id": "saquitos-papel-arroz-pollo-champinones",
+  "title": "Saquitos crujientes de papel de arroz con pollo y champiñones",
+  "source": {
+   "creator": "@jonenutricion",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@jonenutricion/video/7473201630901472534"
+  },
+  "cuisine": "asiática",
+  "methods": [
+   "pan"
+  ],
+  "coating": null,
+  "main": [
+   "pollo",
+   "papel de arroz",
+   "champiñones"
+  ],
+  "ingredients": [
+   {
+    "item": "pechuga de pollo",
+    "g": 250,
+    "household": "1 pechuga grande, en tiras finas"
+   },
+   {
+    "item": "cebolla",
+    "g": 100,
+    "household": "1 pequeña"
+   },
+   {
+    "item": "zanahoria",
+    "g": 80,
+    "household": "1 mediana, en bastoncitos"
+   },
+   {
+    "item": "pimiento",
+    "g": 100,
+    "household": "medio"
+   },
+   {
+    "item": "champiñones",
+    "g": 150,
+    "household": "1 bandeja pequeña"
+   },
+   {
+    "item": "salsa de soja",
+    "g": 15,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "obleas de papel de arroz",
+    "g": 70,
+    "household": "8 obleas"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 15,
+    "household": "1 cucharada y media"
+   }
+  ],
+  "steps": [
+   "Saltea el pollo con una cucharadita de aceite hasta que esté dorado y reserva.",
+   "En la misma sartén pocha la cebolla, la zanahoria y el pimiento. Añade los champiñones y la soja y cocina hasta que se evapore el líquido. Mezcla con el pollo.",
+   "Hidrata cada oblea 5 s en agua templada, pon dos cucharadas de relleno en el centro y ciérrala como un saquito.",
+   "Dóralos en la sartén con el resto del aceite, 2–3 min por lado, hasta que estén crujientes."
+  ],
+  "doneness": "El pollo ya va hecho del salteado; los saquitos están dorados y crujientes.",
+  "minutes": 30,
+  "servings": 2,
+  "perServing": {
+   "kcal": 390,
+   "protein": 35,
+   "carbs": 41,
+   "fat": 10
+  },
+  "tags": [
+   "alta en proteína",
+   "cena"
+  ],
+  "allergens": [
+   "soja",
+   "gluten"
+  ],
+  "flavour": "soja y verduras salteadas"
+ },
+ {
+  "id": "pollo-entero-freidora-patatas-vino",
+  "title": "Pollo asado jugoso en freidora sobre cama de patata y cebolla",
+  "source": {
+   "creator": "@ugar90",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@ugar90/video/7568831059148737814"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "pollo entero",
+   "patata"
+  ],
+  "ingredients": [
+   {
+    "item": "pollo entero abierto por la mitad (peso comestible)",
+    "g": 1000,
+    "household": "1 pollo de 1,6 kg"
+   },
+   {
+    "item": "patatas",
+    "g": 500,
+    "household": "2 grandes, en rodajas finas"
+   },
+   {
+    "item": "cebolla",
+    "g": 200,
+    "household": "1 grande, en juliana"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 20,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "vino blanco",
+    "g": 100,
+    "household": "1 vasito"
+   },
+   {
+    "item": "sal y pimienta",
+    "g": 5,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Haz una cama con las patatas y la cebolla en la cesta (o en un recipiente apto). Salpimenta y riega con el aceite.",
+   "Coloca encima el pollo abierto, con la piel hacia arriba, y salpimenta.",
+   "Riega con el vino blanco de golpe.",
+   "Freidora a 170 °C, 45 min sin abrir. Si tu freidora no dora por arriba, dale la vuelta a los 30 min."
+  ],
+  "doneness": "Al pinchar el muslo junto al hueso los jugos salen transparentes (74 °C en la pechuga).",
+  "minutes": 55,
+  "servings": 4,
+  "perServing": {
+   "kcal": 705,
+   "protein": 50,
+   "carbs": 26,
+   "fat": 43
+  },
+  "tags": [
+   "alta en proteína",
+   "familiar",
+   "meal prep"
+  ],
+  "allergens": [
+   "sulfitos"
+  ],
+  "flavour": "asado clásico con vino blanco"
+ },
+ {
+  "id": "croquetas-jamon-freidora",
+  "title": "Croquetas de jamón en freidora (truco para que no se abran)",
+  "source": {
+   "creator": "@ugar90",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@ugar90/video/7306107047857229088"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer",
+   "pot"
+  ],
+  "coating": "breaded",
+  "main": [
+   "jamón serrano",
+   "bechamel"
+  ],
+  "ingredients": [
+   {
+    "item": "cebolla",
+    "g": 60,
+    "household": "media pequeña, muy picada"
+   },
+   {
+    "item": "taquitos de jamón serrano",
+    "g": 75,
+    "household": "1 sobre"
+   },
+   {
+    "item": "mantequilla",
+    "g": 75,
+    "household": "3 cucharadas colmadas"
+   },
+   {
+    "item": "harina de trigo",
+    "g": 75,
+    "household": "5 cucharadas"
+   },
+   {
+    "item": "leche entera",
+    "g": 600,
+    "household": "600 ml"
+   },
+   {
+    "item": "huevo batido",
+    "g": 60,
+    "household": "1 huevo"
+   },
+   {
+    "item": "pan rallado",
+    "g": 80,
+    "household": "1 taza"
+   },
+   {
+    "item": "aceite de oliva en spray",
+    "g": 5,
+    "household": "unas pulverizaciones"
+   },
+   {
+    "item": "sal, pimienta y nuez moscada",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Dora la cebolla con una pizca de sal, añade el jamón y la mantequilla. Cuando se funda, tuesta la harina 2 min.",
+   "Añade la leche poco a poco sin dejar de remover hasta que espese y se despegue de las paredes. Ajusta de sal, pimienta y nuez moscada.",
+   "Pasa la masa a una fuente, cubre con film a piel y enfría al menos 6 h.",
+   "Forma bolitas con las manos engrasadas, pásalas por huevo y pan rallado y congélalas 30 min: es el truco para que no se abran.",
+   "Pulveriza aceite y freidora a 200 °C, 8 min."
+  ],
+  "doneness": "Doradas por fuera y calientes en el centro.",
+  "minutes": 60,
+  "servings": 4,
+  "perServing": {
+   "kcal": 455,
+   "protein": 17,
+   "carbs": 37,
+   "fat": 27
+  },
+  "tags": [
+   "picoteo",
+   "congelable"
+  ],
+  "allergens": [
+   "gluten",
+   "lácteos",
+   "huevo"
+  ],
+  "flavour": "jamón y nuez moscada"
+ },
+ {
+  "id": "puerros-asados-carbonara",
+  "title": "Puerros confitados a la carbonara",
+  "source": {
+   "creator": "@ugar90",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@ugar90/video/7438587624148782368"
+  },
+  "cuisine": "italiana",
+  "methods": [
+   "airfryer",
+   "pan"
+  ],
+  "coating": null,
+  "main": [
+   "puerro",
+   "guanciale",
+   "huevo"
+  ],
+  "ingredients": [
+   {
+    "item": "puerros (parte blanca y verde clara)",
+    "g": 300,
+    "household": "3 puerros"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 20,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "guanciale o panceta",
+    "g": 80,
+    "household": "en tiras"
+   },
+   {
+    "item": "yemas de huevo",
+    "g": 70,
+    "household": "4 yemas"
+   },
+   {
+    "item": "pecorino o parmesano rallado",
+    "g": 30,
+    "household": "3 cucharadas"
+   },
+   {
+    "item": "agua templada, sal y pimienta negra",
+    "g": 20,
+    "household": "un chorrito"
+   }
+  ],
+  "steps": [
+   "Corta los puerros en trozos de 4 cm, ponlos en un recipiente con sal, pimienta y el aceite.",
+   "Freidora a 150 °C, 50 min, hasta que estén muy tiernos (confitados).",
+   "Mientras, tuesta el guanciale en una sartén sin aceite y escurre la grasa.",
+   "Bate las yemas con el queso, pimienta y un chorrito de agua templada hasta tener una crema. Mezcla con los puerros calientes y el guanciale fuera del fuego."
+  ],
+  "doneness": "Los puerros se cortan con el tenedor; la salsa queda cremosa, sin cuajar en grumos.",
+  "minutes": 60,
+  "servings": 2,
+  "perServing": {
+   "kcal": 500,
+   "protein": 18,
+   "carbs": 17,
+   "fat": 39
+  },
+  "tags": [
+   "acompañamiento",
+   "baja en hidratos"
+  ],
+  "allergens": [
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "carbonara con pimienta negra"
+ },
+ {
+  "id": "flores-pizza-obleas-freidora",
+  "title": "Flores de pizza con obleas de empanadilla",
+  "source": {
+   "creator": "@ugar90",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@ugar90/video/7416668161396804896"
+  },
+  "cuisine": "italiana",
+  "methods": [
+   "airfryer",
+   "oven"
+  ],
+  "coating": null,
+  "main": [
+   "obleas de empanadilla",
+   "jamón cocido",
+   "queso"
+  ],
+  "ingredients": [
+   {
+    "item": "obleas de empanadilla",
+    "g": 160,
+    "household": "8 obleas"
+   },
+   {
+    "item": "tomate concentrado",
+    "g": 40,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "queso cheddar en lonchas",
+    "g": 60,
+    "household": "4 lonchas"
+   },
+   {
+    "item": "jamón cocido picado",
+    "g": 100,
+    "household": "4 lonchas"
+   },
+   {
+    "item": "mozzarella rallada",
+    "g": 40,
+    "household": "1 puñado"
+   },
+   {
+    "item": "huevo batido para pintar",
+    "g": 25,
+    "household": "medio huevo"
+   },
+   {
+    "item": "orégano y semillas de sésamo",
+    "g": 5,
+    "household": "1 cucharadita"
+   }
+  ],
+  "steps": [
+   "Pinta cada oblea con tomate concentrado y orégano. Pon media loncha de cheddar y jamón picado.",
+   "Haz 4 cortes desde el borde hacia el centro y dobla cada pétalo hacia dentro para formar una flor.",
+   "Pon mozzarella en el centro, pinta con huevo y espolvorea sésamo.",
+   "Freidora a 180 °C, 8–10 min (horno a 200 °C, 12–15 min)."
+  ],
+  "doneness": "Masa dorada y queso fundido.",
+  "minutes": 20,
+  "servings": 2,
+  "perServing": {
+   "kcal": 520,
+   "protein": 30,
+   "carbs": 45,
+   "fat": 25
+  },
+  "tags": [
+   "cena",
+   "rápida",
+   "para niños"
+  ],
+  "allergens": [
+   "gluten",
+   "lácteos",
+   "huevo",
+   "sésamo"
+  ],
+  "flavour": "pizza con orégano"
+ },
+ {
+  "id": "picana-freidora-ajo-perejil",
+  "title": "Picaña en freidora con adobo de ajo, perejil y pimentón",
+  "source": {
+   "creator": "@ugar90",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@ugar90/video/7234106362198789402"
+  },
+  "cuisine": "brasileña",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "picaña de ternera"
+  ],
+  "ingredients": [
+   {
+    "item": "pieza de picaña con su grasa",
+    "g": 1200,
+    "household": "1 pieza"
+   },
+   {
+    "item": "cebolla",
+    "g": 60,
+    "household": "media, muy picada"
+   },
+   {
+    "item": "ajo",
+    "g": 10,
+    "household": "2 dientes"
+   },
+   {
+    "item": "perejil fresco",
+    "g": 10,
+    "household": "1 manojito"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 30,
+    "household": "3 cucharadas"
+   },
+   {
+    "item": "sal y pimentón dulce o picante",
+    "g": 10,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Mezcla la cebolla, el ajo y el perejil picados con el aceite, la sal y el pimentón.",
+   "Embadurna la picaña por las dos caras, tapa y deja en la nevera hasta el día siguiente.",
+   "Sácala 30 min antes para que se temple.",
+   "Freidora a 190 °C, 35 min con la grasa hacia arriba. Dale la vuelta y 10 min más. Reposa 5 min y trincha en filetes contra la fibra."
+  ],
+  "doneness": "Al punto, 55–57 °C en el centro; bien hecha, 63 °C.",
+  "minutes": 60,
+  "servings": 6,
+  "perServing": {
+   "kcal": 450,
+   "protein": 40,
+   "carbs": 1,
+   "fat": 31
+  },
+  "tags": [
+   "alta en proteína",
+   "baja en hidratos",
+   "para compartir",
+   "meal prep"
+  ],
+  "allergens": [],
+  "flavour": "ajo, perejil y pimentón"
+ },
+ {
+  "id": "canelones-carne-freidora",
+  "title": "Canelones de carne exprés en freidora",
+  "source": {
+   "creator": "@ugar90",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@ugar90/video/7368794001064873248"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer",
+   "oven",
+   "pan"
+  ],
+  "coating": null,
+  "main": [
+   "carne picada",
+   "pasta"
+  ],
+  "ingredients": [
+   {
+    "item": "láminas de lasaña precocidas",
+    "g": 100,
+    "household": "8 láminas"
+   },
+   {
+    "item": "carne picada de ternera",
+    "g": 250,
+    "household": "1 bandeja pequeña"
+   },
+   {
+    "item": "queso emmental en lonchas",
+    "g": 60,
+    "household": "4 lonchas"
+   },
+   {
+    "item": "tomate frito",
+    "g": 150,
+    "household": "medio bote"
+   },
+   {
+    "item": "bechamel",
+    "g": 200,
+    "household": "1 brick pequeño"
+   },
+   {
+    "item": "mozzarella rallada",
+    "g": 50,
+    "household": "1 puñado grande"
+   },
+   {
+    "item": "sal y pimienta",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Dora la carne en una sartén sin aceite, salpimenta y deja templar.",
+   "Sobre cada lámina pon media loncha de emmental y una capa de carne. Enrolla.",
+   "Cubre el fondo de una fuente apta con la mitad del tomate, coloca los canelones, el resto del tomate, la bechamel y la mozzarella.",
+   "Freidora a 180 °C, 12–15 min (horno a 200 °C, 20 min) hasta que gratine."
+  ],
+  "doneness": "Bechamel burbujeando y queso dorado.",
+  "minutes": 25,
+  "servings": 2,
+  "perServing": {
+   "kcal": 785,
+   "protein": 48,
+   "carbs": 53,
+   "fat": 41
+  },
+  "tags": [
+   "alta en proteína",
+   "comfort",
+   "cena"
+  ],
+  "allergens": [
+   "gluten",
+   "lácteos"
+  ],
+  "flavour": "tomate, bechamel y queso gratinado"
+ },
+ {
+  "id": "mousse-fresa-queso-batido",
+  "title": "Mousse de fresa y queso fresco batido (tipo petit-suisse)",
+  "source": {
+   "creator": "@ugar90",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@ugar90/video/7397377659409304865"
+  },
+  "cuisine": "postre",
+  "methods": [
+   "pot"
+  ],
+  "coating": null,
+  "main": [
+   "queso fresco batido",
+   "fresas"
+  ],
+  "ingredients": [
+   {
+    "item": "fresas",
+    "g": 300,
+    "household": "1 tarrina"
+   },
+   {
+    "item": "queso fresco batido 0 %",
+    "g": 500,
+    "household": "1 tarrina grande"
+   },
+   {
+    "item": "gelatina neutra en láminas",
+    "g": 10,
+    "household": "5 láminas"
+   }
+  ],
+  "steps": [
+   "Hidrata la gelatina en agua fría 5 min.",
+   "Tritura las fresas lavadas con el queso fresco batido.",
+   "Calienta la mezcla sin que hierva y disuelve en ella la gelatina escurrida.",
+   "Reparte en 5 vasitos y enfría al menos 3 h."
+  ],
+  "doneness": "Cuajada y firme al mover el vaso.",
+  "minutes": 15,
+  "servings": 5,
+  "perServing": {
+   "kcal": 70,
+   "protein": 10,
+   "carbs": 8,
+   "fat": 0
+  },
+  "tags": [
+   "postre",
+   "merienda",
+   "alta en proteína",
+   "meal prep"
+  ],
+  "allergens": [
+   "lácteos"
+  ],
+  "flavour": "fresa"
+ },
+ {
+  "id": "pollo-troceado-limon-oregano-freidora",
+  "title": "Pollo troceado al limón, ajo y orégano en freidora",
+  "source": {
+   "creator": "@saboreanda",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@saboreanda/video/7404436591126596896"
+  },
+  "cuisine": "mediterránea",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "pollo troceado"
+  ],
+  "ingredients": [
+   {
+    "item": "medio pollo troceado (peso comestible)",
+    "g": 550,
+    "household": "medio pollo"
+   },
+   {
+    "item": "ajo rallado",
+    "g": 5,
+    "household": "1 diente"
+   },
+   {
+    "item": "ralladura y zumo de limón",
+    "g": 40,
+    "household": "1 limón"
+   },
+   {
+    "item": "orégano y hierbas mediterráneas",
+    "g": 4,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 15,
+    "household": "1 cucharada y media"
+   },
+   {
+    "item": "sal y pimienta",
+    "g": 3,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Mezcla el pollo con el ajo, la ralladura y el zumo de limón, el orégano, las hierbas, sal y pimienta.",
+   "Pásalo a un recipiente apto para la freidora y riega con el aceite.",
+   "Freidora a 160 °C, 20 min. Dale la vuelta y termina 10 min a 180 °C hasta que esté dorado."
+  ],
+  "doneness": "Jugos transparentes junto al hueso (74 °C).",
+  "minutes": 35,
+  "servings": 2,
+  "perServing": {
+   "kcal": 660,
+   "protein": 51,
+   "carbs": 2,
+   "fat": 49
+  },
+  "tags": [
+   "alta en proteína",
+   "baja en hidratos"
+  ],
+  "allergens": [],
+  "flavour": "limón, ajo y orégano"
+ },
+ {
+  "id": "garbanzos-verduras-freidora",
+  "title": "Garbanzos tostados con verduras en freidora",
+  "source": {
+   "creator": "@saboreanda",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@saboreanda/video/7415567235416214817"
+  },
+  "cuisine": "mediterránea",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "garbanzos"
+  ],
+  "ingredients": [
+   {
+    "item": "cebolla dulce",
+    "g": 150,
+    "household": "1 cebolla"
+   },
+   {
+    "item": "zanahoria",
+    "g": 100,
+    "household": "1 grande"
+   },
+   {
+    "item": "calabacín",
+    "g": 150,
+    "household": "medio"
+   },
+   {
+    "item": "tomates cherry",
+    "g": 100,
+    "household": "8 unidades"
+   },
+   {
+    "item": "garbanzos cocidos",
+    "g": 250,
+    "household": "1 bote pequeño, escurrido"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 20,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "especias mediterráneas, sal y perejil",
+    "g": 5,
+    "household": "1 cucharada"
+   }
+  ],
+  "steps": [
+   "Pica la cebolla, la zanahoria y el calabacín; parte los cherrys por la mitad.",
+   "Ponlos sobre papel de horno en la cesta con sal, especias y el aceite. Freidora a 200 °C, 10 min.",
+   "Añade los garbanzos escurridos y secos, remueve y 10 min más.",
+   "Sirve con perejil picado."
+  ],
+  "doneness": "Verduras doradas en los bordes y garbanzos con la piel tostada.",
+  "minutes": 25,
+  "servings": 2,
+  "perServing": {
+   "kcal": 325,
+   "protein": 12,
+   "carbs": 36,
+   "fat": 13
+  },
+  "tags": [
+   "vegana",
+   "ligera",
+   "rica en fibra"
+  ],
+  "allergens": [],
+  "flavour": "hierbas mediterráneas"
+ },
+ {
+  "id": "pechuga-rellena-bacon-mozzarella-freidora",
+  "title": "Pechuga rellena de bacon, mozzarella y tomate",
+  "source": {
+   "creator": "@saltandoladieta",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@saltandoladieta/video/7358752446916611361"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "pechuga de pollo"
+  ],
+  "ingredients": [
+   {
+    "item": "pechuga de pollo",
+    "g": 180,
+    "household": "media pechuga grande"
+   },
+   {
+    "item": "mozzarella rallada",
+    "g": 30,
+    "household": "1 puñadito"
+   },
+   {
+    "item": "dados de bacon",
+    "g": 25,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "tomate",
+    "g": 50,
+    "household": "3 rodajas"
+   },
+   {
+    "item": "aceite de oliva en spray",
+    "g": 3,
+    "household": "unas pulverizaciones"
+   },
+   {
+    "item": "sal, pimienta y hierbas",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Abre la pechuga como un libro sin separarla del todo. Salpimenta por dentro.",
+   "Rellena con la mozzarella, el bacon y las rodajas de tomate. Cierra y sujeta con palillos.",
+   "Pulveriza aceite, espolvorea hierbas y sal.",
+   "Freidora a 180 °C, 20 min, dándole la vuelta a mitad."
+  ],
+  "doneness": "Al cortar por la parte más gruesa no queda rosa (74 °C).",
+  "minutes": 30,
+  "servings": 1,
+  "perServing": {
+   "kcal": 425,
+   "protein": 52,
+   "carbs": 2,
+   "fat": 22
+  },
+  "tags": [
+   "alta en proteína",
+   "baja en hidratos",
+   "cena"
+  ],
+  "allergens": [
+   "lácteos"
+  ],
+  "flavour": "bacon y queso fundido"
+ },
+ {
+  "id": "albondigas-pollo-verduras-tomate",
+  "title": "Albóndigas de pollo con verdura escondida en salsa de tomate",
+  "source": {
+   "creator": "@saltandoladieta",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@saltandoladieta/video/7346118259332091168"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer",
+   "pan"
+  ],
+  "coating": null,
+  "main": [
+   "pollo picado"
+  ],
+  "ingredients": [
+   {
+    "item": "carne picada de pollo",
+    "g": 500,
+    "household": "1 bandeja"
+   },
+   {
+    "item": "cebolla",
+    "g": 120,
+    "household": "1 pequeña"
+   },
+   {
+    "item": "pimiento rojo y verde",
+    "g": 100,
+    "household": "medio de cada"
+   },
+   {
+    "item": "zanahoria rallada",
+    "g": 80,
+    "household": "1 mediana"
+   },
+   {
+    "item": "calabacín en dados pequeños",
+    "g": 100,
+    "household": "un trozo"
+   },
+   {
+    "item": "pan duro",
+    "g": 40,
+    "household": "2 rebanadas"
+   },
+   {
+    "item": "leche",
+    "g": 50,
+    "household": "un chorro"
+   },
+   {
+    "item": "huevo",
+    "g": 60,
+    "household": "1 huevo"
+   },
+   {
+    "item": "pan rallado",
+    "g": 30,
+    "household": "3 cucharadas"
+   },
+   {
+    "item": "harina para rebozar",
+    "g": 20,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 15,
+    "household": "1 cucharada + spray"
+   },
+   {
+    "item": "salsa de tomate casera",
+    "g": 300,
+    "household": "1 bote pequeño"
+   }
+  ],
+  "steps": [
+   "Sofríe la cebolla, los pimientos, la zanahoria y el calabacín muy picados hasta que estén blandos. Escúrrelos y deja enfriar.",
+   "Remoja el pan en la leche 10 min y escúrrelo.",
+   "Mezcla el pollo con las verduras, el pan, el huevo, sal y pimienta. Añade pan rallado hasta que la masa no se pegue.",
+   "Forma bolas, pásalas por harina, pulveriza aceite y freidora a 180 °C, 15 min, girándolas a mitad.",
+   "Termínalas 10 min en una sartén con la salsa de tomate."
+  ],
+  "doneness": "Sin rosa en el centro (74 °C).",
+  "minutes": 50,
+  "servings": 4,
+  "perServing": {
+   "kcal": 400,
+   "protein": 29,
+   "carbs": 28,
+   "fat": 19
+  },
+  "tags": [
+   "alta en proteína",
+   "familiar",
+   "meal prep",
+   "congelable",
+   "para niños"
+  ],
+  "allergens": [
+   "gluten",
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "tomate casero"
+ },
+ {
+  "id": "brochetas-calabacin-jamon-queso",
+  "title": "Brochetas de calabacín rellenas de jamón y queso",
+  "source": {
+   "creator": "@saltandoladieta",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@saltandoladieta/video/7304758876354792737"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": "breaded",
+  "main": [
+   "calabacín",
+   "jamón cocido",
+   "queso"
+  ],
+  "ingredients": [
+   {
+    "item": "calabacín en láminas finas",
+    "g": 200,
+    "household": "12 láminas"
+   },
+   {
+    "item": "queso en lonchas",
+    "g": 60,
+    "household": "12 tiras"
+   },
+   {
+    "item": "jamón cocido",
+    "g": 80,
+    "household": "12 tiras"
+   },
+   {
+    "item": "huevo batido con sal",
+    "g": 40,
+    "household": "1 huevo"
+   },
+   {
+    "item": "pan rallado grueso",
+    "g": 40,
+    "household": "4 cucharadas"
+   },
+   {
+    "item": "aceite de oliva en spray",
+    "g": 5,
+    "household": "unas pulverizaciones"
+   }
+  ],
+  "steps": [
+   "Sobre cada lámina de calabacín pon una tira de jamón y otra de queso y enrolla.",
+   "Ensarta 3 rollitos por brocheta.",
+   "Pásalas por huevo batido y luego por pan rallado.",
+   "Pulveriza aceite y freidora a 200 °C, 10 min."
+  ],
+  "doneness": "Empanado dorado y queso fundido.",
+  "minutes": 20,
+  "servings": 2,
+  "perServing": {
+   "kcal": 290,
+   "protein": 21,
+   "carbs": 18,
+   "fat": 15
+  },
+  "tags": [
+   "ligera",
+   "cena",
+   "para niños"
+  ],
+  "allergens": [
+   "gluten",
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "jamón y queso"
+ },
+ {
+  "id": "quiche-tortilla-trigo-bacon",
+  "title": "Quiche exprés con base de tortilla de trigo",
+  "source": {
+   "creator": "@saltandoladieta",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@saltandoladieta/video/7324812008430259489"
+  },
+  "cuisine": "francesa",
+  "methods": [
+   "airfryer",
+   "pan"
+  ],
+  "coating": null,
+  "main": [
+   "huevo",
+   "tortilla de trigo",
+   "bacon"
+  ],
+  "ingredients": [
+   {
+    "item": "tortilla de trigo grande",
+    "g": 60,
+    "household": "1 tortilla"
+   },
+   {
+    "item": "cebolla",
+    "g": 80,
+    "household": "1 pequeña"
+   },
+   {
+    "item": "bacon o panceta",
+    "g": 45,
+    "household": "3 lonchas"
+   },
+   {
+    "item": "jamón cocido",
+    "g": 40,
+    "household": "2 lonchas"
+   },
+   {
+    "item": "huevos",
+    "g": 120,
+    "household": "2 huevos"
+   },
+   {
+    "item": "leche",
+    "g": 40,
+    "household": "un chorrito"
+   },
+   {
+    "item": "queso rallado",
+    "g": 50,
+    "household": "2 puñados"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 5,
+    "household": "1 cucharadita"
+   },
+   {
+    "item": "sal, pimienta, nuez moscada y orégano",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Pocha la cebolla con el aceite, añade el bacon picado y dóralo.",
+   "Acomoda la tortilla en un molde redondo que quepa en la freidora. 190 °C, 4 min.",
+   "Bate los huevos con la leche, sal, pimienta y nuez moscada. Añade la cebolla con el bacon, el jamón picado y la mitad del queso.",
+   "Vierte en la tortilla, 190 °C, 8 min. Cubre con el resto del queso y orégano y gratina 2 min a 200 °C."
+  ],
+  "doneness": "El centro está cuajado: un palillo sale limpio.",
+  "minutes": 25,
+  "servings": 2,
+  "perServing": {
+   "kcal": 425,
+   "protein": 24,
+   "carbs": 20,
+   "fat": 27
+  },
+  "tags": [
+   "cena",
+   "aprovechamiento"
+  ],
+  "allergens": [
+   "gluten",
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "bacon y nuez moscada"
+ },
+ {
+  "id": "alitas-barbacoa-freidora",
+  "title": "Alitas de pollo a la barbacoa en freidora",
+  "source": {
+   "creator": "@saltandoladieta",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@saltandoladieta/video/7210425993532607749"
+  },
+  "cuisine": "americana",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "alitas de pollo"
+  ],
+  "ingredients": [
+   {
+    "item": "alitas de pollo (peso comestible)",
+    "g": 450,
+    "household": "unas 12 alitas (800 g con hueso)"
+   },
+   {
+    "item": "salsa barbacoa",
+    "g": 60,
+    "household": "4 cucharadas"
+   },
+   {
+    "item": "ajo en polvo, cebolla en polvo, sal y pimienta",
+    "g": 5,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Sazona las alitas con sal, pimienta, ajo y cebolla en polvo. Mezcla con 1 cucharada de barbacoa.",
+   "Freidora a 180 °C, 18 min, dándoles la vuelta a mitad.",
+   "Píntalas por ambos lados con el resto de la salsa y 5 min más a 200 °C."
+  ],
+  "doneness": "La carne se separa del hueso y no queda rosada (74 °C).",
+  "minutes": 30,
+  "servings": 2,
+  "perServing": {
+   "kcal": 480,
+   "protein": 40,
+   "carbs": 12,
+   "fat": 29
+  },
+  "tags": [
+   "alta en proteína",
+   "picoteo"
+  ],
+  "allergens": [
+   "mostaza"
+  ],
+  "flavour": "barbacoa ahumada dulce"
+ },
+ {
+  "id": "milanesa-pollo-napolitana-freidora",
+  "title": "Milanesa de pollo a la napolitana en freidora",
+  "source": {
+   "creator": "@saltandoladieta",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@saltandoladieta/video/7277668380579024161"
+  },
+  "cuisine": "argentina",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": "breaded",
+  "main": [
+   "pechuga de pollo"
+  ],
+  "ingredients": [
+   {
+    "item": "filetes de pechuga de pollo",
+    "g": 300,
+    "household": "2 filetes grandes"
+   },
+   {
+    "item": "harina",
+    "g": 15,
+    "household": "1 cucharada y media"
+   },
+   {
+    "item": "huevo batido",
+    "g": 40,
+    "household": "1 huevo"
+   },
+   {
+    "item": "pan rallado",
+    "g": 45,
+    "household": "4 cucharadas"
+   },
+   {
+    "item": "aceite de oliva en spray",
+    "g": 5,
+    "household": "unas pulverizaciones"
+   },
+   {
+    "item": "salsa de tomate",
+    "g": 60,
+    "household": "3 cucharadas"
+   },
+   {
+    "item": "jamón cocido",
+    "g": 40,
+    "household": "2 lonchas"
+   },
+   {
+    "item": "mozzarella rallada",
+    "g": 50,
+    "household": "1 puñado grande"
+   },
+   {
+    "item": "sal, pimienta y orégano",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Aplana los filetes con un mazo y salpiméntalos.",
+   "Empánalos: harina, huevo y pan rallado.",
+   "Pulveriza aceite y freidora a 190 °C, 12 min, dándoles la vuelta a mitad.",
+   "Cubre cada uno con tomate, una loncha de jamón, mozzarella y orégano. 4 min a 200 °C."
+  ],
+  "doneness": "Empanado dorado y queso fundido; pollo blanco por dentro (74 °C).",
+  "minutes": 25,
+  "servings": 2,
+  "perServing": {
+   "kcal": 440,
+   "protein": 50,
+   "carbs": 26,
+   "fat": 15
+  },
+  "tags": [
+   "alta en proteína",
+   "cena",
+   "para niños"
+  ],
+  "allergens": [
+   "gluten",
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "tomate, jamón y orégano"
+ },
+ {
+  "id": "tosta-atun-gratinada-freidora",
+  "title": "Tosta de atún gratinada en freidora",
+  "source": {
+   "creator": "@saltandoladieta",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@saltandoladieta/video/7161878443326524678"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "atún",
+   "pan"
+  ],
+  "ingredients": [
+   {
+    "item": "pan de hogaza",
+    "g": 60,
+    "household": "1 rebanada grande"
+   },
+   {
+    "item": "atún en aceite de oliva, escurrido",
+    "g": 52,
+    "household": "1 lata pequeña"
+   },
+   {
+    "item": "mayonesa",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "tomate",
+    "g": 40,
+    "household": "2 rodajas"
+   },
+   {
+    "item": "queso rallado",
+    "g": 25,
+    "household": "1 puñadito"
+   },
+   {
+    "item": "pimienta, unas gotas de limón y orégano",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Mezcla el atún con la mayonesa, la pimienta y unas gotas de limón.",
+   "Extiéndelo sobre el pan, pon las rodajas de tomate y el queso.",
+   "Freidora a 190 °C, 5–6 min hasta que gratine. Termina con orégano."
+  ],
+  "doneness": "Queso fundido y bordes del pan tostados.",
+  "minutes": 10,
+  "servings": 1,
+  "perServing": {
+   "kcal": 425,
+   "protein": 24,
+   "carbs": 31,
+   "fat": 22
+  },
+  "tags": [
+   "rápida",
+   "cena",
+   "sin cocinar casi"
+  ],
+  "allergens": [
+   "gluten",
+   "pescado",
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "atún con mayonesa y orégano"
+ },
+ {
+  "id": "pollo-entero-romero-eneldo-patatas-baby",
+  "title": "Pollo entero al romero y eneldo con patatas baby y chalotas",
+  "source": {
+   "creator": "@paufeel",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@paufeel/video/7358890950514593057"
+  },
+  "cuisine": "mediterránea",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "pollo entero",
+   "patata"
+  ],
+  "ingredients": [
+   {
+    "item": "pollo entero (peso comestible)",
+    "g": 1250,
+    "household": "1 pollo de 2 kg"
+   },
+   {
+    "item": "patatas baby",
+    "g": 400,
+    "household": "8 patatas, en mitades"
+   },
+   {
+    "item": "chalotas",
+    "g": 180,
+    "household": "6 chalotas"
+   },
+   {
+    "item": "ajo",
+    "g": 15,
+    "household": "4 dientes"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 20,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "caldo de pollo o verduras",
+    "g": 200,
+    "household": "200 ml"
+   },
+   {
+    "item": "romero, eneldo seco, pimentón dulce, sal y pimienta",
+    "g": 8,
+    "household": "1 cucharadita de cada"
+   }
+  ],
+  "steps": [
+   "Quita la rejilla de la freidora para que el pollo se haga en su jugo. Salpimenta el pollo y espolvorea el eneldo.",
+   "Machaca el ajo con el romero en un mortero y mézclalo con el pimentón, el aceite y el caldo. Masajea el pollo con esta mezcla.",
+   "Pechugas hacia abajo, 25 min a 160 °C.",
+   "Dale la vuelta, riégalo con su jugo, añade las patatas y las chalotas alrededor y 35 min más a 160 °C."
+  ],
+  "doneness": "74 °C en la parte más gruesa de la pechuga, o jugos transparentes al pinchar el muslo.",
+  "minutes": 70,
+  "servings": 5,
+  "perServing": {
+   "kcal": 670,
+   "protein": 49,
+   "carbs": 21,
+   "fat": 42
+  },
+  "tags": [
+   "alta en proteína",
+   "familiar",
+   "meal prep"
+  ],
+  "allergens": [],
+  "flavour": "romero, eneldo y ajo"
+ },
+ {
+  "id": "brochetas-pollo-curry-yogur-freidora",
+  "title": "Brochetas de pollo al curry con yogur",
+  "source": {
+   "creator": "@fussimonsi",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@fussimonsi/video/7311050043111279904"
+  },
+  "cuisine": "india",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "pechuga de pollo"
+  ],
+  "ingredients": [
+   {
+    "item": "filetes de pechuga de pollo",
+    "g": 400,
+    "household": "4 filetes"
+   },
+   {
+    "item": "yogur natural",
+    "g": 100,
+    "household": "1 yogur pequeño"
+   },
+   {
+    "item": "curry en polvo",
+    "g": 6,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "sal y pimienta",
+    "g": 3,
+    "household": "media cucharadita de sal"
+   }
+  ],
+  "steps": [
+   "Corta el pollo en tiras y mézclalo con el yogur, el curry, la sal y la pimienta.",
+   "Marina 30 min en la nevera.",
+   "Ensarta las tiras en brochetas.",
+   "Freidora a 200 °C, 12–15 min, dándoles la vuelta a mitad."
+  ],
+  "doneness": "El trozo más grueso está blanco por dentro (74 °C).",
+  "minutes": 50,
+  "servings": 2,
+  "perServing": {
+   "kcal": 260,
+   "protein": 48,
+   "carbs": 4,
+   "fat": 5
+  },
+  "tags": [
+   "alta en proteína",
+   "baja en grasa",
+   "meal prep"
+  ],
+  "allergens": [
+   "lácteos"
+  ],
+  "flavour": "curry suave y yogur"
+ },
+ {
+  "id": "cuartos-traseros-pollo-verduras-vino",
+  "title": "Cuartos traseros de pollo asados con patata y verduras",
+  "source": {
+   "creator": "@fussimonsi",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@fussimonsi/video/7397137014090501409"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "muslo de pollo",
+   "patata"
+  ],
+  "ingredients": [
+   {
+    "item": "cuartos traseros de pollo (peso comestible)",
+    "g": 420,
+    "household": "2 cuartos traseros"
+   },
+   {
+    "item": "patatas",
+    "g": 300,
+    "household": "2 medianas, en gajos"
+   },
+   {
+    "item": "cebolla",
+    "g": 120,
+    "household": "1 pequeña"
+   },
+   {
+    "item": "pimiento verde",
+    "g": 100,
+    "household": "1"
+   },
+   {
+    "item": "tomate",
+    "g": 150,
+    "household": "1 grande"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 20,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "vino blanco dulce",
+    "g": 50,
+    "household": "un chorrito"
+   },
+   {
+    "item": "tomillo, romero, sal y pimienta",
+    "g": 4,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Quita la rejilla y pon papel para freidora en el fondo.",
+   "Coloca las patatas, la cebolla, el pimiento y el tomate troceados. Riega con la mitad del aceite, las hierbas, sal, pimienta y el vino.",
+   "Pon el pollo encima, con el resto del aceite y las hierbas.",
+   "180 °C, 40 min. A mitad, da la vuelta al pollo y vuelve a sazonarlo."
+  ],
+  "doneness": "Muslo sin jugos rosados junto al hueso (74 °C).",
+  "minutes": 50,
+  "servings": 2,
+  "perServing": {
+   "kcal": 715,
+   "protein": 42,
+   "carbs": 38,
+   "fat": 42
+  },
+  "tags": [
+   "alta en proteína",
+   "un solo recipiente"
+  ],
+  "allergens": [
+   "sulfitos"
+  ],
+  "flavour": "tomillo y romero"
+ },
+ {
+  "id": "pollo-curry-coco-freidora-arroz",
+  "title": "Pollo al curry con leche de coco en freidora y arroz",
+  "source": {
+   "creator": "@maxiaj",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@maxiaj/video/7420699851698015521"
+  },
+  "cuisine": "tailandesa",
+  "methods": [
+   "airfryer",
+   "pot"
+  ],
+  "coating": null,
+  "main": [
+   "pechuga de pollo",
+   "arroz"
+  ],
+  "ingredients": [
+   {
+    "item": "pechuga de pollo en dados",
+    "g": 300,
+    "household": "1 pechuga grande"
+   },
+   {
+    "item": "cebolla",
+    "g": 120,
+    "household": "1 pequeña"
+   },
+   {
+    "item": "ajo",
+    "g": 6,
+    "household": "2 dientes"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "leche de coco",
+    "g": 150,
+    "household": "media lata"
+   },
+   {
+    "item": "curry en polvo, pimentón, sal y pimienta",
+    "g": 8,
+    "household": "1 cucharada de curry"
+   },
+   {
+    "item": "arroz blanco, crudo",
+    "g": 140,
+    "household": "2 tazas pequeñas"
+   }
+  ],
+  "steps": [
+   "Pon el arroz a cocer (12–15 min según el tipo).",
+   "En una fuente apta, mezcla el pollo con la cebolla, el ajo picados, el aceite, sal y pimienta. Freidora a 190 °C, 15 min, removiendo a mitad.",
+   "Añade la leche de coco hasta casi cubrir y el curry, mezcla y 5 min más a 170 °C.",
+   "Sirve sobre el arroz."
+  ],
+  "doneness": "Pollo blanco por dentro y salsa espesa y caliente.",
+  "minutes": 25,
+  "servings": 2,
+  "perServing": {
+   "kcal": 630,
+   "protein": 42,
+   "carbs": 64,
+   "fat": 22
+  },
+  "tags": [
+   "alta en proteína",
+   "cena",
+   "comfort"
+  ],
+  "allergens": [],
+  "flavour": "curry con coco"
+ },
+ {
+  "id": "fajitas-pollo-freidora-tortillas",
+  "title": "Fajitas de pollo con soja y pimentón en freidora",
+  "source": {
+   "creator": "@poramoralhambre",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@poramoralhambre/video/7395661131181722885"
+  },
+  "cuisine": "mexicana",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "pechuga de pollo",
+   "tortilla de trigo"
+  ],
+  "ingredients": [
+   {
+    "item": "pechuga de pollo en tiras",
+    "g": 400,
+    "household": "1 pechuga grande"
+   },
+   {
+    "item": "salsa de soja o tamari",
+    "g": 20,
+    "household": "1 cucharada y media"
+   },
+   {
+    "item": "pimentón y ajo en polvo",
+    "g": 5,
+    "household": "1 cucharadita de cada"
+   },
+   {
+    "item": "pimientos rojo y amarillo",
+    "g": 200,
+    "household": "medio de cada, en tiras"
+   },
+   {
+    "item": "cebolla",
+    "g": 120,
+    "household": "media, en juliana"
+   },
+   {
+    "item": "queso rallado",
+    "g": 40,
+    "household": "1 puñado"
+   },
+   {
+    "item": "tortillas de trigo medianas",
+    "g": 240,
+    "household": "6 tortillas"
+   }
+  ],
+  "steps": [
+   "Mezcla el pollo con la soja, el pimentón, el ajo en polvo y una pizca de sal.",
+   "Añade los pimientos y la cebolla y mezcla.",
+   "Freidora a 200 °C, 10 min, removiendo a mitad. Echa el queso y 2 min más.",
+   "Calienta las tortillas 20 s por lado en una sartén y rellénalas."
+  ],
+  "doneness": "Tiras de pollo blancas por dentro.",
+  "minutes": 20,
+  "servings": 2,
+  "perServing": {
+   "kcal": 705,
+   "protein": 64,
+   "carbs": 71,
+   "fat": 18
+  },
+  "tags": [
+   "alta en proteína",
+   "rápida",
+   "cena"
+  ],
+  "allergens": [
+   "gluten",
+   "soja",
+   "lácteos"
+  ],
+  "flavour": "soja y pimentón"
+ },
+ {
+  "id": "huevos-machacados-jamon-yogur-tostada",
+  "title": "Tostadas de huevo duro machacado con jamón y yogur",
+  "source": {
+   "creator": "@alvaroenlacocina",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@alvaroenlacocina/video/7311475117291359494"
+  },
+  "cuisine": "española",
+  "methods": [
+   "pot"
+  ],
+  "coating": null,
+  "main": [
+   "huevo",
+   "jamón cocido",
+   "pan"
+  ],
+  "ingredients": [
+   {
+    "item": "huevos",
+    "g": 120,
+    "household": "2 huevos"
+   },
+   {
+    "item": "jamón cocido picado",
+    "g": 40,
+    "household": "2 lonchas"
+   },
+   {
+    "item": "yogur griego",
+    "g": 20,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "mostaza",
+    "g": 2,
+    "household": "un cuarto de cucharadita"
+   },
+   {
+    "item": "perejil, sal, pimienta y unas gotas de limón",
+    "g": 3,
+    "household": "al gusto"
+   },
+   {
+    "item": "pan integral",
+    "g": 60,
+    "household": "2 rebanadas"
+   }
+  ],
+  "steps": [
+   "Echa los huevos en agua hirviendo y cuécelos 8 min a fuego suave. Enfríalos en agua con hielo y pélalos.",
+   "Machácalos con un tenedor y mézclalos con el jamón, el perejil, el yogur, la mostaza, sal, pimienta y unas gotas de limón.",
+   "Tuesta el pan y reparte la mezcla encima."
+  ],
+  "doneness": "Yema cuajada pero todavía cremosa.",
+  "minutes": 15,
+  "servings": 1,
+  "perServing": {
+   "kcal": 385,
+   "protein": 28,
+   "carbs": 28,
+   "fat": 17
+  },
+  "tags": [
+   "desayuno",
+   "cena",
+   "rápida"
+  ],
+  "allergens": [
+   "huevo",
+   "gluten",
+   "lácteos",
+   "mostaza"
+  ],
+  "flavour": "huevo, mostaza y perejil"
+ },
+ {
+  "id": "cazuelita-tortilla-huevo-cabra-jamon",
+  "title": "Cazuelita de tortilla integral con huevo, cabra y jamón",
+  "source": {
+   "creator": "@petit_fit",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@petit_fit/video/7457160646405262625"
+  },
+  "cuisine": "fusión",
+  "methods": [
+   "airfryer",
+   "oven"
+  ],
+  "coating": null,
+  "main": [
+   "huevo",
+   "tortilla de trigo",
+   "jamón serrano"
+  ],
+  "ingredients": [
+   {
+    "item": "tortilla de trigo integral",
+    "g": 60,
+    "household": "1 tortilla"
+   },
+   {
+    "item": "huevos",
+    "g": 120,
+    "household": "2 huevos"
+   },
+   {
+    "item": "champiñones",
+    "g": 25,
+    "household": "2 champiñones"
+   },
+   {
+    "item": "rulo de cabra",
+    "g": 25,
+    "household": "1 rodaja"
+   },
+   {
+    "item": "tomates cherry",
+    "g": 20,
+    "household": "3 unidades"
+   },
+   {
+    "item": "espinacas frescas",
+    "g": 20,
+    "household": "1 puñadito"
+   },
+   {
+    "item": "taquitos de jamón curado",
+    "g": 30,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "mozzarella rallada",
+    "g": 30,
+    "household": "1 puñado"
+   },
+   {
+    "item": "sazonador mexicano y sal",
+    "g": 2,
+    "household": "1 cucharadita"
+   }
+  ],
+  "steps": [
+   "Mezcla en un bol los huevos con los cherrys, las espinacas, los champiñones, el jamón, la cabra desmenuzada, sal y especias.",
+   "Acomoda la tortilla en una cazuelita o molde pequeño apto.",
+   "Vierte la mezcla dentro y cubre con mozzarella.",
+   "Freidora a 180 °C, 10–12 min (horno a 190 °C, 15 min)."
+  ],
+  "doneness": "Huevo cuajado en el centro.",
+  "minutes": 15,
+  "servings": 1,
+  "perServing": {
+   "kcal": 605,
+   "protein": 42,
+   "carbs": 32,
+   "fat": 33
+  },
+  "tags": [
+   "alta en proteína",
+   "cena",
+   "rápida"
+  ],
+  "allergens": [
+   "huevo",
+   "gluten",
+   "lácteos"
+  ],
+  "flavour": "queso de cabra y jamón"
+ },
+ {
+  "id": "huevos-horno-champinones-espinacas",
+  "title": "Huevos al horno con champiñones, espinacas y mozzarella",
+  "source": {
+   "creator": "@petit_fit",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@petit_fit/video/7306531029202881825"
+  },
+  "cuisine": "mediterránea",
+  "methods": [
+   "airfryer",
+   "oven"
+  ],
+  "coating": null,
+  "main": [
+   "huevo"
+  ],
+  "ingredients": [
+   {
+    "item": "huevos",
+    "g": 180,
+    "household": "3 huevos"
+   },
+   {
+    "item": "champiñones",
+    "g": 50,
+    "household": "4 champiñones"
+   },
+   {
+    "item": "tomates cherry",
+    "g": 50,
+    "household": "5 unidades"
+   },
+   {
+    "item": "espinacas",
+    "g": 25,
+    "household": "1 puñado"
+   },
+   {
+    "item": "mozzarella rallada",
+    "g": 30,
+    "household": "1 puñado"
+   },
+   {
+    "item": "orégano y sal",
+    "g": 2,
+    "household": "1 cucharadita de orégano"
+   }
+  ],
+  "steps": [
+   "Bate los huevos con el orégano y la sal.",
+   "Añade los champiñones laminados, los cherrys en mitades y las espinacas.",
+   "Vierte en un molde pequeño forrado con papel y cubre con la mozzarella.",
+   "Freidora a 180 °C, 12 min (horno a 200 °C, 15 min)."
+  ],
+  "doneness": "El centro está firme al presionar.",
+  "minutes": 15,
+  "servings": 1,
+  "perServing": {
+   "kcal": 370,
+   "protein": 30,
+   "carbs": 5,
+   "fat": 25
+  },
+  "tags": [
+   "alta en proteína",
+   "baja en hidratos",
+   "sin gluten",
+   "cena",
+   "rápida"
+  ],
+  "allergens": [
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "orégano"
+ },
+ {
+  "id": "mini-quiches-sin-masa-brie-verduras",
+  "title": "Mini quiches sin masa de verduras y brie",
+  "source": {
+   "creator": "@petit_fit",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@petit_fit/video/7315133764496117025"
+  },
+  "cuisine": "francesa",
+  "methods": [
+   "oven",
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "huevo",
+   "queso brie"
+  ],
+  "ingredients": [
+   {
+    "item": "leche o bebida vegetal",
+    "g": 100,
+    "household": "100 ml"
+   },
+   {
+    "item": "huevos",
+    "g": 180,
+    "household": "3 huevos"
+   },
+   {
+    "item": "cebolla dulce",
+    "g": 80,
+    "household": "1 pequeña"
+   },
+   {
+    "item": "espinacas frescas",
+    "g": 80,
+    "household": "2 puñados"
+   },
+   {
+    "item": "tomates cherry",
+    "g": 80,
+    "household": "8 unidades"
+   },
+   {
+    "item": "pimiento amarillo",
+    "g": 60,
+    "household": "media pieza"
+   },
+   {
+    "item": "queso brie",
+    "g": 80,
+    "household": "un cuarto de cuña"
+   },
+   {
+    "item": "mozzarella rallada",
+    "g": 25,
+    "household": "1 puñadito"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "hierbas mediterráneas y sal",
+    "g": 3,
+    "household": "1 cucharadita"
+   }
+  ],
+  "steps": [
+   "Saltea las verduras picadas finas con el aceite y sal. Añade el brie en trozos y remueve hasta que funda.",
+   "Bate los huevos con la leche, sal y las hierbas, e incorpora las verduras.",
+   "Reparte en un molde de magdalenas engrasado (10 huecos) y pon mozzarella encima.",
+   "Horno a 180 °C, 20 min (freidora a 170 °C, 12–14 min)."
+  ],
+  "doneness": "Doradas y firmes; un palillo sale limpio.",
+  "minutes": 35,
+  "servings": 2,
+  "perServing": {
+   "kcal": 415,
+   "protein": 25,
+   "carbs": 11,
+   "fat": 30
+  },
+  "tags": [
+   "cena",
+   "meal prep",
+   "sin gluten",
+   "aperitivo"
+  ],
+  "allergens": [
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "brie y hierbas"
+ },
+ {
+  "id": "pastel-merluza-langostinos-freidora",
+  "title": "Pastel de merluza y langostinos al ajillo",
+  "source": {
+   "creator": "@foodpepa",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@foodpepa/video/7305818386901093665"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer",
+   "pan",
+   "pot"
+  ],
+  "coating": null,
+  "main": [
+   "merluza",
+   "langostinos",
+   "huevo"
+  ],
+  "ingredients": [
+   {
+    "item": "merluza congelada",
+    "g": 400,
+    "household": "4 lomos"
+   },
+   {
+    "item": "langostinos pelados",
+    "g": 200,
+    "household": "1 bolsa pequeña"
+   },
+   {
+    "item": "huevos",
+    "g": 240,
+    "household": "4 huevos"
+   },
+   {
+    "item": "nata para cocinar ligera",
+    "g": 200,
+    "household": "1 brick"
+   },
+   {
+    "item": "puerro (parte blanca)",
+    "g": 100,
+    "household": "1 puerro"
+   },
+   {
+    "item": "cebolla",
+    "g": 60,
+    "household": "media"
+   },
+   {
+    "item": "tomate frito",
+    "g": 30,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "aceite de oliva y ajo",
+    "g": 12,
+    "household": "1 cucharada y 1 diente"
+   }
+  ],
+  "steps": [
+   "Pocha el puerro y la cebolla con la mitad del aceite.",
+   "Saltea los langostinos con el ajo y el resto del aceite (le dan mucho sabor).",
+   "Cuece la merluza 5 min, escúrrela y desmígala quitando espinas.",
+   "Bate todo con los huevos, la nata y el tomate frito, y viértelo en un molde apto.",
+   "Freidora a 180 °C, 40 min; si se dora demasiado, tápalo con papel de aluminio. Enfría antes de desmoldar."
+  ],
+  "doneness": "Un palillo en el centro sale limpio.",
+  "minutes": 60,
+  "servings": 6,
+  "perServing": {
+   "kcal": 220,
+   "protein": 23,
+   "carbs": 5,
+   "fat": 12
+  },
+  "tags": [
+   "alta en proteína",
+   "meal prep",
+   "para invitados",
+   "sin gluten"
+  ],
+  "allergens": [
+   "pescado",
+   "marisco",
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "marinero suave"
+ },
+ {
+  "id": "bandeja-pollo-patata-brocoli-mostaza",
+  "title": "Bandeja de pollo, patata y brócoli a la mostaza",
+  "source": {
+   "creator": "@gia_alfieri",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@gia_alfieri/video/7511822550356315448"
+  },
+  "cuisine": "fusión",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "pechuga de pollo",
+   "patata",
+   "brócoli"
+  ],
+  "ingredients": [
+   {
+    "item": "pechuga de pollo en dados",
+    "g": 150,
+    "household": "media pechuga grande"
+   },
+   {
+    "item": "patata",
+    "g": 200,
+    "household": "1 mediana, en dados"
+   },
+   {
+    "item": "brócoli",
+    "g": 90,
+    "household": "1 taza de ramilletes"
+   },
+   {
+    "item": "mostaza",
+    "g": 10,
+    "household": "2 cucharaditas"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "ajo, perejil, pimentón, sal y pimienta",
+    "g": 4,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Mezcla en una fuente apta el pollo, la patata, la mostaza, el aceite y las especias.",
+   "Tapa con papel de aluminio y freidora a 200 °C, 20 min.",
+   "Añade el brócoli, remueve y 10 min más destapado."
+  ],
+  "doneness": "Patata tierna al pincharla y pollo blanco por dentro.",
+  "minutes": 35,
+  "servings": 1,
+  "perServing": {
+   "kcal": 445,
+   "protein": 42,
+   "carbs": 39,
+   "fat": 13
+  },
+  "tags": [
+   "alta en proteína",
+   "un solo recipiente",
+   "meal prep"
+  ],
+  "allergens": [
+   "mostaza"
+  ],
+  "flavour": "mostaza y ajo"
+ },
+ {
+  "id": "bizcocho-desayuno-huevo-avena-platano",
+  "title": "Bizcocho de desayuno de huevo, avena y plátano",
+  "source": {
+   "creator": "@gia_alfieri",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@gia_alfieri/video/7511822550356315448"
+  },
+  "cuisine": "desayuno",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "huevo",
+   "avena",
+   "plátano"
+  ],
+  "ingredients": [
+   {
+    "item": "huevos",
+    "g": 180,
+    "household": "3 huevos"
+   },
+   {
+    "item": "harina de avena",
+    "g": 50,
+    "household": "5 cucharadas"
+   },
+   {
+    "item": "plátano maduro",
+    "g": 120,
+    "household": "1 plátano"
+   },
+   {
+    "item": "pepitas de chocolate",
+    "g": 15,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "levadura química, vainilla y edulcorante",
+    "g": 8,
+    "household": "1 cucharadita de cada"
+   }
+  ],
+  "steps": [
+   "Aplasta el plátano y mézclalo con los huevos, la avena, la levadura, la vainilla y el edulcorante.",
+   "Vierte en una fuente pequeña apta, reparte las pepitas de chocolate y tapa con papel de aluminio.",
+   "Freidora a 180 °C, 20–25 min."
+  ],
+  "doneness": "Un palillo sale limpio.",
+  "minutes": 30,
+  "servings": 1,
+  "perServing": {
+   "kcal": 625,
+   "protein": 30,
+   "carbs": 65,
+   "fat": 26
+  },
+  "tags": [
+   "desayuno",
+   "dulce"
+  ],
+  "allergens": [
+   "huevo",
+   "gluten"
+  ],
+  "flavour": "plátano y chocolate"
+ },
+ {
+  "id": "pita-ternera-cebolla-pimiento",
+  "title": "Pan de pita relleno de ternera con cebolla y pimiento",
+  "source": {
+   "creator": "@gia_alfieri",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@gia_alfieri/video/7511822550356315448"
+  },
+  "cuisine": "árabe",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "ternera",
+   "pan de pita"
+  ],
+  "ingredients": [
+   {
+    "item": "ternera magra en tiras",
+    "g": 130,
+    "household": "1 filete grande"
+   },
+   {
+    "item": "cebolla",
+    "g": 120,
+    "household": "1 pequeña"
+   },
+   {
+    "item": "pimiento",
+    "g": 120,
+    "household": "1 pequeño"
+   },
+   {
+    "item": "ajo",
+    "g": 3,
+    "household": "1 diente"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 5,
+    "household": "1 cucharadita"
+   },
+   {
+    "item": "pan de pita",
+    "g": 70,
+    "household": "1 pan"
+   },
+   {
+    "item": "mayonesa ligera",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "comino, pimentón, sal y pimienta",
+    "g": 3,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Mezcla en una fuente apta la ternera con la cebolla y el pimiento en tiras, el ajo picado, el aceite y las especias.",
+   "Tapa con papel de aluminio y freidora a 200 °C, 20 min; destapa los últimos 5 min.",
+   "Calienta el pan de pita, úntalo con la mayonesa y rellénalo. Añade ensalada si tienes."
+  ],
+  "doneness": "Ternera hecha y verdura tierna.",
+  "minutes": 30,
+  "servings": 1,
+  "perServing": {
+   "kcal": 520,
+   "protein": 36,
+   "carbs": 57,
+   "fat": 14
+  },
+  "tags": [
+   "alta en proteína",
+   "cena"
+  ],
+  "allergens": [
+   "gluten",
+   "huevo"
+  ],
+  "flavour": "comino y pimentón"
+ },
+ {
+  "id": "brownie-proteico-yogur-cacao",
+  "title": "Brownie proteico de yogur y cacao sin harina",
+  "source": {
+   "creator": "@gia_alfieri",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@gia_alfieri/video/7434280471518825783"
+  },
+  "cuisine": "postre",
+  "methods": [
+   "airfryer",
+   "oven"
+  ],
+  "coating": null,
+  "main": [
+   "yogur",
+   "huevo",
+   "cacao"
+  ],
+  "ingredients": [
+   {
+    "item": "huevos",
+    "g": 120,
+    "household": "2 huevos"
+   },
+   {
+    "item": "yogur griego 0 % o skyr",
+    "g": 200,
+    "household": "2 yogures"
+   },
+   {
+    "item": "cacao puro en polvo",
+    "g": 20,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "pepitas de chocolate (opcional)",
+    "g": 15,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "levadura química, vainilla y edulcorante",
+    "g": 8,
+    "household": "1 cucharadita de cada"
+   }
+  ],
+  "steps": [
+   "Mezcla todos los ingredientes hasta tener una crema sin grumos.",
+   "Vierte en uno grande o en dos moldes pequeños aptos.",
+   "Freidora a 190 °C, 15 min (horno a 180 °C, 20 min)."
+  ],
+  "doneness": "Firme por los bordes y apenas tembloroso en el centro.",
+  "minutes": 20,
+  "servings": 2,
+  "perServing": {
+   "kcal": 220,
+   "protein": 20,
+   "carbs": 12,
+   "fat": 10
+  },
+  "tags": [
+   "postre",
+   "merienda",
+   "alta en proteína",
+   "sin gluten"
+  ],
+  "allergens": [
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "chocolate"
+ },
+ {
+  "id": "gambas-ajillo-cazuela-freidora",
+  "title": "Gambas al ajillo en cazuela de barro en la freidora",
+  "source": {
+   "creator": "@saborea.saludable",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@saborea.saludable/video/7320935014743444768"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "langostinos"
+  ],
+  "ingredients": [
+   {
+    "item": "langostinos o gambones pelados",
+    "g": 200,
+    "household": "12 unidades"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 20,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "ajo laminado",
+    "g": 8,
+    "household": "2 dientes"
+   },
+   {
+    "item": "guindilla (opcional)",
+    "g": 1,
+    "household": "1"
+   },
+   {
+    "item": "pimentón dulce",
+    "g": 1,
+    "household": "media cucharadita"
+   },
+   {
+    "item": "perejil picado y sal",
+    "g": 6,
+    "household": "2 cucharadas"
+   }
+  ],
+  "steps": [
+   "En una cazuelita de barro pon el aceite, el ajo y la guindilla. Freidora a 180 °C, 5 min.",
+   "Añade el pimentón y remueve.",
+   "Echa los langostinos, sal y el perejil. Remueve y 4 min más a 180 °C."
+  ],
+  "doneness": "Los langostinos se curvan y pasan de gris a rosado.",
+  "minutes": 12,
+  "servings": 1,
+  "perServing": {
+   "kcal": 350,
+   "protein": 36,
+   "carbs": 2,
+   "fat": 22
+  },
+  "tags": [
+   "alta en proteína",
+   "baja en hidratos",
+   "rápida",
+   "tapa"
+  ],
+  "allergens": [
+   "marisco"
+  ],
+  "flavour": "ajo y guindilla"
+ },
+ {
+  "id": "langostinos-coco-salsa-melocoton",
+  "title": "Langostinos rebozados en coco con salsa de melocotón",
+  "source": {
+   "creator": "@ruidoenlacocina",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@ruidoenlacocina/video/7305717441533840673"
+  },
+  "cuisine": "tropical",
+  "methods": [
+   "airfryer",
+   "oven"
+  ],
+  "coating": "breaded",
+  "main": [
+   "langostinos"
+  ],
+  "ingredients": [
+   {
+    "item": "langostinos crudos pelados (con la cola)",
+    "g": 500,
+    "household": "1 kg con cáscara"
+   },
+   {
+    "item": "harina",
+    "g": 30,
+    "household": "3 cucharadas"
+   },
+   {
+    "item": "huevos",
+    "g": 120,
+    "household": "2 huevos"
+   },
+   {
+    "item": "coco rallado",
+    "g": 60,
+    "household": "6 cucharadas"
+   },
+   {
+    "item": "aceite de oliva en spray",
+    "g": 5,
+    "household": "unas pulverizaciones"
+   },
+   {
+    "item": "mermelada de melocotón",
+    "g": 75,
+    "household": "5 cucharadas"
+   },
+   {
+    "item": "kétchup",
+    "g": 30,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "salsa Worcestershire y unas gotas de tabasco",
+    "g": 15,
+    "household": "1 cucharada"
+   }
+  ],
+  "steps": [
+   "Pela los langostinos dejando la cola y quítales el intestino.",
+   "Pásalos por harina, huevo y coco rallado, sin amontonarlos.",
+   "Pulveriza aceite y freidora a 180 °C, 7 min (horno a 170 °C, 10 min).",
+   "Mezcla la mermelada, el kétchup, la Worcestershire y el tabasco para mojar."
+  ],
+  "doneness": "Coco dorado y langostino opaco y rosado por dentro.",
+  "minutes": 30,
+  "servings": 4,
+  "perServing": {
+   "kcal": 345,
+   "protein": 28,
+   "carbs": 21,
+   "fat": 15
+  },
+  "tags": [
+   "alta en proteína",
+   "aperitivo",
+   "para invitados"
+  ],
+  "allergens": [
+   "marisco",
+   "gluten",
+   "huevo",
+   "pescado"
+  ],
+  "flavour": "coco dulce y picante"
+ },
+ {
+  "id": "falafel-freidora",
+  "title": "Falafel de garbanzos en freidora",
+  "source": {
+   "creator": "@roberto.nufisa",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@roberto.nufisa/video/7420140160584584481"
+  },
+  "cuisine": "oriente medio",
+  "methods": [
+   "airfryer",
+   "oven"
+  ],
+  "coating": null,
+  "main": [
+   "garbanzos"
+  ],
+  "ingredients": [
+   {
+    "item": "garbanzos cocidos, escurridos",
+    "g": 200,
+    "household": "medio bote grande"
+   },
+   {
+    "item": "cebolleta",
+    "g": 60,
+    "household": "1 cebolleta"
+   },
+   {
+    "item": "ajo",
+    "g": 3,
+    "household": "1 diente"
+   },
+   {
+    "item": "perejil y cilantro frescos",
+    "g": 30,
+    "household": "1 manojo de cada"
+   },
+   {
+    "item": "harina de garbanzo",
+    "g": 50,
+    "household": "5 cucharadas"
+   },
+   {
+    "item": "aceite de oliva en spray",
+    "g": 5,
+    "household": "unas pulverizaciones"
+   },
+   {
+    "item": "pimentón dulce, comino, sal y un chorrito de limón",
+    "g": 5,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Pica los garbanzos con la cebolleta, el ajo, las hierbas, las especias y el limón; que quede grumoso, no una crema.",
+   "Añade harina de garbanzo hasta que se pueda moldear.",
+   "Con las manos aceitadas forma bolitas del tamaño de una cucharada colmada.",
+   "Freidora precalentada a 180 °C, pulveriza aceite y 15 min, girándolas a mitad."
+  ],
+  "doneness": "Exterior tostado y firme.",
+  "minutes": 30,
+  "servings": 2,
+  "perServing": {
+   "kcal": 265,
+   "protein": 14,
+   "carbs": 33,
+   "fat": 7
+  },
+  "tags": [
+   "vegana",
+   "rica en fibra",
+   "sin gluten"
+  ],
+  "allergens": [],
+  "flavour": "comino y hierbas frescas"
+ },
+ {
+  "id": "garbanzos-crujientes-curry-snack",
+  "title": "Garbanzos crujientes al curry",
+  "source": {
+   "creator": "@laraibarra_",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@laraibarra_/video/7283211002361941280"
+  },
+  "cuisine": "snack",
+  "methods": [
+   "airfryer",
+   "oven"
+  ],
+  "coating": null,
+  "main": [
+   "garbanzos"
+  ],
+  "ingredients": [
+   {
+    "item": "garbanzos cocidos, escurridos",
+    "g": 240,
+    "household": "1 bote"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 5,
+    "household": "1 cucharadita"
+   },
+   {
+    "item": "comino, ajo en polvo, curry, cayena (opcional) y sal",
+    "g": 6,
+    "household": "1 cucharadita de cada"
+   }
+  ],
+  "steps": [
+   "Lava los garbanzos y sécalos muy bien con papel: es la clave para que crujan.",
+   "Mézclalos con el aceite, la sal y las especias.",
+   "Sobre papel de horno, freidora a 180 °C, 10–15 min, agitando a mitad (horno a 200 °C, 20–30 min)."
+  ],
+  "doneness": "Crujen al morderlos; al enfriarse quedan más crujientes aún.",
+  "minutes": 20,
+  "servings": 3,
+  "perServing": {
+   "kcal": 120,
+   "protein": 6,
+   "carbs": 16,
+   "fat": 3
+  },
+  "tags": [
+   "snack",
+   "vegana",
+   "rica en fibra"
+  ],
+  "allergens": [],
+  "flavour": "curry y comino"
+ },
+ {
+  "id": "garbanzos-boniato-cabra-espinacas",
+  "title": "Garbanzos y boniato crujientes con queso de cabra y espinacas",
+  "source": {
+   "creator": "@margacocinaconalma",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@margacocinaconalma/video/7605661833172634902"
+  },
+  "cuisine": "mediterránea",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "garbanzos",
+   "boniato",
+   "queso de cabra"
+  ],
+  "ingredients": [
+   {
+    "item": "garbanzos cocidos, escurridos",
+    "g": 240,
+    "household": "1 bote pequeño"
+   },
+   {
+    "item": "boniato",
+    "g": 80,
+    "household": "medio pequeño"
+   },
+   {
+    "item": "espinacas frescas",
+    "g": 150,
+    "household": "1 bolsa"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 40,
+    "household": "4 cucharadas"
+   },
+   {
+    "item": "ajo en polvo, pimentón dulce, comino, pimienta y sal",
+    "g": 12,
+    "household": "1 cucharada de cada"
+   },
+   {
+    "item": "rulo de queso de cabra",
+    "g": 60,
+    "household": "2 rodajas"
+   },
+   {
+    "item": "ralladura de limón",
+    "g": 2,
+    "household": "de medio limón"
+   }
+  ],
+  "steps": [
+   "Lava los garbanzos y sécalos muy bien. Pela el boniato y córtalo en dados pequeños.",
+   "Mezcla el aceite con las especias, reserva una cucharada para las espinacas y embadurna el resto con los garbanzos y el boniato.",
+   "Sobre papel, freidora a 200 °C, 8 min; remueve y 8 min más.",
+   "Aliña las espinacas con lo reservado y sirve encima los garbanzos, el boniato, la cabra desmenuzada y la ralladura de limón."
+  ],
+  "doneness": "Boniato tierno por dentro y garbanzos crujientes.",
+  "minutes": 25,
+  "servings": 2,
+  "perServing": {
+   "kcal": 485,
+   "protein": 17,
+   "carbs": 29,
+   "fat": 31
+  },
+  "tags": [
+   "vegetariana",
+   "rica en fibra",
+   "táper"
+  ],
+  "allergens": [
+   "lácteos"
+  ],
+  "flavour": "pimentón, comino y cabra"
+ },
+ {
+  "id": "albondigas-salsa-verduras-freidora",
+  "title": "Albóndigas en salsa de verduras asadas, todo en freidora",
+  "source": {
+   "creator": "@cosorinando",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@cosorinando/video/7322900564059131169"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "albóndigas",
+   "carne picada"
+  ],
+  "ingredients": [
+   {
+    "item": "albóndigas de ternera y cerdo, crudas",
+    "g": 800,
+    "household": "unas 32 albóndigas"
+   },
+   {
+    "item": "cebolla",
+    "g": 300,
+    "household": "2 cebollas"
+   },
+   {
+    "item": "ajo",
+    "g": 15,
+    "household": "3 dientes"
+   },
+   {
+    "item": "tomates maduros",
+    "g": 450,
+    "household": "3 tomates"
+   },
+   {
+    "item": "zanahorias",
+    "g": 240,
+    "household": "3 zanahorias"
+   },
+   {
+    "item": "pimiento",
+    "g": 150,
+    "household": "1 grande"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "caldo de carne",
+    "g": 400,
+    "household": "400 ml"
+   },
+   {
+    "item": "guisantes",
+    "g": 100,
+    "household": "1 puñado grande"
+   }
+  ],
+  "steps": [
+   "Trocea las verduras, salpimenta, riega con el aceite y freidora a 195 °C, 15 min.",
+   "Tritura las verduras asadas con el caldo y reserva la salsa.",
+   "Cocina las albóndigas a 195 °C, 20 min, girándolas a mitad.",
+   "En una fuente apta, cubre las albóndigas con la salsa y los guisantes y 15 min más a 200 °C."
+  ],
+  "doneness": "Albóndigas sin rosa en el centro (71 °C).",
+  "minutes": 60,
+  "servings": 4,
+  "perServing": {
+   "kcal": 565,
+   "protein": 37,
+   "carbs": 27,
+   "fat": 33
+  },
+  "tags": [
+   "alta en proteína",
+   "familiar",
+   "meal prep",
+   "congelable"
+  ],
+  "allergens": [
+   "gluten"
+  ],
+  "flavour": "verdura asada"
+ },
+ {
+  "id": "bocadillo-albondigas-salsa-espanola",
+  "title": "Bocadillo de albóndigas en salsa española",
+  "source": {
+   "creator": "@elcomidista.com",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@elcomidista.com/video/7215851177710325018"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer",
+   "pan"
+  ],
+  "coating": null,
+  "main": [
+   "carne picada",
+   "pan"
+  ],
+  "ingredients": [
+   {
+    "item": "carne picada de ternera y cerdo",
+    "g": 500,
+    "household": "1 bandeja"
+   },
+   {
+    "item": "miga de pan",
+    "g": 40,
+    "household": "1 puñado"
+   },
+   {
+    "item": "leche",
+    "g": 50,
+    "household": "un chorro"
+   },
+   {
+    "item": "huevo",
+    "g": 60,
+    "household": "1 huevo"
+   },
+   {
+    "item": "cebolla en polvo, ajo en polvo, perejil, sal y pimienta",
+    "g": 6,
+    "household": "al gusto"
+   },
+   {
+    "item": "cebolla",
+    "g": 150,
+    "household": "1 mediana"
+   },
+   {
+    "item": "zanahoria",
+    "g": 100,
+    "household": "1 grande"
+   },
+   {
+    "item": "tomate triturado",
+    "g": 100,
+    "household": "4 cucharadas"
+   },
+   {
+    "item": "harina",
+    "g": 15,
+    "household": "1 cucharada y media"
+   },
+   {
+    "item": "caldo de carne",
+    "g": 400,
+    "household": "400 ml"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 20,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "pan de barra",
+    "g": 320,
+    "household": "4 trozos de 20 cm"
+   }
+  ],
+  "steps": [
+   "Moja la miga en la leche y mézclala con la carne, el huevo, las especias, sal y pimienta. Forma albóndigas.",
+   "Freidora a 195 °C, 10 min.",
+   "Salsa: rehoga el ajo, la cebolla y la zanahoria picados en el aceite, añade el tomate, luego la harina y el caldo, y cuece 10 min. Tritura si la quieres fina.",
+   "Mete las albóndigas en la salsa 5 min y rellena el pan."
+  ],
+  "doneness": "Sin rosa en el centro (71 °C).",
+  "minutes": 45,
+  "servings": 4,
+  "perServing": {
+   "kcal": 630,
+   "protein": 33,
+   "carbs": 58,
+   "fat": 27
+  },
+  "tags": [
+   "comfort",
+   "familiar"
+  ],
+  "allergens": [
+   "gluten",
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "salsa española casera"
+ },
+ {
+  "id": "tortilla-atun-tomate-mozzarella",
+  "title": "Tortilla de atún con tomate y mozzarella",
+  "source": {
+   "creator": "@acocinarencasa",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@acocinarencasa/video/7238366826982296837"
+  },
+  "cuisine": "fusión",
+  "methods": [
+   "pan"
+  ],
+  "coating": null,
+  "main": [
+   "atún",
+   "huevo"
+  ],
+  "ingredients": [
+   {
+    "item": "atún en conserva escurrido",
+    "g": 80,
+    "household": "1 lata"
+   },
+   {
+    "item": "huevos",
+    "g": 120,
+    "household": "2 huevos"
+   },
+   {
+    "item": "cebolla",
+    "g": 60,
+    "household": "media"
+   },
+   {
+    "item": "tomate",
+    "g": 100,
+    "household": "1 pequeño (dados + rodajas)"
+   },
+   {
+    "item": "mozzarella rallada",
+    "g": 100,
+    "household": "2 puñados"
+   },
+   {
+    "item": "harina",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "ajo en polvo, pimentón, perejil, sal y pimienta",
+    "g": 4,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Mezcla los huevos con el atún, la cebolla y medio tomate en dados, la mitad de la mozzarella, la harina y las especias.",
+   "Viértelo en una sartén con el aceite, tapa y cuaja 5 min a fuego medio-bajo.",
+   "Dale la vuelta con un plato y 3 min más tapada.",
+   "Cubre con rodajas de tomate, el resto de la mozzarella y perejil. Tapa hasta que funda."
+  ],
+  "doneness": "Cuajada por dentro: al presionar el centro no sale líquido.",
+  "minutes": 20,
+  "servings": 2,
+  "perServing": {
+   "kcal": 400,
+   "protein": 29,
+   "carbs": 10,
+   "fat": 28
+  },
+  "tags": [
+   "alta en proteína",
+   "cena",
+   "rápida"
+  ],
+  "allergens": [
+   "pescado",
+   "huevo",
+   "lácteos",
+   "gluten"
+  ],
+  "flavour": "atún, tomate y queso"
+ },
+ {
+  "id": "arroz-caldoso-pollo-azafran",
+  "title": "Arroz caldoso con pollo y azafrán",
+  "source": {
+   "creator": "@cocinaconnoelia",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@cocinaconnoelia/video/7225323446517976346"
+  },
+  "cuisine": "española",
+  "methods": [
+   "pot"
+  ],
+  "coating": null,
+  "main": [
+   "pollo troceado",
+   "arroz"
+  ],
+  "ingredients": [
+   {
+    "item": "pollo troceado (peso comestible)",
+    "g": 630,
+    "household": "900 g con hueso"
+   },
+   {
+    "item": "arroz redondo",
+    "g": 350,
+    "household": "3 tazas y media"
+   },
+   {
+    "item": "cebolla",
+    "g": 150,
+    "household": "1 grande"
+   },
+   {
+    "item": "pimientos rojo y verde",
+    "g": 250,
+    "household": "1 de cada"
+   },
+   {
+    "item": "zanahorias",
+    "g": 160,
+    "household": "2"
+   },
+   {
+    "item": "tomates maduros rallados",
+    "g": 450,
+    "household": "3"
+   },
+   {
+    "item": "patata",
+    "g": 200,
+    "household": "1 mediana, en dados"
+   },
+   {
+    "item": "ajo, azafrán y sal",
+    "g": 8,
+    "household": "2 dientes y 14 hebras"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 30,
+    "household": "3 cucharadas"
+   },
+   {
+    "item": "agua",
+    "g": 1500,
+    "household": "1,5 l"
+   }
+  ],
+  "steps": [
+   "Dora el pollo salado en el aceite en una cazuela honda y resérvalo.",
+   "Sofríe en la misma grasa la cebolla, los pimientos y la zanahoria picados. Cuando estén blandos, añade el tomate rallado y cocina 10 min.",
+   "Añade la patata, un majado de ajo, sal y azafrán, y el pollo. Rehoga 2 min.",
+   "Echa el agua; cuando hierva, sala y añade el arroz. Cuece 16 min y reposa 3."
+  ],
+  "doneness": "Grano tierno con un punto en el centro y caldo meloso.",
+  "minutes": 50,
+  "servings": 5,
+  "perServing": {
+   "kcal": 660,
+   "protein": 31,
+   "carbs": 73,
+   "fat": 26
+  },
+  "tags": [
+   "familiar",
+   "comfort",
+   "un solo recipiente"
+  ],
+  "allergens": [],
+  "flavour": "sofrito y azafrán"
+ },
+ {
+  "id": "arroz-meloso-pollo-ajillo-nora",
+  "title": "Arroz meloso de pollo al ajillo con ñora",
+  "source": {
+   "creator": "@cocinandomelavida",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@cocinandomelavida/video/7378444967527648545"
+  },
+  "cuisine": "española",
+  "methods": [
+   "pot"
+  ],
+  "coating": null,
+  "main": [
+   "alitas de pollo",
+   "arroz"
+  ],
+  "ingredients": [
+   {
+    "item": "alitas de pollo (peso comestible)",
+    "g": 280,
+    "household": "500 g con hueso"
+   },
+   {
+    "item": "arroz redondo",
+    "g": 340,
+    "household": "3 tazas y media"
+   },
+   {
+    "item": "ajo picado",
+    "g": 25,
+    "household": "5 dientes"
+   },
+   {
+    "item": "cebolla morada",
+    "g": 150,
+    "household": "1"
+   },
+   {
+    "item": "tomates maduros rallados",
+    "g": 300,
+    "household": "2"
+   },
+   {
+    "item": "carne de ñora o pimiento choricero",
+    "g": 15,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "vino blanco",
+    "g": 150,
+    "household": "1 vaso"
+   },
+   {
+    "item": "caldo de pollo",
+    "g": 1200,
+    "household": "1,2 l (ten 2 l a mano)"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 30,
+    "household": "3 cucharadas"
+   },
+   {
+    "item": "laurel, azafrán, sal y pimienta",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Dora las alitas saladas en el aceite. Añade el ajo y, cuando se dore, el vino y el laurel; deja evaporar y reserva las alitas.",
+   "Carameliza la cebolla, añade el tomate con sal y deja reducir. Incorpora la ñora.",
+   "Devuelve las alitas, cubre con caldo, añade el azafrán y lleva a hervir.",
+   "Echa el arroz y cuece 15 min removiendo de vez en cuando para que suelte almidón. Reposa 5 min."
+  ],
+  "doneness": "Textura cremosa, ni seca ni caldosa.",
+  "minutes": 50,
+  "servings": 4,
+  "perServing": {
+   "kcal": 570,
+   "protein": 21,
+   "carbs": 76,
+   "fat": 17
+  },
+  "tags": [
+   "comfort",
+   "familiar"
+  ],
+  "allergens": [
+   "sulfitos"
+  ],
+  "flavour": "ajillo y ñora"
+ },
+ {
+  "id": "pollo-oriental-soja-miel-jengibre-arroz",
+  "title": "Pollo oriental de soja, miel y jengibre con arroz (meal prep)",
+  "source": {
+   "creator": "@made_in_casa",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@made_in_casa/video/7486247518959914245"
+  },
+  "cuisine": "asiática",
+  "methods": [
+   "pan",
+   "pot"
+  ],
+  "coating": null,
+  "main": [
+   "pechuga de pollo",
+   "arroz"
+  ],
+  "ingredients": [
+   {
+    "item": "pechuga de pollo en tiras",
+    "g": 600,
+    "household": "2 pechugas grandes"
+   },
+   {
+    "item": "aceite de sésamo",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "miel",
+    "g": 20,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "salsa de soja",
+    "g": 30,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "jengibre rallado, ajo y cebolla en polvo, pimienta",
+    "g": 5,
+    "household": "media cucharadita de jengibre"
+   },
+   {
+    "item": "arroz blanco, crudo",
+    "g": 280,
+    "household": "4 tazas pequeñas"
+   }
+  ],
+  "steps": [
+   "Mezcla el pollo con todos los ingredientes menos el arroz en una bolsa de congelación. Puedes congelarla hasta 3 meses.",
+   "El día de cocinar, descongela en la nevera y saltea el pollo con su marinada en una sartén muy caliente, 6–8 min, hasta que la salsa glasee.",
+   "Cuece el arroz y reparte en 4 táperes."
+  ],
+  "doneness": "Pollo blanco por dentro y salsa brillante y espesa.",
+  "minutes": 25,
+  "servings": 4,
+  "perServing": {
+   "kcal": 455,
+   "protein": 40,
+   "carbs": 60,
+   "fat": 5
+  },
+  "tags": [
+   "alta en proteína",
+   "baja en grasa",
+   "meal prep",
+   "congelable"
+  ],
+  "allergens": [
+   "soja",
+   "gluten",
+   "sésamo"
+  ],
+  "flavour": "soja, miel y jengibre"
+ },
+ {
+  "id": "pollo-mostaza-miel-pure-calabaza",
+  "title": "Pollo a la mostaza y miel con puré de calabaza",
+  "source": {
+   "creator": "@made_in_casa",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@made_in_casa/video/7486247518959914245"
+  },
+  "cuisine": "fusión",
+  "methods": [
+   "pan",
+   "microwave"
+  ],
+  "coating": null,
+  "main": [
+   "pechuga de pollo",
+   "calabaza"
+  ],
+  "ingredients": [
+   {
+    "item": "pechuga de pollo en tiras",
+    "g": 300,
+    "household": "1 pechuga grande"
+   },
+   {
+    "item": "mantequilla",
+    "g": 5,
+    "household": "1 cucharadita"
+   },
+   {
+    "item": "mostaza",
+    "g": 15,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "miel",
+    "g": 20,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "cebolleta picada y ajo rallado",
+    "g": 35,
+    "household": "1 cebolleta pequeña"
+   },
+   {
+    "item": "queso crema",
+    "g": 30,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "calabaza pelada",
+    "g": 500,
+    "household": "1 trozo grande"
+   },
+   {
+    "item": "sal y pimienta",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Marina el pollo con la mantequilla blanda, la mostaza, la miel, la cebolleta, el ajo, sal y pimienta (aguanta congelado hasta 3 meses).",
+   "Cuece la calabaza en dados al microondas 8–10 min tapada y aplástala con sal y pimienta.",
+   "Saltea el pollo en una sartén caliente 6–8 min. Al final añade el queso crema y remueve hasta tener una salsa cremosa."
+  ],
+  "doneness": "Pollo blanco por dentro.",
+  "minutes": 25,
+  "servings": 2,
+  "perServing": {
+   "kcal": 325,
+   "protein": 38,
+   "carbs": 26,
+   "fat": 8
+  },
+  "tags": [
+   "alta en proteína",
+   "ligera",
+   "meal prep"
+  ],
+  "allergens": [
+   "mostaza",
+   "lácteos"
+  ],
+  "flavour": "mostaza y miel"
+ },
+ {
+  "id": "taper-arroz-pollo-calabaza-panceta-horno",
+  "title": "Táperes de arroz con pollo, calabaza y panceta al horno",
+  "source": {
+   "creator": "@kulinaria.recetas",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@kulinaria.recetas/video/7482920193014893830"
+  },
+  "cuisine": "fusión",
+  "methods": [
+   "oven"
+  ],
+  "coating": null,
+  "main": [
+   "pechuga de pollo",
+   "arroz",
+   "calabaza"
+  ],
+  "ingredients": [
+   {
+    "item": "arroz que no se pasa, crudo",
+    "g": 200,
+    "household": "2 tazas"
+   },
+   {
+    "item": "pechuga de pollo en dados",
+    "g": 600,
+    "household": "2 pechugas"
+   },
+   {
+    "item": "caldo de pollo caliente",
+    "g": 500,
+    "household": "500 ml"
+   },
+   {
+    "item": "cebolla",
+    "g": 150,
+    "household": "1"
+   },
+   {
+    "item": "pimiento",
+    "g": 150,
+    "household": "1"
+   },
+   {
+    "item": "calabaza en dados pequeños",
+    "g": 300,
+    "household": "1 trozo"
+   },
+   {
+    "item": "queso crema",
+    "g": 45,
+    "household": "3 cucharaditas"
+   },
+   {
+    "item": "mostaza",
+    "g": 15,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "queso rallado",
+    "g": 45,
+    "household": "3 puñaditos"
+   },
+   {
+    "item": "panceta en tiras",
+    "g": 60,
+    "household": "3 lonchas"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "orégano, ajo y cebolla en polvo, pimentón y sal",
+    "g": 5,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Reparte en 3 táperes de vidrio aptos para horno el arroz, la cebolla, el pimiento y la calabaza picados, el pollo, el aceite y las especias.",
+   "Añade a cada uno queso crema, mostaza y su parte de caldo. Mezcla.",
+   "Cubre con queso rallado y la panceta. Tapa con papel de aluminio y horno a 180 °C, 40 min; destapa los últimos 5.",
+   "Enfría, tapa y guarda en la nevera hasta 3 días."
+  ],
+  "doneness": "Arroz tierno y sin caldo en el fondo.",
+  "minutes": 55,
+  "servings": 3,
+  "perServing": {
+   "kcal": 730,
+   "protein": 61,
+   "carbs": 66,
+   "fat": 22
+  },
+  "tags": [
+   "alta en proteína",
+   "meal prep",
+   "táper"
+  ],
+  "allergens": [
+   "lácteos",
+   "mostaza"
+  ],
+  "flavour": "mostaza, queso y panceta"
+ },
+ {
+  "id": "salmon-glaseado-miel-soja-naranja-freidora",
+  "title": "Salmón glaseado con miel, soja y naranja en 15 minutos",
+  "source": {
+   "creator": "@santifood",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@santifood/video/7365922334349266208"
+  },
+  "cuisine": "asiática",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "salmón"
+  ],
+  "ingredients": [
+   {
+    "item": "lomos de salmón",
+    "g": 300,
+    "household": "2 lomos"
+   },
+   {
+    "item": "miel",
+    "g": 20,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "salsa de soja",
+    "g": 20,
+    "household": "1 cucharada y media"
+   },
+   {
+    "item": "zumo de naranja",
+    "g": 40,
+    "household": "medio vaso pequeño"
+   },
+   {
+    "item": "zumo y rodajas de limón (opcional)",
+    "g": 20,
+    "household": "medio limón"
+   },
+   {
+    "item": "sal y pimienta negra",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Bate la miel, la soja y los zumos.",
+   "Salpimienta el salmón y colócalo en una fuente apta, con rodajas de limón si te gusta.",
+   "Riega con la marinada y freidora a 180 °C, 12–15 min según grosor, regándolo con la salsa a mitad."
+  ],
+  "doneness": "Se separa en láminas y el centro está opaco (63 °C).",
+  "minutes": 15,
+  "servings": 2,
+  "perServing": {
+   "kcal": 360,
+   "protein": 31,
+   "carbs": 11,
+   "fat": 20
+  },
+  "tags": [
+   "alta en proteína",
+   "rápida",
+   "baja en hidratos"
+  ],
+  "allergens": [
+   "pescado",
+   "soja",
+   "gluten"
+  ],
+  "flavour": "dulce-salado de miel y soja"
+ },
+ {
+  "id": "salmon-esparragos-patatas-mejillones",
+  "title": "Salmón con espárragos, patatas y mejillones al eneldo",
+  "source": {
+   "creator": "@cosorinando",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@cosorinando/video/7507626980532079894"
+  },
+  "cuisine": "nórdica",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "salmón",
+   "mejillones",
+   "patata"
+  ],
+  "ingredients": [
+   {
+    "item": "filetes de salmón",
+    "g": 300,
+    "household": "2 filetes"
+   },
+   {
+    "item": "patatas cocidas",
+    "g": 300,
+    "household": "2 medianas"
+   },
+   {
+    "item": "espárragos verdes",
+    "g": 200,
+    "household": "1 manojo"
+   },
+   {
+    "item": "mejillones cocidos sin concha",
+    "g": 120,
+    "household": "1 tarrina pequeña"
+   },
+   {
+    "item": "aceite de oliva en spray",
+    "g": 5,
+    "household": "unas pulverizaciones"
+   },
+   {
+    "item": "zumo de limón, eneldo y sal",
+    "g": 10,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Sobre papel de horno coloca el salmón, los espárragos, las patatas en rodajas y los mejillones.",
+   "Pulveriza aceite, riega con limón y espolvorea eneldo y sal.",
+   "Freidora a 190 °C, 13 min."
+  ],
+  "doneness": "Salmón opaco en el centro y espárragos tiernos.",
+  "minutes": 20,
+  "servings": 2,
+  "perServing": {
+   "kcal": 565,
+   "protein": 49,
+   "carbs": 29,
+   "fat": 25
+  },
+  "tags": [
+   "alta en proteína",
+   "un solo recipiente",
+   "sin gluten"
+  ],
+  "allergens": [
+   "pescado",
+   "moluscos"
+  ],
+  "flavour": "eneldo y limón"
+ },
+ {
+  "id": "dados-salmon-soja-arroz-coliflor",
+  "title": "Dados de salmón a la soja con arroz de coliflor",
+  "source": {
+   "creator": "@cocinacongemabarajas",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@cocinacongemabarajas/video/7350411162950978848"
+  },
+  "cuisine": "fusión",
+  "methods": [
+   "airfryer",
+   "pan"
+  ],
+  "coating": null,
+  "main": [
+   "salmón",
+   "coliflor"
+  ],
+  "ingredients": [
+   {
+    "item": "lomos de salmón sin piel ni espinas",
+    "g": 600,
+    "household": "4 lomos"
+   },
+   {
+    "item": "coliflor rallada o picada",
+    "g": 800,
+    "household": "1 coliflor"
+   },
+   {
+    "item": "cebolla",
+    "g": 150,
+    "household": "1"
+   },
+   {
+    "item": "ajo",
+    "g": 15,
+    "household": "4 dientes"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 40,
+    "household": "4 cucharadas"
+   },
+   {
+    "item": "salsa de soja",
+    "g": 30,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "ajo y cebolla en polvo, pimentón dulce",
+    "g": 12,
+    "household": "1 cucharada de cada"
+   },
+   {
+    "item": "aguacate",
+    "g": 100,
+    "household": "medio"
+   }
+  ],
+  "steps": [
+   "Sofríe la cebolla y el ajo con la mitad del aceite; añade la coliflor y sal y cocina a fuego medio, removiendo, hasta que se dore.",
+   "Corta el salmón en dados y mézclalo con la soja, las especias y el resto del aceite.",
+   "Freidora precalentada a 180 °C, 5 min; remueve con cuidado y 2 min más.",
+   "Sirve el salmón sobre el arroz de coliflor con el aguacate."
+  ],
+  "doneness": "Dados opacos por fuera y jugosos en el centro.",
+  "minutes": 30,
+  "servings": 4,
+  "perServing": {
+   "kcal": 515,
+   "protein": 36,
+   "carbs": 12,
+   "fat": 34
+  },
+  "tags": [
+   "alta en proteína",
+   "baja en hidratos",
+   "keto"
+  ],
+  "allergens": [
+   "pescado",
+   "soja",
+   "gluten"
+  ],
+  "flavour": "soja y pimentón"
+ },
+ {
+  "id": "lomo-cerdo-entero-especiado-freidora",
+  "title": "Cinta de lomo entera especiada en freidora",
+  "source": {
+   "creator": "@paofit.es",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@paofit.es/video/7274679985099574560"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "lomo de cerdo"
+  ],
+  "ingredients": [
+   {
+    "item": "cinta de lomo de cerdo",
+    "g": 1200,
+    "household": "1 pieza"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 15,
+    "household": "1 cucharada y media"
+   },
+   {
+    "item": "sal, orégano, pimienta, cebolla en polvo, pimentón y ajo en polvo",
+    "g": 15,
+    "household": "1 cucharadita de cada"
+   }
+  ],
+  "steps": [
+   "Pincha la pieza con un cuchillo por ambos lados y frótala con todas las especias.",
+   "Píntala con el aceite.",
+   "Freidora a 180 °C, 35–45 min, girándola a mitad. El vídeo dice 20 min, pero con una pieza entera de 1,2 kg hace falta más: fíate del termómetro.",
+   "Reposa 10 min antes de cortar en filetes."
+  ],
+  "doneness": "63 °C en el centro y reposo; queda rosado pálido y jugoso.",
+  "minutes": 55,
+  "servings": 6,
+  "perServing": {
+   "kcal": 325,
+   "protein": 42,
+   "carbs": 0,
+   "fat": 17
+  },
+  "tags": [
+   "alta en proteína",
+   "baja en hidratos",
+   "meal prep"
+  ],
+  "allergens": [],
+  "flavour": "pimentón, orégano y ajo"
+ },
+ {
+  "id": "solomillo-pavo-relleno-serrano-queso",
+  "title": "Solomillo de pavo relleno de serrano, queso y tomate",
+  "source": {
+   "creator": "@amayabotxera",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@amayabotxera/video/7343688928274238752"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "solomillo de pavo"
+  ],
+  "ingredients": [
+   {
+    "item": "solomillo de pavo",
+    "g": 200,
+    "household": "1 solomillo"
+   },
+   {
+    "item": "queso en loncha",
+    "g": 20,
+    "household": "1 loncha"
+   },
+   {
+    "item": "jamón serrano",
+    "g": 20,
+    "household": "1 loncha"
+   },
+   {
+    "item": "tomate",
+    "g": 40,
+    "household": "2 rodajas"
+   },
+   {
+    "item": "aceite de oliva en spray",
+    "g": 3,
+    "household": "unas pulverizaciones"
+   },
+   {
+    "item": "especias para pollo y sal",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Abre el solomillo como un libro.",
+   "Rellena con el queso, el jamón y el tomate y ciérralo con palillos.",
+   "Sazona, pulveriza aceite y freidora a 190 °C, 12–15 min según grosor."
+  ],
+  "doneness": "Sin rosa en la parte más gruesa (74 °C).",
+  "minutes": 20,
+  "servings": 1,
+  "perServing": {
+   "kcal": 365,
+   "protein": 57,
+   "carbs": 2,
+   "fat": 13
+  },
+  "tags": [
+   "alta en proteína",
+   "baja en hidratos",
+   "rápida",
+   "cena"
+  ],
+  "allergens": [
+   "lácteos"
+  ],
+  "flavour": "jamón y queso"
+ },
+ {
+  "id": "solomillo-cerdo-relleno-higos-bacon",
+  "title": "Solomillo de cerdo relleno de higos, jamón y queso envuelto en bacon",
+  "source": {
+   "creator": "@cosories",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@cosories/video/7314709604359834913"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "solomillo de cerdo",
+   "patata"
+  ],
+  "ingredients": [
+   {
+    "item": "solomillo de cerdo",
+    "g": 500,
+    "household": "1 solomillo"
+   },
+   {
+    "item": "bacon",
+    "g": 72,
+    "household": "6 lonchas"
+   },
+   {
+    "item": "jamón cocido",
+    "g": 60,
+    "household": "4 lonchas"
+   },
+   {
+    "item": "queso en lonchas",
+    "g": 60,
+    "household": "4 lonchas"
+   },
+   {
+    "item": "higos secos",
+    "g": 60,
+    "household": "4–6 higos"
+   },
+   {
+    "item": "patata",
+    "g": 250,
+    "household": "1 grande, laminada"
+   },
+   {
+    "item": "sal y pimienta",
+    "g": 3,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Salpimienta el solomillo y ábrelo en libro.",
+   "Rellena con el jamón, el queso y los higos troceados. Ciérralo con palillos y envuélvelo en el bacon.",
+   "Haz una cama con la patata laminada en la freidora precalentada y pon el solomillo encima.",
+   "180 °C, 20–25 min, dándole la vuelta a mitad. Reposa 5 min."
+  ],
+  "doneness": "63 °C en el centro de la carne.",
+  "minutes": 40,
+  "servings": 3,
+  "perServing": {
+   "kcal": 490,
+   "protein": 48,
+   "carbs": 26,
+   "fat": 20
+  },
+  "tags": [
+   "alta en proteína",
+   "para invitados",
+   "Navidad"
+  ],
+  "allergens": [
+   "lácteos"
+  ],
+  "flavour": "dulce de higo con bacon"
+ },
+ {
+  "id": "lomo-libro-naranja-hinojo-freidora",
+  "title": "Lomo en libro con naranja, hinojo y cebolla dulce",
+  "source": {
+   "creator": "@gastronomiaycia",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@gastronomiaycia/video/7380438019834236192"
+  },
+  "cuisine": "mediterránea",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "lomo de cerdo"
+  ],
+  "ingredients": [
+   {
+    "item": "cinta de lomo de cerdo",
+    "g": 1200,
+    "household": "1 pieza"
+   },
+   {
+    "item": "bulbo de hinojo",
+    "g": 250,
+    "household": "1"
+   },
+   {
+    "item": "naranja",
+    "g": 150,
+    "household": "1"
+   },
+   {
+    "item": "cebolla dulce",
+    "g": 150,
+    "household": "1"
+   },
+   {
+    "item": "aceite de oliva virgen extra con ajo y perejil (ajilimójili)",
+    "g": 40,
+    "household": "4 cucharadas"
+   },
+   {
+    "item": "sal y pimienta negra",
+    "g": 4,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Corta el lomo en filetes gruesos sin llegar al final, como las páginas de un libro.",
+   "Corta en rodajas finas el hinojo, la naranja lavada con piel y la cebolla.",
+   "Sala la pieza y rellena cada corte con una rodaja de cada. Riega con el aceite de ajo y perejil y sujeta con dos brochetas.",
+   "Freidora precalentada a 180 °C, 25–30 min, hasta 63 °C en el centro. Sirve con el jugo y pimienta negra."
+  ],
+  "doneness": "63 °C en el centro de la pieza.",
+  "minutes": 45,
+  "servings": 6,
+  "perServing": {
+   "kcal": 395,
+   "protein": 43,
+   "carbs": 8,
+   "fat": 21
+  },
+  "tags": [
+   "alta en proteína",
+   "para invitados",
+   "meal prep"
+  ],
+  "allergens": [],
+  "flavour": "naranja, hinojo y ajo"
+ },
+ {
+  "id": "pavo-salsa-pimienta-verde-arroz",
+  "title": "Pechuga de pavo con salsa ligera de pimienta verde",
+  "source": {
+   "creator": "@myebycosta",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@myebycosta/video/7325548495316864289"
+  },
+  "cuisine": "francesa",
+  "methods": [
+   "pan",
+   "pot"
+  ],
+  "coating": null,
+  "main": [
+   "pechuga de pavo",
+   "arroz"
+  ],
+  "ingredients": [
+   {
+    "item": "filetes de pechuga de pavo",
+    "g": 400,
+    "household": "4 filetes"
+   },
+   {
+    "item": "chalotas",
+    "g": 60,
+    "household": "2"
+   },
+   {
+    "item": "pimienta verde en grano",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "vino blanco",
+    "g": 150,
+    "household": "1 vaso"
+   },
+   {
+    "item": "queso crema",
+    "g": 10,
+    "household": "1 cucharadita"
+   },
+   {
+    "item": "leche semidesnatada",
+    "g": 150,
+    "household": "1 vaso pequeño"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 15,
+    "household": "1 cucharada y media"
+   },
+   {
+    "item": "arroz, crudo (para acompañar)",
+    "g": 120,
+    "household": "1 taza"
+   },
+   {
+    "item": "ajo, sal y pimienta negra",
+    "g": 4,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Cuece el arroz y saltéalo después con un ajo picado.",
+   "Pocha las chalotas en un cazo con parte del aceite. Añade la pimienta verde y luego el vino, y deja evaporar.",
+   "Derrite el queso crema, añade la leche, sal y pimienta y reduce removiendo hasta que espese.",
+   "Haz el pavo a la plancha con el resto del aceite y sírvelo con la salsa y el arroz."
+  ],
+  "doneness": "Pavo blanco por dentro (74 °C).",
+  "minutes": 30,
+  "servings": 2,
+  "perServing": {
+   "kcal": 575,
+   "protein": 54,
+   "carbs": 57,
+   "fat": 12
+  },
+  "tags": [
+   "alta en proteína",
+   "baja en grasa",
+   "cena"
+  ],
+  "allergens": [
+   "lácteos",
+   "sulfitos"
+  ],
+  "flavour": "pimienta verde cremosa"
+ },
+ {
+  "id": "pavo-salsa-champinones-basmati",
+  "title": "Pavo con salsa cremosa de champiñones y arroz basmati",
+  "source": {
+   "creator": "@myebycosta",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@myebycosta/video/7214944535699508486"
+  },
+  "cuisine": "española",
+  "methods": [
+   "pan",
+   "pot"
+  ],
+  "coating": null,
+  "main": [
+   "pechuga de pavo",
+   "champiñones",
+   "arroz"
+  ],
+  "ingredients": [
+   {
+    "item": "filetes de pechuga de pavo",
+    "g": 400,
+    "household": "4 filetes"
+   },
+   {
+    "item": "champiñones portobello",
+    "g": 200,
+    "household": "6–8"
+   },
+   {
+    "item": "cebolla",
+    "g": 150,
+    "household": "1"
+   },
+   {
+    "item": "queso crema",
+    "g": 30,
+    "household": "1 cucharada generosa"
+   },
+   {
+    "item": "vino blanco",
+    "g": 50,
+    "household": "medio vasito"
+   },
+   {
+    "item": "leche",
+    "g": 150,
+    "household": "1 vasito"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 15,
+    "household": "1 cucharada y media"
+   },
+   {
+    "item": "arroz basmati, crudo",
+    "g": 120,
+    "household": "1 taza"
+   },
+   {
+    "item": "sal y pimienta",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Cuece el arroz basmati.",
+   "Pocha la cebolla con parte del aceite, añade los champiñones laminados y cocina hasta que casi estén.",
+   "Echa el vino y deja evaporar. Funde el queso crema, añade la leche, salpimienta y reduce.",
+   "Marca el pavo en otra sartén con el resto del aceite y sírvelo con la salsa y el arroz."
+  ],
+  "doneness": "Pavo blanco por dentro (74 °C).",
+  "minutes": 30,
+  "servings": 2,
+  "perServing": {
+   "kcal": 620,
+   "protein": 57,
+   "carbs": 60,
+   "fat": 15
+  },
+  "tags": [
+   "alta en proteína",
+   "cena",
+   "comfort"
+  ],
+  "allergens": [
+   "lácteos",
+   "sulfitos"
+  ],
+  "flavour": "champiñón cremoso"
+ },
+ {
+  "id": "bacalao-gratinado-alioli-pimenton",
+  "title": "Bacalao gratinado con mahonesa de ajo y pimentón sobre cebolla",
+  "source": {
+   "creator": "@karguinano",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@karguinano/video/7574416424324680992"
+  },
+  "cuisine": "vasca",
+  "methods": [
+   "pan",
+   "oven"
+  ],
+  "coating": null,
+  "main": [
+   "bacalao desalado",
+   "cebolla"
+  ],
+  "ingredients": [
+   {
+    "item": "lomos de bacalao desalado",
+    "g": 600,
+    "household": "4 lomos"
+   },
+   {
+    "item": "cebollas",
+    "g": 450,
+    "household": "3"
+   },
+   {
+    "item": "aceite de oliva virgen extra para la cebolla",
+    "g": 30,
+    "household": "3 cucharadas"
+   },
+   {
+    "item": "mahonesa casera de ajo (huevo, ajo, aceite, vinagre)",
+    "g": 100,
+    "household": "4 cucharadas colmadas"
+   },
+   {
+    "item": "pimentón",
+    "g": 5,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "hojas de espinaca",
+    "g": 40,
+    "household": "20 hojas"
+   },
+   {
+    "item": "perejil y sal",
+    "g": 3,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Marca el bacalao en una sartén con un poco de aceite, 2–3 min por lado, y reserva en una fuente de horno.",
+   "En la misma sartén confita la cebolla en juliana a fuego suave hasta que esté dorada. Fríe al final las hojas de espinaca para decorar.",
+   "Mezcla la mahonesa con el pimentón y una cucharada de agua. Pon la cebolla bajo el bacalao y cúbrelo con la mahonesa.",
+   "Gratina en el horno a máxima potencia, 3–4 min. Termina con las espinacas y perejil."
+  ],
+  "doneness": "Bacalao en lascas que se separan y mahonesa dorada.",
+  "minutes": 35,
+  "servings": 4,
+  "perServing": {
+   "kcal": 415,
+   "protein": 29,
+   "carbs": 10,
+   "fat": 29
+  },
+  "tags": [
+   "alta en proteína",
+   "para invitados"
+  ],
+  "allergens": [
+   "pescado",
+   "huevo",
+   "sulfitos"
+  ],
+  "flavour": "ajo y pimentón"
+ },
+ {
+  "id": "merluza-naranja-queso-gratinada",
+  "title": "Merluza al horno con crema de naranja y queso gratinado",
+  "source": {
+   "creator": "@abrilminguet",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@abrilminguet/video/7251940851327208730"
+  },
+  "cuisine": "mediterránea",
+  "methods": [
+   "oven"
+  ],
+  "coating": null,
+  "main": [
+   "merluza"
+  ],
+  "ingredients": [
+   {
+    "item": "merluza en rodajas",
+    "g": 580,
+    "household": "4–5 rodajas"
+   },
+   {
+    "item": "zumo de naranja",
+    "g": 250,
+    "household": "de 2–3 naranjas"
+   },
+   {
+    "item": "queso fresco batido",
+    "g": 250,
+    "household": "1 tarrina"
+   },
+   {
+    "item": "queso rallado",
+    "g": 40,
+    "household": "1 puñado"
+   },
+   {
+    "item": "cebolla en juliana",
+    "g": 60,
+    "household": "media pequeña"
+   },
+   {
+    "item": "ajo",
+    "g": 15,
+    "household": "4–5 dientes"
+   },
+   {
+    "item": "sésamo, perejil y ralladura de naranja",
+    "g": 8,
+    "household": "para terminar"
+   },
+   {
+    "item": "sal y pimienta",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Salpimienta la merluza en una fuente de horno.",
+   "Bate el zumo de naranja con el queso fresco batido y viértelo sobre el pescado.",
+   "Reparte el queso rallado, la cebolla y los ajos.",
+   "Horno a 200 °C, arriba y abajo, unos 25 min hasta que gratine. Termina con perejil, sésamo y ralladura de naranja."
+  ],
+  "doneness": "Merluza blanca que se separa de la espina.",
+  "minutes": 35,
+  "servings": 3,
+  "perServing": {
+   "kcal": 285,
+   "protein": 43,
+   "carbs": 15,
+   "fat": 8
+  },
+  "tags": [
+   "alta en proteína",
+   "baja en grasa",
+   "sin gluten"
+  ],
+  "allergens": [
+   "pescado",
+   "lácteos",
+   "sésamo"
+  ],
+  "flavour": "naranja y queso"
+ },
+ {
+  "id": "colas-merluza-horno-refrito-berasategui",
+  "title": "Colas de merluza al horno sobre patata y cebolla con refrito de ajo",
+  "source": {
+   "creator": "@hoy.enmicocina",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@hoy.enmicocina/video/7429226568427326752"
+  },
+  "cuisine": "vasca",
+  "methods": [
+   "oven",
+   "pan",
+   "pot"
+  ],
+  "coating": null,
+  "main": [
+   "merluza",
+   "patata",
+   "cebolla"
+  ],
+  "ingredients": [
+   {
+    "item": "cola de merluza",
+    "g": 700,
+    "household": "1 cola grande abierta"
+   },
+   {
+    "item": "cebollas",
+    "g": 500,
+    "household": "4–5"
+   },
+   {
+    "item": "patatas cocidas",
+    "g": 400,
+    "household": "2–3 medianas"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 70,
+    "household": "7 cucharadas (pocha y refrito)"
+   },
+   {
+    "item": "pimentón de la Vera",
+    "g": 5,
+    "household": "1 cucharadita"
+   },
+   {
+    "item": "ajo laminado",
+    "g": 16,
+    "household": "4–5 dientes"
+   },
+   {
+    "item": "cayena, vinagre de sidra y perejil",
+    "g": 25,
+    "household": "1 cayena y 2 cucharadas de vinagre"
+   }
+  ],
+  "steps": [
+   "Sala la merluza por ambos lados 20 min antes.",
+   "Pocha la cebolla en juliana con parte del aceite 30 min. Añade el pimentón al final y extiéndela en una bandeja de horno. Encima, la patata cocida en rodajas de 5 mm.",
+   "Coloca la merluza con la piel hacia abajo, un hilo de aceite y horno a 180 °C, 10 min.",
+   "Dora el ajo y la cayena en el resto del aceite y viértelo sobre la merluza. Echa el vinagre en la sartén caliente y viértelo también.",
+   "Pasa los jugos de la bandeja a la sartén, hierve y vuelve a regar. Repítelo tres veces y termina con perejil."
+  ],
+  "doneness": "La carne se separa de la espina central.",
+  "minutes": 55,
+  "servings": 3,
+  "perServing": {
+   "kcal": 550,
+   "protein": 42,
+   "carbs": 37,
+   "fat": 28
+  },
+  "tags": [
+   "alta en proteína",
+   "para invitados",
+   "sin gluten"
+  ],
+  "allergens": [
+   "pescado"
+  ],
+  "flavour": "refrito de ajo y vinagre"
+ },
+ {
+  "id": "merluza-salsa-guisantes-nora",
+  "title": "Merluza en salsa con guisantes y ñora",
+  "source": {
+   "creator": "@missohlaura",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@missohlaura/video/7415680930490125601"
+  },
+  "cuisine": "española",
+  "methods": [
+   "pan"
+  ],
+  "coating": null,
+  "main": [
+   "merluza",
+   "guisantes"
+  ],
+  "ingredients": [
+   {
+    "item": "lomos de merluza",
+    "g": 600,
+    "household": "4 lomos"
+   },
+   {
+    "item": "cebolla",
+    "g": 150,
+    "household": "1"
+   },
+   {
+    "item": "ajo",
+    "g": 6,
+    "household": "2 dientes"
+   },
+   {
+    "item": "tomate frito",
+    "g": 30,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "pasta de ñora",
+    "g": 5,
+    "household": "1 cucharadita"
+   },
+   {
+    "item": "vino blanco",
+    "g": 100,
+    "household": "1 copa"
+   },
+   {
+    "item": "fumet de pescado",
+    "g": 250,
+    "household": "250 ml"
+   },
+   {
+    "item": "guisantes",
+    "g": 100,
+    "household": "1 taza"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 20,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "sal y pimienta",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Dora el ajo y la cebolla picados en el aceite.",
+   "Añade el tomate frito y el vino y deja reducir. Incorpora la ñora.",
+   "Echa el fumet y los guisantes y cuece 5 min. Salpimienta.",
+   "Pon los lomos salpimentados en la salsa, unos 4 min por cada lado."
+  ],
+  "doneness": "La merluza se separa en láminas.",
+  "minutes": 25,
+  "servings": 4,
+  "perServing": {
+   "kcal": 205,
+   "protein": 27,
+   "carbs": 8,
+   "fat": 8
+  },
+  "tags": [
+   "alta en proteína",
+   "ligera",
+   "sin gluten"
+  ],
+  "allergens": [
+   "pescado",
+   "sulfitos"
+  ],
+  "flavour": "ñora y vino blanco"
+ },
+ {
+  "id": "pasta-gratinada-verduras-asadas-atun",
+  "title": "Pasta gratinada con verduras asadas y atún",
+  "source": {
+   "creator": "@recetasdewilly",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@recetasdewilly/video/7208643632499412230"
+  },
+  "cuisine": "italiana",
+  "methods": [
+   "oven",
+   "pot"
+  ],
+  "coating": null,
+  "main": [
+   "pasta",
+   "atún"
+  ],
+  "ingredients": [
+   {
+    "item": "pimientos rojo y verdes",
+    "g": 450,
+    "household": "1 rojo y 2 verdes"
+   },
+   {
+    "item": "cebollas moradas",
+    "g": 300,
+    "household": "2"
+   },
+   {
+    "item": "pasta corta",
+    "g": 400,
+    "household": "100 g por persona"
+   },
+   {
+    "item": "tomate triturado",
+    "g": 400,
+    "household": "1 bote"
+   },
+   {
+    "item": "atún en conserva escurrido",
+    "g": 160,
+    "household": "2 latas"
+   },
+   {
+    "item": "mozzarella rallada",
+    "g": 120,
+    "household": "1 bolsa pequeña"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 20,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "orégano, sal y pimienta",
+    "g": 3,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Trocea las verduras, sazona con sal, pimienta, orégano y el aceite. Horno a 180 °C, 30 min.",
+   "Mientras, cuece la pasta y escúrrela.",
+   "Mezcla en la bandeja las verduras con la pasta, el tomate y el atún. Cubre con mozzarella.",
+   "Gratina con calor arriba unos 5 min."
+  ],
+  "doneness": "Queso dorado y burbujeante.",
+  "minutes": 45,
+  "servings": 4,
+  "perServing": {
+   "kcal": 655,
+   "protein": 32,
+   "carbs": 89,
+   "fat": 13
+  },
+  "tags": [
+   "familiar",
+   "meal prep",
+   "táper"
+  ],
+  "allergens": [
+   "gluten",
+   "pescado",
+   "lácteos"
+  ],
+  "flavour": "verdura asada y orégano"
+ },
+ {
+  "id": "bizcocho-claras-yogur-avena-freidora",
+  "title": "Bizcocho esponjoso de claras, yogur y avena",
+  "source": {
+   "creator": "@fitt.anitaa",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@fitt.anitaa/video/7355581006235192608"
+  },
+  "cuisine": "desayuno",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "claras de huevo",
+   "avena",
+   "yogur"
+  ],
+  "ingredients": [
+   {
+    "item": "claras de huevo",
+    "g": 150,
+    "household": "150 ml (unas 4–5 claras)"
+   },
+   {
+    "item": "yogur natural",
+    "g": 125,
+    "household": "1 yogur"
+   },
+   {
+    "item": "harina de avena",
+    "g": 35,
+    "household": "3 cucharadas y media"
+   },
+   {
+    "item": "eritritol o edulcorante",
+    "g": 10,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Monta las claras a punto de nieve.",
+   "Incorpora con movimientos envolventes el yogur, la avena y el edulcorante.",
+   "Pasa a un molde apto y freidora a 170 °C, 15 min."
+  ],
+  "doneness": "Dorado y un palillo sale limpio.",
+  "minutes": 20,
+  "servings": 1,
+  "perServing": {
+   "kcal": 285,
+   "protein": 25,
+   "carbs": 28,
+   "fat": 7
+  },
+  "tags": [
+   "desayuno",
+   "merienda",
+   "alta en proteína"
+  ],
+  "allergens": [
+   "huevo",
+   "lácteos",
+   "gluten"
+  ],
+  "flavour": "bizcocho de yogur"
+ },
+ {
+  "id": "carrot-cake-proteico",
+  "title": "Carrot cake proteico con cobertura de yogur",
+  "source": {
+   "creator": "@lorenaonfit",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@lorenaonfit/video/7462447097875270944"
+  },
+  "cuisine": "desayuno",
+  "methods": [
+   "oven",
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "zanahoria",
+   "avena",
+   "huevo"
+  ],
+  "ingredients": [
+   {
+    "item": "huevos",
+    "g": 180,
+    "household": "3 huevos"
+   },
+   {
+    "item": "yogur desnatado",
+    "g": 60,
+    "household": "3 cucharadas"
+   },
+   {
+    "item": "zanahoria rallada fina",
+    "g": 200,
+    "household": "2 grandes"
+   },
+   {
+    "item": "harina de avena",
+    "g": 100,
+    "household": "1 taza"
+   },
+   {
+    "item": "proteína en polvo (whey)",
+    "g": 25,
+    "household": "1 cacito"
+   },
+   {
+    "item": "leche",
+    "g": 50,
+    "household": "un chorrito"
+   },
+   {
+    "item": "levadura química, canela y edulcorante",
+    "g": 10,
+    "household": "1 cucharada de levadura"
+   },
+   {
+    "item": "yogur proteico o skyr para la cobertura",
+    "g": 150,
+    "household": "1 tarrina"
+   },
+   {
+    "item": "proteína en polvo para la cobertura",
+    "g": 15,
+    "household": "medio cacito"
+   }
+  ],
+  "steps": [
+   "Bate los huevos con el yogur y el edulcorante. Añade la zanahoria.",
+   "Incorpora la avena, la proteína, la levadura y la canela; añade la leche hasta tener una masa espesa.",
+   "Horno a 180 °C, 30 min (o freidora a 160 °C, 25 min).",
+   "Mezcla el skyr con la proteína, parte el bizcocho en dos, rellena y cubre."
+  ],
+  "doneness": "Un palillo sale limpio.",
+  "minutes": 45,
+  "servings": 4,
+  "perServing": {
+   "kcal": 255,
+   "protein": 22,
+   "carbs": 24,
+   "fat": 7
+  },
+  "tags": [
+   "desayuno",
+   "merienda",
+   "alta en proteína",
+   "meal prep",
+   "congelable"
+  ],
+  "allergens": [
+   "huevo",
+   "lácteos",
+   "gluten"
+  ],
+  "flavour": "zanahoria y canela"
+ },
+ {
+  "id": "tortitas-avena-esponjosas",
+  "title": "Tortitas de avena esponjosas",
+  "source": {
+   "creator": "@ingecocinero",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@ingecocinero/video/7417538258118118688"
+  },
+  "cuisine": "desayuno",
+  "methods": [
+   "pan"
+  ],
+  "coating": null,
+  "main": [
+   "avena",
+   "huevo"
+  ],
+  "ingredients": [
+   {
+    "item": "harina de avena",
+    "g": 160,
+    "household": "1 taza y media"
+   },
+   {
+    "item": "bebida de avena o leche",
+    "g": 140,
+    "household": "140 ml"
+   },
+   {
+    "item": "huevos L",
+    "g": 130,
+    "household": "2 huevos"
+   },
+   {
+    "item": "levadura química",
+    "g": 8,
+    "household": "1 sobre"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "sal",
+    "g": 1,
+    "household": "una pizca"
+   }
+  ],
+  "steps": [
+   "Bate los huevos, añade la bebida de avena, la harina, la levadura y la sal hasta tener una crema.",
+   "Calienta una sartén con unas gotas de aceite a fuego medio.",
+   "Vierte un cazo de masa y, cuando salgan burbujas, dale la vuelta. Repite."
+  ],
+  "doneness": "Doradas por ambos lados y esponjosas por dentro.",
+  "minutes": 20,
+  "servings": 2,
+  "perServing": {
+   "kcal": 470,
+   "protein": 19,
+   "carbs": 57,
+   "fat": 15
+  },
+  "tags": [
+   "desayuno"
+  ],
+  "allergens": [
+   "huevo",
+   "gluten"
+  ],
+  "flavour": "avena"
+ },
+ {
+  "id": "patata-feria-rellena-bacon-atun",
+  "title": "Patata de feria rellena de bacon, atún y mozzarella",
+  "source": {
+   "creator": "@cosorinando",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@cosorinando/video/7469501742602833174"
+  },
+  "cuisine": "española",
+  "methods": [
+   "microwave",
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "patata",
+   "atún",
+   "bacon"
+  ],
+  "ingredients": [
+   {
+    "item": "patatas grandes",
+    "g": 900,
+    "household": "2 de 450 g"
+   },
+   {
+    "item": "taquitos de bacon",
+    "g": 60,
+    "household": "1 sobre"
+   },
+   {
+    "item": "atún en conserva escurrido",
+    "g": 80,
+    "household": "1 lata"
+   },
+   {
+    "item": "mozzarella rallada",
+    "g": 60,
+    "household": "2 puñados"
+   },
+   {
+    "item": "salsa alioli ligera",
+    "g": 30,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "sal, pimienta y perejil",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Haz unos cortes a las patatas, envuélvelas en papel de cocina mojado y 5 min de microondas a máxima potencia.",
+   "Envuélvelas en papel de aluminio y freidora a 200 °C, 40 min, girándolas a mitad.",
+   "Ábrelas, ahueca la carne con un tenedor y salpimienta. Añade el alioli, el bacon y el atún.",
+   "Cubre con la mozzarella y gratina 4 min."
+  ],
+  "doneness": "Patata blanda al pinchar el centro.",
+  "minutes": 55,
+  "servings": 2,
+  "perServing": {
+   "kcal": 680,
+   "protein": 30,
+   "carbs": 78,
+   "fat": 28
+  },
+  "tags": [
+   "comfort",
+   "cena"
+  ],
+  "allergens": [
+   "pescado",
+   "lácteos",
+   "huevo"
+  ],
+  "flavour": "alioli y bacon"
+ },
+ {
+  "id": "boniatos-rellenos-huevo-feta",
+  "title": "Boniatos rellenos de huevo, tomate y feta",
+  "source": {
+   "creator": "@ma_petite_bouchee",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@ma_petite_bouchee/video/7576391214820347158"
+  },
+  "cuisine": "mediterránea",
+  "methods": [
+   "airfryer",
+   "oven"
+  ],
+  "coating": null,
+  "main": [
+   "boniato",
+   "huevo",
+   "queso feta"
+  ],
+  "ingredients": [
+   {
+    "item": "boniatos medianos",
+    "g": 500,
+    "household": "2"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 5,
+    "household": "1 cucharadita"
+   },
+   {
+    "item": "tomate picado",
+    "g": 120,
+    "household": "1"
+   },
+   {
+    "item": "cebolleta picada",
+    "g": 40,
+    "household": "1 pequeña"
+   },
+   {
+    "item": "huevo",
+    "g": 60,
+    "household": "1 huevo"
+   },
+   {
+    "item": "leche",
+    "g": 30,
+    "household": "un chorrito"
+   },
+   {
+    "item": "queso feta",
+    "g": 60,
+    "household": "media tarrina"
+   },
+   {
+    "item": "sal",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Lava y seca los boniatos, pínchalos con un tenedor y úntalos con el aceite.",
+   "Freidora a 200 °C, 25 min (horno a 200 °C, 45 min).",
+   "Ábrelos por la mitad, rellena con el tomate, la cebolleta, el huevo batido con la leche y sal, y el feta desmenuzado.",
+   "10 min más a 185 °C (horno 15 min)."
+  ],
+  "doneness": "El huevo del relleno está cuajado y el boniato muy tierno.",
+  "minutes": 40,
+  "servings": 2,
+  "perServing": {
+   "kcal": 385,
+   "protein": 13,
+   "carbs": 56,
+   "fat": 13
+  },
+  "tags": [
+   "vegetariana",
+   "sin gluten"
+  ],
+  "allergens": [
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "feta salado y boniato dulce"
+ },
+ {
+  "id": "bastones-boniato-crujientes-freidora",
+  "title": "Bastones de boniato crujientes",
+  "source": {
+   "creator": "@latoneira",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@latoneira/video/7428173050815827233"
+  },
+  "cuisine": "guarnición",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "boniato"
+  ],
+  "ingredients": [
+   {
+    "item": "boniatos",
+    "g": 750,
+    "household": "3"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 15,
+    "household": "1 cucharada y media"
+   },
+   {
+    "item": "maicena",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "especias al gusto (pimentón, ajo, orégano) y sal",
+    "g": 5,
+    "household": "1 cucharada"
+   }
+  ],
+  "steps": [
+   "Pela los boniatos y córtalos en bastones del mismo grosor.",
+   "Mézclalos con el aceite, las especias, la sal y la maicena: la maicena es lo que los hace crujir.",
+   "Freidora a 160 °C, 20 min, removiendo a mitad, y sube a 200 °C los últimos 3 min."
+  ],
+  "doneness": "Bordes dorados y crujientes, interior tierno.",
+  "minutes": 30,
+  "servings": 3,
+  "perServing": {
+   "kcal": 275,
+   "protein": 4,
+   "carbs": 53,
+   "fat": 5
+  },
+  "tags": [
+   "guarnición",
+   "vegana",
+   "sin gluten"
+  ],
+  "allergens": [],
+  "flavour": "pimentón y ajo"
+ },
+ {
+  "id": "patatas-rellenas-carne-piquillos-bechamel",
+  "title": "Patatas rellenas de carne, piquillos y bechamel",
+  "source": {
+   "creator": "@latoneira",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@latoneira/video/7303616136296336673"
+  },
+  "cuisine": "española",
+  "methods": [
+   "microwave",
+   "pan",
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "patata",
+   "carne picada"
+  ],
+  "ingredients": [
+   {
+    "item": "patatas medianas",
+    "g": 800,
+    "household": "4"
+   },
+   {
+    "item": "cebolla picada",
+    "g": 60,
+    "household": "media"
+   },
+   {
+    "item": "ajo picado",
+    "g": 6,
+    "household": "2 dientes"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "carne picada mixta",
+    "g": 200,
+    "household": "1 bandeja pequeña"
+   },
+   {
+    "item": "bacon en tiras",
+    "g": 50,
+    "household": "3 lonchas"
+   },
+   {
+    "item": "pimientos del piquillo",
+    "g": 100,
+    "household": "4"
+   },
+   {
+    "item": "bechamel",
+    "g": 300,
+    "household": "300 ml"
+   },
+   {
+    "item": "queso rallado (mozzarella o proteico)",
+    "g": 60,
+    "household": "2 puñados"
+   },
+   {
+    "item": "sal y especias para albóndigas",
+    "g": 3,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Pincha las patatas, envuélvelas en papel de horno mojado y microondas 8–9 min a máxima potencia.",
+   "Sofríe la cebolla y el ajo, añade la carne y el bacon, sazona y cocina 2–3 min. Incorpora los piquillos troceados y la bechamel.",
+   "Parte las patatas, vacíalas un poco y mezcla esa patata con el relleno.",
+   "Rellénalas, cubre con queso y freidora a 200 °C, 5–6 min."
+  ],
+  "doneness": "Relleno caliente y queso gratinado.",
+  "minutes": 35,
+  "servings": 4,
+  "perServing": {
+   "kcal": 470,
+   "protein": 20,
+   "carbs": 43,
+   "fat": 23
+  },
+  "tags": [
+   "comfort",
+   "meal prep",
+   "familiar"
+  ],
+  "allergens": [
+   "lácteos",
+   "gluten"
+  ],
+  "flavour": "carne con piquillo y bechamel"
+ },
+ {
+  "id": "pollo-teriyaki-verduras-freidora",
+  "title": "Pollo teriyaki exprés con verduras en freidora",
+  "source": {
+   "creator": "@megustacomersano",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@megustacomersano/video/7463176582325275926"
+  },
+  "cuisine": "japonesa",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "pechuga de pollo"
+  ],
+  "ingredients": [
+   {
+    "item": "pechuga de pollo en tiras",
+    "g": 300,
+    "household": "1 pechuga grande"
+   },
+   {
+    "item": "calabacín",
+    "g": 150,
+    "household": "medio"
+   },
+   {
+    "item": "zanahoria",
+    "g": 100,
+    "household": "1 grande"
+   },
+   {
+    "item": "cebolla morada",
+    "g": 100,
+    "household": "1 pequeña"
+   },
+   {
+    "item": "espárragos trigueros",
+    "g": 100,
+    "household": "medio manojo"
+   },
+   {
+    "item": "pimiento",
+    "g": 100,
+    "household": "1 pequeño"
+   },
+   {
+    "item": "aceite de oliva en spray",
+    "g": 5,
+    "household": "unas pulverizaciones"
+   },
+   {
+    "item": "salsa de soja",
+    "g": 20,
+    "household": "1 cucharada y media"
+   },
+   {
+    "item": "miel",
+    "g": 15,
+    "household": "1 cucharadita colmada"
+   },
+   {
+    "item": "especias al gusto (ajo, ají dulce)",
+    "g": 3,
+    "household": "1 cucharadita"
+   }
+  ],
+  "steps": [
+   "Corta las verduras en bastones y ponlas en la cesta con el pollo, el aceite y las especias. Mezcla.",
+   "Freidora a 200 °C, 15 min, removiendo a mitad.",
+   "Añade la soja y la miel, mezcla bien y sirve (o 2 min más para que glasee)."
+  ],
+  "doneness": "Pollo blanco por dentro y verdura al dente.",
+  "minutes": 20,
+  "servings": 2,
+  "perServing": {
+   "kcal": 290,
+   "protein": 39,
+   "carbs": 22,
+   "fat": 5
+  },
+  "tags": [
+   "alta en proteína",
+   "ligera",
+   "rápida",
+   "un solo recipiente"
+  ],
+  "allergens": [
+   "soja",
+   "gluten"
+  ],
+  "flavour": "teriyaki dulce-salado"
+ },
+ {
+  "id": "pollo-coreano-crujiente-freidora",
+  "title": "Pollo coreano crujiente en freidora con salsa picante dulce",
+  "source": {
+   "creator": "@hamsikdangbcn",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@hamsikdangbcn/video/7391534125787712775"
+  },
+  "cuisine": "coreana",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": "battered",
+  "main": [
+   "alitas de pollo"
+  ],
+  "ingredients": [
+   {
+    "item": "alitas de pollo (peso comestible)",
+    "g": 340,
+    "household": "600 g con hueso"
+   },
+   {
+    "item": "levadura química (polvo de hornear)",
+    "g": 7,
+    "household": "1 cucharadita y media"
+   },
+   {
+    "item": "maicena y harina de arroz",
+    "g": 14,
+    "household": "1 cucharadita y media de cada"
+   },
+   {
+    "item": "sal",
+    "g": 7,
+    "household": "1 cucharadita y media"
+   },
+   {
+    "item": "aceite vegetal en spray",
+    "g": 5,
+    "household": "unas pulverizaciones"
+   },
+   {
+    "item": "salsa de soja",
+    "g": 30,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "kétchup",
+    "g": 30,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "azúcar",
+    "g": 25,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "sriracha o gochujang",
+    "g": 30,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "miel",
+    "g": 40,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "ajo picado, vino blanco y agua",
+    "g": 45,
+    "household": "1 cucharada de cada + 2 de agua"
+   },
+   {
+    "item": "semillas de sésamo",
+    "g": 5,
+    "household": "1 cucharadita"
+   }
+  ],
+  "steps": [
+   "Mezcla las alitas con la levadura, la sal, la maicena y la harina de arroz hasta que queden cubiertas. La levadura es el truco del crujiente.",
+   "Pulveriza aceite por ambos lados y freidora a 200 °C, 15 min, sin precalentar.",
+   "Mientras, hierve en un cazo el ajo, la soja, el kétchup, el azúcar, la sriracha, el vino, la miel y el agua hasta que espese.",
+   "Da la vuelta a las alitas y 15 min más. Mézclalas con la salsa y espolvorea sésamo."
+  ],
+  "doneness": "Piel muy crujiente y carne que se separa del hueso (74 °C).",
+  "minutes": 40,
+  "servings": 2,
+  "perServing": {
+   "kcal": 540,
+   "protein": 33,
+   "carbs": 42,
+   "fat": 26
+  },
+  "tags": [
+   "picoteo",
+   "capricho"
+  ],
+  "allergens": [
+   "soja",
+   "gluten",
+   "sésamo",
+   "sulfitos"
+  ],
+  "flavour": "picante dulce coreano"
+ },
+ {
+  "id": "tiras-pollo-copos-maiz-parmesano-ketchup-datiles",
+  "title": "Tiras de pollo crujientes de maíz y parmesano con kétchup de dátiles",
+  "source": {
+   "creator": "@paufeel",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@paufeel/video/7466771410040425750"
+  },
+  "cuisine": "americana",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": "breaded",
+  "main": [
+   "solomillos de pollo"
+  ],
+  "ingredients": [
+   {
+    "item": "solomillos de pollo",
+    "g": 600,
+    "household": "8 solomillos"
+   },
+   {
+    "item": "yogur natural sin azúcar",
+    "g": 100,
+    "household": "1 yogur"
+   },
+   {
+    "item": "copos de maíz sin azúcar triturados",
+    "g": 30,
+    "household": "1 taza"
+   },
+   {
+    "item": "parmesano rallado",
+    "g": 50,
+    "household": "media taza"
+   },
+   {
+    "item": "ajo en polvo, pimentón dulce, sal y pimienta",
+    "g": 5,
+    "household": "1 cucharadita de cada"
+   },
+   {
+    "item": "aceite de oliva virgen extra en spray",
+    "g": 10,
+    "household": "unas pulverizaciones"
+   },
+   {
+    "item": "tomate natural triturado",
+    "g": 45,
+    "household": "3 cucharadas"
+   },
+   {
+    "item": "dátiles sin hueso",
+    "g": 16,
+    "household": "2"
+   },
+   {
+    "item": "vinagre de vino blanco",
+    "g": 45,
+    "household": "3 cucharadas"
+   }
+  ],
+  "steps": [
+   "Corta los solomillos por la mitad y mézclalos con el yogur, las especias y la sal.",
+   "Mezcla los copos de maíz triturados con el parmesano y reboza el pollo (no hace falta huevo: el yogur hace de pegamento).",
+   "Pulveriza aceite y freidora a 180 °C, 15–17 min, dándoles la vuelta a mitad.",
+   "Tritura el tomate con los dátiles y el vinagre para el kétchup."
+  ],
+  "doneness": "Rebozado dorado y pollo blanco por dentro (74 °C).",
+  "minutes": 30,
+  "servings": 4,
+  "perServing": {
+   "kcal": 295,
+   "protein": 41,
+   "carbs": 11,
+   "fat": 9
+  },
+  "tags": [
+   "alta en proteína",
+   "para niños",
+   "cena"
+  ],
+  "allergens": [
+   "lácteos",
+   "gluten",
+   "sulfitos"
+  ],
+  "flavour": "parmesano y pimentón"
+ },
+ {
+  "id": "huevo-plato-pavo-feta-freidora",
+  "title": "Huevos al plato exprés con pavo y feta",
+  "source": {
+   "creator": "@shoothecook_recetas",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@shoothecook_recetas/video/7463163092785007905"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "huevo",
+   "pavo"
+  ],
+  "ingredients": [
+   {
+    "item": "salsa de tomate",
+    "g": 30,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "lonchas de pechuga de pavo",
+    "g": 45,
+    "household": "3 lonchas"
+   },
+   {
+    "item": "huevos",
+    "g": 120,
+    "household": "2 huevos"
+   },
+   {
+    "item": "queso feta",
+    "g": 30,
+    "household": "1 trozo"
+   },
+   {
+    "item": "orégano, sal y pimienta",
+    "g": 1,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "En un recipiente pequeño apto pon el tomate, el orégano y el pavo.",
+   "Casca los huevos encima, salpimienta y desmenuza el feta.",
+   "Freidora a 200 °C, 5 min. Si te gusta la yema más hecha, déjalo 2 min dentro con la freidora apagada."
+  ],
+  "doneness": "Clara totalmente cuajada.",
+  "minutes": 8,
+  "servings": 1,
+  "perServing": {
+   "kcal": 320,
+   "protein": 28,
+   "carbs": 6,
+   "fat": 20
+  },
+  "tags": [
+   "alta en proteína",
+   "baja en hidratos",
+   "rápida",
+   "cena"
+  ],
+  "allergens": [
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "tomate y orégano"
+ },
+ {
+  "id": "taco-huevo-sobrasada-piparras",
+  "title": "Taco crujiente de huevo, sobrasada y piparras",
+  "source": {
+   "creator": "@shoothecook_recetas",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@shoothecook_recetas/video/7463163092785007905"
+  },
+  "cuisine": "fusión",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "huevo",
+   "tortilla de trigo",
+   "sobrasada"
+  ],
+  "ingredients": [
+   {
+    "item": "tortilla de trigo integral",
+    "g": 60,
+    "household": "1 tortilla"
+   },
+   {
+    "item": "mozzarella rallada",
+    "g": 30,
+    "household": "1 puñado"
+   },
+   {
+    "item": "huevo",
+    "g": 60,
+    "household": "1 huevo"
+   },
+   {
+    "item": "sobrasada",
+    "g": 20,
+    "household": "1 trozo"
+   },
+   {
+    "item": "piparras",
+    "g": 15,
+    "household": "3"
+   },
+   {
+    "item": "sal y pimienta",
+    "g": 1,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Pon la tortilla en un molde apto, de forma que los bordes suban como un cuenco.",
+   "Reparte la mozzarella, casca el huevo en el centro, salpimienta y añade la sobrasada en trocitos y las piparras.",
+   "Freidora a 190 °C, 5 min."
+  ],
+  "doneness": "Clara cuajada y tortilla crujiente.",
+  "minutes": 8,
+  "servings": 1,
+  "perServing": {
+   "kcal": 450,
+   "protein": 23,
+   "carbs": 29,
+   "fat": 25
+  },
+  "tags": [
+   "rápida",
+   "cena",
+   "desayuno"
+  ],
+  "allergens": [
+   "gluten",
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "sobrasada y piparra"
+ },
+ {
+  "id": "tortilla-vaga-sardinas-espinacas",
+  "title": "Tortilla vaga de sardinas, espinacas y tomate seco",
+  "source": {
+   "creator": "@shoothecook_recetas",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@shoothecook_recetas/video/7463163092785007905"
+  },
+  "cuisine": "mediterránea",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "huevo",
+   "sardinas"
+  ],
+  "ingredients": [
+   {
+    "item": "huevos",
+    "g": 120,
+    "household": "2 huevos"
+   },
+   {
+    "item": "espinacas",
+    "g": 30,
+    "household": "1 puñado"
+   },
+   {
+    "item": "sardinas en aceite escurridas",
+    "g": 85,
+    "household": "1 lata"
+   },
+   {
+    "item": "tomates secos en aceite",
+    "g": 20,
+    "household": "2"
+   },
+   {
+    "item": "mozzarella rallada",
+    "g": 30,
+    "household": "1 puñado"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 3,
+    "household": "unas gotas"
+   }
+  ],
+  "steps": [
+   "Pon papel de horno en un molde que sobresalga por los lados y unas gotas de aceite.",
+   "Casca los huevos, salpimienta y añade las espinacas troceadas, las sardinas, los tomates secos picados y el queso.",
+   "Freidora a 180 °C, 8 min."
+  ],
+  "doneness": "Huevo cuajado y queso fundido.",
+  "minutes": 12,
+  "servings": 1,
+  "perServing": {
+   "kcal": 515,
+   "protein": 43,
+   "carbs": 6,
+   "fat": 35
+  },
+  "tags": [
+   "alta en proteína",
+   "baja en hidratos",
+   "omega-3",
+   "rápida"
+  ],
+  "allergens": [
+   "huevo",
+   "pescado",
+   "lácteos"
+  ],
+  "flavour": "sardina y tomate seco"
+ },
+ {
+  "id": "huevos-flamenca-freidora",
+  "title": "Huevos a la flamenca en freidora",
+  "source": {
+   "creator": "@lacocinadeisacn",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@lacocinadeisacn/video/7383657459182800161"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer",
+   "oven"
+  ],
+  "coating": null,
+  "main": [
+   "huevo",
+   "chorizo",
+   "jamón serrano"
+  ],
+  "ingredients": [
+   {
+    "item": "tomate frito",
+    "g": 200,
+    "household": "1 bote pequeño"
+   },
+   {
+    "item": "menestra de verduras cocida",
+    "g": 200,
+    "household": "2 puñados"
+   },
+   {
+    "item": "taquitos de jamón serrano",
+    "g": 50,
+    "household": "1 sobre"
+   },
+   {
+    "item": "chorizo en rodajas",
+    "g": 40,
+    "household": "8 rodajas"
+   },
+   {
+    "item": "huevos",
+    "g": 240,
+    "household": "4 huevos"
+   },
+   {
+    "item": "sal",
+    "g": 1,
+    "household": "una pizca"
+   }
+  ],
+  "steps": [
+   "Mezcla en una fuente de barro el tomate frito con la menestra.",
+   "Reparte el jamón y el chorizo.",
+   "Haz cuatro huecos con una cuchara, casca los huevos y sálalos.",
+   "Freidora a 180 °C, 12–15 min (horno a 200 °C, 8–10 min)."
+  ],
+  "doneness": "Clara blanca y cuajada; yema todavía se mueve.",
+  "minutes": 20,
+  "servings": 2,
+  "perServing": {
+   "kcal": 445,
+   "protein": 31,
+   "carbs": 17,
+   "fat": 27
+  },
+  "tags": [
+   "alta en proteína",
+   "tradicional",
+   "cena"
+  ],
+  "allergens": [
+   "huevo"
+  ],
+  "flavour": "tomate, chorizo y jamón"
+ },
+ {
+  "id": "huevos-rotos-jamon-freidora",
+  "title": "Huevos rotos con jamón todo en freidora",
+  "source": {
+   "creator": "@airfryer.recetas",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@airfryer.recetas/video/7310913702759288097"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "patata",
+   "huevo",
+   "jamón serrano"
+  ],
+  "ingredients": [
+   {
+    "item": "patatas",
+    "g": 600,
+    "household": "3–4 medianas"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 15,
+    "household": "1 cucharada y media"
+   },
+   {
+    "item": "jamón serrano en lonchas",
+    "g": 100,
+    "household": "6–8 lonchas"
+   },
+   {
+    "item": "huevos",
+    "g": 120,
+    "household": "2 huevos"
+   },
+   {
+    "item": "sal, ajo en polvo y pimentón",
+    "g": 3,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Corta las patatas en bastones, sálalas y mézclalas con el aceite. Freidora a 180 °C, 18–20 min, removiendo.",
+   "Cubre con las lonchas de jamón y 8 min a 170 °C.",
+   "Haz dos huecos entre el jamón, casca los huevos y sazona las yemas con sal y ajo en polvo. 8–10 min más hasta que cuaje la clara.",
+   "Pimentón por encima y rompe los huevos sobre las patatas."
+  ],
+  "doneness": "Clara totalmente blanca y yema líquida.",
+  "minutes": 40,
+  "servings": 2,
+  "perServing": {
+   "kcal": 505,
+   "protein": 28,
+   "carbs": 52,
+   "fat": 20
+  },
+  "tags": [
+   "tradicional",
+   "comfort"
+  ],
+  "allergens": [
+   "huevo"
+  ],
+  "flavour": "jamón y pimentón"
+ },
+ {
+  "id": "huevos-rotos-carbonara",
+  "title": "Huevos rotos a la carbonara",
+  "source": {
+   "creator": "@shoothecook_recetas",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@shoothecook_recetas/video/7332197558913092896"
+  },
+  "cuisine": "fusión",
+  "methods": [
+   "airfryer",
+   "pan"
+  ],
+  "coating": null,
+  "main": [
+   "patata",
+   "huevo",
+   "panceta"
+  ],
+  "ingredients": [
+   {
+    "item": "patatas o boniatos",
+    "g": 400,
+    "household": "2 medianos"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "panceta o guanciale",
+    "g": 40,
+    "household": "2 lonchas"
+   },
+   {
+    "item": "huevos camperos",
+    "g": 120,
+    "household": "2 huevos"
+   },
+   {
+    "item": "parmesano rallado",
+    "g": 20,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "pimienta negra recién molida y sal",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Corta las patatas en bastones de un dedo, mézclalas con el aceite y sal. Sobre papel, freidora a 190 °C, 20–25 min, removiendo a mitad.",
+   "Dora la panceta en una sartén sin aceite y sácala.",
+   "En la grasa que suelta, casca los huevos con sal, tapa y deja que cuajen justo.",
+   "Patatas de base, huevos encima, la panceta, mucha pimienta y parmesano."
+  ],
+  "doneness": "Clara cuajada y yema líquida.",
+  "minutes": 30,
+  "servings": 2,
+  "perServing": {
+   "kcal": 405,
+   "protein": 17,
+   "carbs": 35,
+   "fat": 22
+  },
+  "tags": [
+   "comfort",
+   "capricho"
+  ],
+  "allergens": [
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "pimienta negra y parmesano"
+ },
+ {
+  "id": "smash-burger-bacon-cebolla-caramelizada",
+  "title": "Smash burgers con bacon, cheddar y cebolla caramelizada",
+  "source": {
+   "creator": "@carla_naranjo",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@carla_naranjo/video/7342244568018079008"
+  },
+  "cuisine": "americana",
+  "methods": [
+   "pan"
+  ],
+  "coating": null,
+  "main": [
+   "ternera picada",
+   "pan brioche"
+  ],
+  "ingredients": [
+   {
+    "item": "carne picada de ternera",
+    "g": 500,
+    "household": "1 bandeja"
+   },
+   {
+    "item": "pan brioche de hamburguesa",
+    "g": 150,
+    "household": "2 panes"
+   },
+   {
+    "item": "queso cheddar",
+    "g": 40,
+    "household": "2 lonchas"
+   },
+   {
+    "item": "queso curado",
+    "g": 40,
+    "household": "2 lonchas"
+   },
+   {
+    "item": "bacon",
+    "g": 50,
+    "household": "4 lonchas"
+   },
+   {
+    "item": "cebolla para caramelizar con aceite y azúcar",
+    "g": 160,
+    "household": "1 cebolla + 1 cucharadita de azúcar"
+   },
+   {
+    "item": "mayonesa",
+    "g": 30,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "kétchup y pepinillo picado",
+    "g": 30,
+    "household": "1 cucharada de cada"
+   },
+   {
+    "item": "sal y pimienta",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Carameliza la cebolla en juliana a fuego bajo 20 min con un poco de aceite y el azúcar.",
+   "Haz bolas de carne de unos 125 g. En una plancha o sartén muy caliente, aplasta cada bola con fuerza hasta dejarla fina. Sal y pimienta.",
+   "Al minuto y medio, cuando tenga costra, dale la vuelta y pon el queso encima. Dora el bacon aparte.",
+   "Mezcla la mayonesa, el kétchup y el pepinillo. Monta: pan tostado, salsa, dos carnes, bacon y cebolla."
+  ],
+  "doneness": "Costra marrón y sin rosa en el centro (las carnes finas se hacen al momento; picada a 71 °C).",
+  "minutes": 35,
+  "servings": 2,
+  "perServing": {
+   "kcal": 1195,
+   "protein": 68,
+   "carbs": 49,
+   "fat": 78
+  },
+  "tags": [
+   "capricho",
+   "alta en proteína"
+  ],
+  "allergens": [
+   "gluten",
+   "lácteos",
+   "huevo",
+   "mostaza"
+  ],
+  "flavour": "costra tostada y cebolla dulce"
+ },
+ {
+  "id": "hamburguesas-mixtas-ternera-lentejas",
+  "title": "Hamburguesas mixtas de ternera y lentejas en freidora",
+  "source": {
+   "creator": "@mouvair",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@mouvair/video/7361795583620795654"
+  },
+  "cuisine": "fusión",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "ternera picada",
+   "lentejas"
+  ],
+  "ingredients": [
+   {
+    "item": "carne picada de ternera",
+    "g": 240,
+    "household": "1 bandeja pequeña"
+   },
+   {
+    "item": "lentejas cocidas, escurridas",
+    "g": 250,
+    "household": "1 bote pequeño"
+   },
+   {
+    "item": "cebolla",
+    "g": 60,
+    "household": "media pequeña"
+   },
+   {
+    "item": "zanahoria",
+    "g": 40,
+    "household": "media"
+   },
+   {
+    "item": "harina",
+    "g": 15,
+    "household": "1 cucharada y media"
+   },
+   {
+    "item": "panes de hamburguesa",
+    "g": 240,
+    "household": "4 panes"
+   },
+   {
+    "item": "tomate y lechuga",
+    "g": 140,
+    "household": "1 tomate y 8 hojas"
+   },
+   {
+    "item": "sal, pimienta, comino y perejil",
+    "g": 4,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Aplasta las lentejas con un tenedor y mézclalas con la cebolla y la zanahoria muy picadas, la harina y las especias.",
+   "Incorpora la carne salpimentada y forma 4 hamburguesas, apretando bien para que no se rompan.",
+   "Freidora precalentada a 190 °C, 15 min, dándoles la vuelta a mitad.",
+   "Monta en el pan con tomate y lechuga."
+  ],
+  "doneness": "Firme al tocarla y sin rosa en el centro (71 °C).",
+  "minutes": 30,
+  "servings": 4,
+  "perServing": {
+   "kcal": 385,
+   "protein": 23,
+   "carbs": 49,
+   "fat": 11
+  },
+  "tags": [
+   "rica en fibra",
+   "familiar",
+   "para niños"
+  ],
+  "allergens": [
+   "gluten"
+  ],
+  "flavour": "comino"
+ },
+ {
+  "id": "albondigas-lentejas-tandoori",
+  "title": "Albóndigas de lentejas al tandoori en 15 minutos",
+  "source": {
+   "creator": "@nutrisinexcusas",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@nutrisinexcusas/video/7281226495974968608"
+  },
+  "cuisine": "india",
+  "methods": [
+   "airfryer",
+   "oven"
+  ],
+  "coating": null,
+  "main": [
+   "lentejas"
+  ],
+  "ingredients": [
+   {
+    "item": "lentejas cocidas, escurridas",
+    "g": 200,
+    "household": "1 bote pequeño"
+   },
+   {
+    "item": "harina de centeno o espelta",
+    "g": 20,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "especias tandoori, sal y pimienta",
+    "g": 4,
+    "household": "1 cucharadita"
+   },
+   {
+    "item": "aceite de oliva en spray",
+    "g": 3,
+    "household": "unas pulverizaciones"
+   },
+   {
+    "item": "tomate frito",
+    "g": 100,
+    "household": "medio bote pequeño"
+   },
+   {
+    "item": "albahaca fresca (opcional)",
+    "g": 2,
+    "household": "unas hojas"
+   }
+  ],
+  "steps": [
+   "Machaca bien las lentejas con la harina, la sal, la pimienta y el tandoori hasta tener una pasta.",
+   "Forma albóndigas pequeñas y pulveriza aceite.",
+   "Freidora a 200 °C, 10 min (o en una sartén).",
+   "Sírvelas sobre el tomate caliente con albahaca."
+  ],
+  "doneness": "Doradas y firmes por fuera.",
+  "minutes": 15,
+  "servings": 1,
+  "perServing": {
+   "kcal": 400,
+   "protein": 22,
+   "carbs": 63,
+   "fat": 5
+  },
+  "tags": [
+   "vegana",
+   "rica en fibra",
+   "rápida"
+  ],
+  "allergens": [
+   "gluten"
+  ],
+  "flavour": "tandoori"
+ },
+ {
+  "id": "arroz-frito-huevo-soja",
+  "title": "Arroz frito con huevo, soja y cebolleta",
+  "source": {
+   "creator": "@cookingwith.gi",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@cookingwith.gi/video/7473274712253156654"
+  },
+  "cuisine": "china",
+  "methods": [
+   "pan"
+  ],
+  "coating": null,
+  "main": [
+   "arroz",
+   "huevo"
+  ],
+  "ingredients": [
+   {
+    "item": "arroz cocido frío (del día anterior)",
+    "g": 400,
+    "household": "2 tazas grandes"
+   },
+   {
+    "item": "huevos",
+    "g": 180,
+    "household": "3 huevos"
+   },
+   {
+    "item": "zanahoria en dados",
+    "g": 80,
+    "household": "1 mediana"
+   },
+   {
+    "item": "cebolla en dados",
+    "g": 80,
+    "household": "media"
+   },
+   {
+    "item": "cebolleta picada",
+    "g": 30,
+    "household": "2 tallos"
+   },
+   {
+    "item": "ajo machacado",
+    "g": 6,
+    "household": "2 dientes"
+   },
+   {
+    "item": "salsa de soja",
+    "g": 30,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "aceite de sésamo",
+    "g": 5,
+    "household": "1 cucharadita"
+   },
+   {
+    "item": "aceite de girasol u oliva suave",
+    "g": 10,
+    "household": "1 cucharada"
+   }
+  ],
+  "steps": [
+   "Sofríe la zanahoria, la cebolla, la cebolleta y el ajo en el aceite a fuego medio-alto, 3–4 min.",
+   "Aparta las verduras, echa los huevos batidos y remueve hasta que cuajen. Mezcla.",
+   "Añade el arroz frío y saltea fuerte 3 min. Termina con la soja y el aceite de sésamo.",
+   "Decora con más cebolleta. Para más proteína, añade pollo o gambas salteados."
+  ],
+  "doneness": "Arroz suelto y caliente, con algún grano tostado.",
+  "minutes": 15,
+  "servings": 2,
+  "perServing": {
+   "kcal": 500,
+   "protein": 18,
+   "carbs": 66,
+   "fat": 17
+  },
+  "tags": [
+   "rápida",
+   "aprovechamiento"
+  ],
+  "allergens": [
+   "huevo",
+   "soja",
+   "gluten",
+   "sésamo"
+  ],
+  "flavour": "soja y sésamo"
+ },
+ {
+  "id": "arroz-chino-pollo-verduras-tortilla",
+  "title": "Arroz chino con pollo, col y tortilla",
+  "source": {
+   "creator": "@recetasdewilly",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@recetasdewilly/video/7329649598035676448"
+  },
+  "cuisine": "china",
+  "methods": [
+   "pan",
+   "pot"
+  ],
+  "coating": null,
+  "main": [
+   "pechuga de pollo",
+   "arroz",
+   "huevo"
+  ],
+  "ingredients": [
+   {
+    "item": "pechugas de pollo fileteadas",
+    "g": 500,
+    "household": "2 pechugas"
+   },
+   {
+    "item": "arroz basmati, crudo",
+    "g": 200,
+    "household": "2 tazas"
+   },
+   {
+    "item": "cebolla tierna",
+    "g": 150,
+    "household": "1 grande"
+   },
+   {
+    "item": "zanahorias",
+    "g": 160,
+    "household": "2"
+   },
+   {
+    "item": "pimiento verde",
+    "g": 100,
+    "household": "1"
+   },
+   {
+    "item": "col blanca",
+    "g": 200,
+    "household": "un cuarto"
+   },
+   {
+    "item": "ajo y jengibre rallado",
+    "g": 10,
+    "household": "2 dientes y 1 cucharadita"
+   },
+   {
+    "item": "salsa de soja y vinagre de arroz",
+    "g": 60,
+    "household": "2 cucharadas de cada"
+   },
+   {
+    "item": "huevos",
+    "g": 120,
+    "household": "2 huevos"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 20,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "cúrcuma, pimentón y guindilla en copos",
+    "g": 3,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Cuece el arroz basmati lavado con un dedo de agua por encima hasta que se absorba.",
+   "Marca el pollo en una sartén grande con el aceite y salpimienta.",
+   "Añade las verduras en juliana, el ajo y el jengibre y saltea fuerte 2 min. Echa la soja, el vinagre y las especias, 2 min más.",
+   "Incorpora el arroz. Haz una tortilla con los huevos, trocéala y mézclala."
+  ],
+  "doneness": "Pollo dorado y verduras crujientes.",
+  "minutes": 30,
+  "servings": 3,
+  "perServing": {
+   "kcal": 610,
+   "protein": 51,
+   "carbs": 65,
+   "fat": 14
+  },
+  "tags": [
+   "alta en proteína",
+   "meal prep",
+   "táper"
+  ],
+  "allergens": [
+   "soja",
+   "gluten",
+   "huevo"
+  ],
+  "flavour": "soja, jengibre y vinagre de arroz"
+ },
+ {
+  "id": "bowl-pollo-nachos-salsa-yogur",
+  "title": "Bowl de pollo con nachos de piadina, feta y salsa de yogur",
+  "source": {
+   "creator": "@paula.gnzalz",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@paula.gnzalz/video/7343752763945520416"
+  },
+  "cuisine": "mediterránea",
+  "methods": [
+   "pan",
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "pechuga de pollo",
+   "piadina"
+  ],
+  "ingredients": [
+   {
+    "item": "pechuga de pollo en dados",
+    "g": 400,
+    "household": "1 pechuga entera"
+   },
+   {
+    "item": "yogur griego ligero",
+    "g": 80,
+    "household": "4 cucharadas"
+   },
+   {
+    "item": "limón, sal, orégano y pimentón dulce",
+    "g": 10,
+    "household": "un chorrito y al gusto"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 15,
+    "household": "1 cucharada y media"
+   },
+   {
+    "item": "piadina o tortilla grande",
+    "g": 110,
+    "household": "1"
+   },
+   {
+    "item": "lechuga iceberg",
+    "g": 100,
+    "household": "un cuarto"
+   },
+   {
+    "item": "tomate",
+    "g": 150,
+    "household": "1"
+   },
+   {
+    "item": "pepino",
+    "g": 100,
+    "household": "medio"
+   },
+   {
+    "item": "cebolla",
+    "g": 50,
+    "household": "un trozo"
+   },
+   {
+    "item": "queso feta",
+    "g": 50,
+    "household": "1 trozo"
+   }
+  ],
+  "steps": [
+   "Mezcla el yogur con limón, sal, orégano y pimentón. Marina el pollo con la mitad.",
+   "Dora el pollo en una sartén con 1 cucharada de aceite.",
+   "Pinta la piadina con el resto del aceite, pimentón y sal, córtala en triángulos y freidora a 200 °C, 4 min.",
+   "Monta: lechuga, tomate, pepino, cebolla, pollo, nachos, feta y el resto de la salsa."
+  ],
+  "doneness": "Pollo dorado y blanco por dentro.",
+  "minutes": 15,
+  "servings": 2,
+  "perServing": {
+   "kcal": 600,
+   "protein": 58,
+   "carbs": 38,
+   "fat": 22
+  },
+  "tags": [
+   "alta en proteína",
+   "rápida",
+   "fresca"
+  ],
+  "allergens": [
+   "gluten",
+   "lácteos"
+  ],
+  "flavour": "yogur, orégano y pimentón"
+ },
+ {
+  "id": "poke-bowl-pollo-sriracha",
+  "title": "Poke bowl de pollo con salsa de sriracha y arce",
+  "source": {
+   "creator": "@nutrilogasamantha",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@nutrilogasamantha/video/7390120701098822918"
+  },
+  "cuisine": "hawaiana",
+  "methods": [
+   "airfryer",
+   "pot"
+  ],
+  "coating": null,
+  "main": [
+   "pechuga de pollo",
+   "arroz"
+  ],
+  "ingredients": [
+   {
+    "item": "pechuga de pollo en dados",
+    "g": 280,
+    "household": "1 pechuga"
+   },
+   {
+    "item": "ajo, jengibre, sal y pimienta",
+    "g": 5,
+    "household": "al gusto"
+   },
+   {
+    "item": "aceite de sésamo",
+    "g": 10,
+    "household": "2 cucharaditas"
+   },
+   {
+    "item": "salsa de soja",
+    "g": 30,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "sirope de arce",
+    "g": 15,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "vinagre de arroz",
+    "g": 5,
+    "household": "1 cucharadita"
+   },
+   {
+    "item": "sriracha",
+    "g": 10,
+    "household": "2 cucharaditas"
+   },
+   {
+    "item": "arroz blanco o de sushi, crudo",
+    "g": 140,
+    "household": "1 taza y media"
+   },
+   {
+    "item": "pepino, zanahoria rallada y aguacate",
+    "g": 240,
+    "household": "medio pepino, 1 zanahoria, medio aguacate"
+   },
+   {
+    "item": "semillas de sésamo",
+    "g": 5,
+    "household": "1 cucharadita"
+   }
+  ],
+  "steps": [
+   "Mezcla la soja, el aceite de sésamo, el arce, el vinagre y la sriracha. Marina el pollo sazonado 20 min.",
+   "Freidora a 185 °C, 14–15 min, removiendo a mitad.",
+   "Cuece el arroz.",
+   "Monta los bowls con el arroz, el pollo, el pepino, la zanahoria, el aguacate y el sésamo."
+  ],
+  "doneness": "Dados de pollo blancos por dentro.",
+  "minutes": 40,
+  "servings": 2,
+  "perServing": {
+   "kcal": 580,
+   "protein": 40,
+   "carbs": 67,
+   "fat": 15
+  },
+  "tags": [
+   "alta en proteína",
+   "post-entreno",
+   "táper"
+  ],
+  "allergens": [
+   "soja",
+   "gluten",
+   "sésamo"
+  ],
+  "flavour": "picante dulce"
+ },
+ {
+  "id": "wrap-pollo-bacon-salsa-yogur",
+  "title": "Wrap de pollo y bacon con salsa de yogur y perejil",
+  "source": {
+   "creator": "@yaidymakes_es",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@yaidymakes_es/video/7474677921051954478"
+  },
+  "cuisine": "americana",
+  "methods": [
+   "pan"
+  ],
+  "coating": null,
+  "main": [
+   "pechuga de pollo",
+   "tortilla de trigo"
+  ],
+  "ingredients": [
+   {
+    "item": "tortilla de trigo grande",
+    "g": 60,
+    "household": "1 tortilla"
+   },
+   {
+    "item": "pechuga de pollo",
+    "g": 200,
+    "household": "1 pechuga pequeña"
+   },
+   {
+    "item": "bacon",
+    "g": 15,
+    "household": "1 loncha"
+   },
+   {
+    "item": "lechuga romana",
+    "g": 50,
+    "household": "1 taza"
+   },
+   {
+    "item": "tomates cherry",
+    "g": 50,
+    "household": "4"
+   },
+   {
+    "item": "cebolla roja",
+    "g": 30,
+    "household": "unas rodajas"
+   },
+   {
+    "item": "yogur natural 0 %",
+    "g": 60,
+    "household": "4 cucharadas"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 10,
+    "household": "1 cucharada (mitad salsa, mitad pollo)"
+   },
+   {
+    "item": "ajo en polvo, pimentón, perejil, unas gotas de limón, sal y pimienta",
+    "g": 5,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Dora el bacon en una sartén hasta que esté crujiente y resérvalo en su grasa.",
+   "Sazona el pollo con sal, pimienta, pimentón y ajo en polvo y hazlo en la misma sartén 5–6 min por lado. Reposa y corta en tiras.",
+   "Mezcla el yogur con ajo en polvo, limón, sal, pimienta, perejil y media cucharada de aceite.",
+   "Rellena la tortilla con la lechuga, los tomates, la cebolla, el bacon, el pollo y la salsa. Enrolla y corta en diagonal."
+  ],
+  "doneness": "Pollo dorado y sin rosa (74 °C).",
+  "minutes": 25,
+  "servings": 1,
+  "perServing": {
+   "kcal": 605,
+   "protein": 58,
+   "carbs": 37,
+   "fat": 23
+  },
+  "tags": [
+   "alta en proteína",
+   "táper",
+   "comida"
+  ],
+  "allergens": [
+   "gluten",
+   "lácteos"
+  ],
+  "flavour": "yogur con perejil"
+ },
+ {
+  "id": "pastelitos-carne-obleas-freidora",
+  "title": "Pastelitos de carne con obleas de empanadilla",
+  "source": {
+   "creator": "@ekilu",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@ekilu/video/7330194045580430624"
+  },
+  "cuisine": "española",
+  "methods": [
+   "pan",
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "carne picada",
+   "obleas de empanadilla"
+  ],
+  "ingredients": [
+   {
+    "item": "carne picada",
+    "g": 200,
+    "household": "1 bandeja pequeña (el doble que en el vídeo, para que llenen más)"
+   },
+   {
+    "item": "zanahoria",
+    "g": 40,
+    "household": "media"
+   },
+   {
+    "item": "cebolla",
+    "g": 60,
+    "household": "media"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "tomate frito",
+    "g": 30,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "obleas de empanadilla",
+    "g": 240,
+    "household": "12 obleas"
+   },
+   {
+    "item": "huevo batido para pintar",
+    "g": 30,
+    "household": "medio huevo"
+   },
+   {
+    "item": "sal y pimienta",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Pica muy fina la cebolla y la zanahoria y sofríelas en el aceite 10 min.",
+   "Sube el fuego, añade la carne salpimentada y cocínala hasta que dore. Baja, añade el tomate y mezcla 2 min.",
+   "Pon relleno sobre una oblea, tapa con otra, sella con un tenedor y pincha por encima. Pinta con huevo.",
+   "Freidora a 180 °C, 10 min (en dos tandas)."
+  ],
+  "doneness": "Masa dorada y crujiente.",
+  "minutes": 35,
+  "servings": 2,
+  "perServing": {
+   "kcal": 670,
+   "protein": 28,
+   "carbs": 66,
+   "fat": 31
+  },
+  "tags": [
+   "para niños",
+   "congelable"
+  ],
+  "allergens": [
+   "gluten",
+   "huevo"
+  ],
+  "flavour": "carne con tomate"
+ },
+ {
+  "id": "empanadillas-carne-tortillas-trigo",
+  "title": "Empanadillas exprés de carne con tortillas de trigo",
+  "source": {
+   "creator": "@rakeltecocina",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@rakeltecocina/video/7246761491238538522"
+  },
+  "cuisine": "española",
+  "methods": [
+   "microwave",
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "carne picada",
+   "tortilla de trigo",
+   "huevo"
+  ],
+  "ingredients": [
+   {
+    "item": "carne picada",
+    "g": 200,
+    "household": "1 bandeja pequeña"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "ajo y cebolla en polvo, sal",
+    "g": 3,
+    "household": "al gusto"
+   },
+   {
+    "item": "huevo cocido",
+    "g": 60,
+    "household": "1"
+   },
+   {
+    "item": "tomate frito",
+    "g": 60,
+    "household": "4 cucharadas"
+   },
+   {
+    "item": "queso rallado",
+    "g": 40,
+    "household": "4 cucharadas"
+   },
+   {
+    "item": "tortillas de trigo pequeñas",
+    "g": 150,
+    "household": "6"
+   },
+   {
+    "item": "aceite de oliva en spray",
+    "g": 3,
+    "household": "unas pulverizaciones"
+   }
+  ],
+  "steps": [
+   "Mezcla la carne con el aceite, el ajo, la cebolla en polvo y la sal, y cocínala en el microondas 3 min a máxima potencia, removiendo a mitad.",
+   "Añade el huevo picado, el tomate y el queso.",
+   "Rellena media tortilla, dóblala y sella el borde con agua y un tenedor.",
+   "Pulveriza aceite y freidora a 190 °C, 10 min."
+  ],
+  "doneness": "Doradas y crujientes por fuera.",
+  "minutes": 20,
+  "servings": 2,
+  "perServing": {
+   "kcal": 630,
+   "protein": 33,
+   "carbs": 41,
+   "fat": 32
+  },
+  "tags": [
+   "rápida",
+   "para niños"
+  ],
+  "allergens": [
+   "gluten",
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "carne con tomate y queso"
+ },
+ {
+  "id": "empanadillas-carbonara-champinon-bacon",
+  "title": "Empanadillas carbonara de champiñón y bacon",
+  "source": {
+   "creator": "@enjoybyana",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@enjoybyana/video/7337654840505470241"
+  },
+  "cuisine": "fusión",
+  "methods": [
+   "pan",
+   "airfryer",
+   "oven"
+  ],
+  "coating": null,
+  "main": [
+   "champiñones",
+   "bacon",
+   "obleas de empanadilla"
+  ],
+  "ingredients": [
+   {
+    "item": "champiñones muy picados",
+    "g": 200,
+    "household": "1 bandeja"
+   },
+   {
+    "item": "cebolla picada",
+    "g": 80,
+    "household": "media"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "bacon en taquitos",
+    "g": 100,
+    "household": "1 paquete"
+   },
+   {
+    "item": "nata para cocinar",
+    "g": 100,
+    "household": "medio brick"
+   },
+   {
+    "item": "obleas de empanadilla",
+    "g": 240,
+    "household": "12 obleas"
+   },
+   {
+    "item": "huevo batido para pintar",
+    "g": 30,
+    "household": "medio huevo"
+   },
+   {
+    "item": "sal y pimienta",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Sofríe la cebolla y los champiñones hasta que tomen color. Añade el bacon y dóralo.",
+   "Echa la nata, salpimienta y deja que espese.",
+   "Rellena las obleas sin pasarte, sella con un tenedor y pinta con huevo.",
+   "Freidora a 180 °C, 8 min, dándoles la vuelta cuando queden 4."
+  ],
+  "doneness": "Doradas por ambas caras.",
+  "minutes": 30,
+  "servings": 3,
+  "perServing": {
+   "kcal": 475,
+   "protein": 15,
+   "carbs": 44,
+   "fat": 26
+  },
+  "tags": [
+   "aperitivo",
+   "para invitados",
+   "congelable"
+  ],
+  "allergens": [
+   "gluten",
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "carbonara cremosa"
+ },
+ {
+  "id": "empanadillas-atun-pisto-huevo",
+  "title": "Empanadillas de atún, pisto y huevo duro",
+  "source": {
+   "creator": "@fussimonsi",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@fussimonsi/video/7388991098925911328"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "atún",
+   "obleas de empanadilla",
+   "huevo"
+  ],
+  "ingredients": [
+   {
+    "item": "obleas de empanadilla",
+    "g": 240,
+    "household": "12 obleas"
+   },
+   {
+    "item": "pisto o fritada",
+    "g": 380,
+    "household": "1 bote"
+   },
+   {
+    "item": "atún en conserva escurrido",
+    "g": 160,
+    "household": "2 latas"
+   },
+   {
+    "item": "huevos cocidos",
+    "g": 120,
+    "household": "2"
+   },
+   {
+    "item": "huevo batido para pintar",
+    "g": 30,
+    "household": "medio huevo"
+   }
+  ],
+  "steps": [
+   "Mezcla el pisto escurrido con el atún y el huevo cocido picado.",
+   "Rellena las obleas, ciérralas y sella con un tenedor.",
+   "Quita la rejilla, pon 6 empanadillas y píntalas con huevo.",
+   "Freidora a 160 °C, 20 min, dándoles la vuelta a mitad si tu freidora no dora por abajo. Haz dos tandas."
+  ],
+  "doneness": "Masa dorada por ambas caras.",
+  "minutes": 35,
+  "servings": 3,
+  "perServing": {
+   "kcal": 505,
+   "protein": 27,
+   "carbs": 50,
+   "fat": 21
+  },
+  "tags": [
+   "familiar",
+   "congelable",
+   "táper"
+  ],
+  "allergens": [
+   "gluten",
+   "pescado",
+   "huevo"
+  ],
+  "flavour": "pisto y atún"
+ },
+ {
+  "id": "bocaditos-merluza-panko-mayo-cebollino",
+  "title": "Bocaditos de merluza en panko con mayonesa de cebollino",
+  "source": {
+   "creator": "@latoneira",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@latoneira/video/7428648392676412705"
+  },
+  "cuisine": "española",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": "breaded",
+  "main": [
+   "merluza"
+  ],
+  "ingredients": [
+   {
+    "item": "lomos de merluza sin piel ni espinas",
+    "g": 400,
+    "household": "3–4 lomos"
+   },
+   {
+    "item": "majado de ajo y aceite",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "harina",
+    "g": 20,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "huevo batido",
+    "g": 60,
+    "household": "1 huevo"
+   },
+   {
+    "item": "panko",
+    "g": 30,
+    "household": "media taza"
+   },
+   {
+    "item": "copos de maíz picados",
+    "g": 20,
+    "household": "media taza"
+   },
+   {
+    "item": "aceite de oliva virgen extra en spray",
+    "g": 5,
+    "household": "unas pulverizaciones"
+   },
+   {
+    "item": "mayonesa",
+    "g": 20,
+    "household": "1 cucharada y media"
+   },
+   {
+    "item": "cebollino picado y sal",
+    "g": 3,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Corta la merluza en trozos de bocado, sala y píntalos con el majado de ajo y aceite.",
+   "Empánalos: harina, huevo y la mezcla de panko con copos de maíz.",
+   "Pulveriza aceite y freidora a 195 °C, 8 min.",
+   "Sirve con la mayonesa mezclada con el cebollino."
+  ],
+  "doneness": "Empanado dorado y merluza blanca.",
+  "minutes": 20,
+  "servings": 2,
+  "perServing": {
+   "kcal": 450,
+   "protein": 39,
+   "carbs": 28,
+   "fat": 17
+  },
+  "tags": [
+   "alta en proteína",
+   "rápida",
+   "para niños"
+  ],
+  "allergens": [
+   "pescado",
+   "gluten",
+   "huevo"
+  ],
+  "flavour": "ajo y cebollino"
+ },
+ {
+  "id": "huevos-plato-guisantes-chorizo",
+  "title": "Huevos al plato con guisantes y chorizo",
+  "source": {
+   "creator": "@recetasdewilly",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@recetasdewilly/video/7270609957672750368"
+  },
+  "cuisine": "española",
+  "methods": [
+   "pan",
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "huevo",
+   "chorizo",
+   "guisantes"
+  ],
+  "ingredients": [
+   {
+    "item": "cebolla",
+    "g": 100,
+    "household": "1 pequeña"
+   },
+   {
+    "item": "ajo",
+    "g": 6,
+    "household": "2 dientes"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 10,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "chorizo",
+    "g": 30,
+    "household": "6 rodajas"
+   },
+   {
+    "item": "guisantes cocidos",
+    "g": 30,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "tomate triturado",
+    "g": 200,
+    "household": "medio bote"
+   },
+   {
+    "item": "huevos",
+    "g": 120,
+    "household": "2 huevos"
+   },
+   {
+    "item": "queso rallado",
+    "g": 15,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "pimentón, pimienta, orégano y sal",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Pocha la cebolla y el ajo picados con el aceite y sal, 6–8 min.",
+   "Añade el chorizo 2 min y luego los guisantes 2 min.",
+   "Incorpora el tomate y las especias y reduce 3 min. Pasa el sofrito a una cazuelita de barro.",
+   "Echa las claras por encima, remueve y freidora a 200 °C, 5 min. Pon las yemas y el queso y 2 min más."
+  ],
+  "doneness": "Claras cuajadas y yemas templadas pero líquidas.",
+  "minutes": 25,
+  "servings": 1,
+  "perServing": {
+   "kcal": 560,
+   "protein": 30,
+   "carbs": 23,
+   "fat": 38
+  },
+  "tags": [
+   "tradicional",
+   "cena"
+  ],
+  "allergens": [
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "chorizo y pimentón"
+ },
+ {
+  "id": "huevos-revueltos-cremosos-freidora-parmesano",
+  "title": "Huevos revueltos cremosos en freidora con parmesano y cebollino",
+  "source": {
+   "creator": "@lacadenasaludable",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@lacadenasaludable/video/7363176027734019360"
+  },
+  "cuisine": "desayuno",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "huevo"
+  ],
+  "ingredients": [
+   {
+    "item": "huevos",
+    "g": 180,
+    "household": "3 huevos"
+   },
+   {
+    "item": "leche",
+    "g": 30,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "parmesano rallado",
+    "g": 15,
+    "household": "1 cucharada y media"
+   },
+   {
+    "item": "cebollino, sal y pimienta",
+    "g": 3,
+    "household": "al gusto"
+   },
+   {
+    "item": "aceite en spray",
+    "g": 2,
+    "household": "unas gotas"
+   },
+   {
+    "item": "pan para tostar",
+    "g": 60,
+    "household": "2 rebanadas"
+   }
+  ],
+  "steps": [
+   "Bate los huevos con la leche, sal y pimienta en un recipiente apto engrasado.",
+   "Freidora a 200 °C, 2 min. Saca, remueve y 2–3 min más según lo cuajados que te gusten.",
+   "Termina con parmesano y cebollino y sirve con el pan tostado."
+  ],
+  "doneness": "Cuajados pero brillantes y cremosos.",
+  "minutes": 8,
+  "servings": 1,
+  "perServing": {
+   "kcal": 500,
+   "protein": 33,
+   "carbs": 32,
+   "fat": 27
+  },
+  "tags": [
+   "desayuno",
+   "rápida",
+   "cena"
+  ],
+  "allergens": [
+   "huevo",
+   "lácteos",
+   "gluten"
+  ],
+  "flavour": "parmesano y cebollino"
+ },
+ {
+  "id": "tortilla-calabacin-pollo-cottage",
+  "title": "Tortilla de calabacín con pollo y queso cottage",
+  "source": {
+   "creator": "@jonenutricion",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@jonenutricion/video/7473201630901472534"
+  },
+  "cuisine": "mediterránea",
+  "methods": [
+   "pan"
+  ],
+  "coating": null,
+  "main": [
+   "calabacín",
+   "huevo",
+   "pollo",
+   "queso cottage"
+  ],
+  "ingredients": [
+   {
+    "item": "calabacín en rodajas muy finas",
+    "g": 150,
+    "household": "medio"
+   },
+   {
+    "item": "huevos",
+    "g": 120,
+    "household": "2 huevos"
+   },
+   {
+    "item": "pechuga de pollo cocinada y desmenuzada",
+    "g": 100,
+    "household": "media pechuga"
+   },
+   {
+    "item": "queso cottage",
+    "g": 100,
+    "household": "media tarrina"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 5,
+    "household": "1 cucharadita"
+   },
+   {
+    "item": "sal, pimienta y orégano",
+    "g": 2,
+    "household": "al gusto"
+   }
+  ],
+  "steps": [
+   "Dora las rodajas de calabacín en la sartén con el aceite, 3 min.",
+   "Bate los huevos con sal y pimienta y viértelos sobre el calabacín.",
+   "Reparte el pollo y el cottage por encima, tapa y cuaja a fuego medio-bajo 5–6 min.",
+   "Dobla o sirve abierta con orégano."
+  ],
+  "doneness": "Huevo cuajado y relleno caliente.",
+  "minutes": 15,
+  "servings": 1,
+  "perServing": {
+   "kcal": 505,
+   "protein": 58,
+   "carbs": 8,
+   "fat": 25
+  },
+  "tags": [
+   "alta en proteína",
+   "baja en hidratos",
+   "aprovechamiento",
+   "cena"
+  ],
+  "allergens": [
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "calabacín y orégano"
+ },
+ {
+  "id": "sincronizada-jamon-queso",
+  "title": "Sincronizadas de jamón y queso",
+  "source": {
+   "creator": "@latoneira",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@latoneira/video/6993609637081681158"
+  },
+  "cuisine": "mexicana",
+  "methods": [
+   "pan",
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "tortilla de trigo",
+   "jamón cocido",
+   "queso"
+  ],
+  "ingredients": [
+   {
+    "item": "tortillas de trigo medianas",
+    "g": 80,
+    "household": "2"
+   },
+   {
+    "item": "jamón cocido",
+    "g": 60,
+    "household": "3 lonchas"
+   },
+   {
+    "item": "queso para fundir (mozzarella, gouda o edam)",
+    "g": 50,
+    "household": "2 lonchas o 1 puñado"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 3,
+    "household": "unas gotas"
+   }
+  ],
+  "steps": [
+   "Sobre una tortilla pon la mitad del queso, el jamón y el resto del queso. Tapa con la otra tortilla.",
+   "Sartén a fuego medio con unas gotas de aceite, 2–3 min por lado apretando con la espátula (o freidora a 180 °C, 5–6 min con algo de peso encima).",
+   "Corta en triángulos. Queda muy bien con guacamole o pico de gallo."
+  ],
+  "doneness": "Doradas y con el queso fundido.",
+  "minutes": 10,
+  "servings": 1,
+  "perServing": {
+   "kcal": 495,
+   "protein": 30,
+   "carbs": 41,
+   "fat": 21
+  },
+  "tags": [
+   "rápida",
+   "para niños",
+   "cena"
+  ],
+  "allergens": [
+   "gluten",
+   "lácteos"
+  ],
+  "flavour": "jamón y queso fundido"
+ },
+ {
+  "id": "pelotazos-caseros-mijo-parmesano",
+  "title": "Pelotazos caseros de mijo con parmesano y pimentón",
+  "source": {
+   "creator": "@petit_fit",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@petit_fit/video/7286546717867003169"
+  },
+  "cuisine": "snack",
+  "methods": [
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "mijo inflado",
+   "parmesano"
+  ],
+  "ingredients": [
+   {
+    "item": "bolitas de mijo inflado",
+    "g": 80,
+    "household": "2 tazas"
+   },
+   {
+    "item": "pimentón dulce",
+    "g": 7,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "ajo en polvo",
+    "g": 7,
+    "household": "1 cucharada"
+   },
+   {
+    "item": "parmesano rallado",
+    "g": 30,
+    "household": "3 cucharadas"
+   },
+   {
+    "item": "aceite de oliva virgen extra",
+    "g": 15,
+    "household": "1 cucharada y media"
+   },
+   {
+    "item": "sal",
+    "g": 1,
+    "household": "una pizca"
+   }
+  ],
+  "steps": [
+   "Mezcla las bolitas con el aceite hasta que estén impregnadas.",
+   "Añade el pimentón, el ajo, el parmesano y la sal y mezcla bien.",
+   "Freidora a 180 °C, 2–3 min. Vigílalas: se tuestan muy rápido."
+  ],
+  "doneness": "Crujientes y con el queso tostado.",
+  "minutes": 5,
+  "servings": 2,
+  "perServing": {
+   "kcal": 280,
+   "protein": 10,
+   "carbs": 33,
+   "fat": 13
+  },
+  "tags": [
+   "snack",
+   "picoteo",
+   "vegetariana"
+  ],
+  "allergens": [
+   "lácteos"
+  ],
+  "flavour": "pimentón y queso"
+ },
+ {
+  "id": "torrijas-brioche-freidora",
+  "title": "Torrijas de brioche con miel y canela en freidora",
+  "source": {
+   "creator": "@ugar90",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@ugar90/video/7482736688171601174"
+  },
+  "cuisine": "postre",
+  "methods": [
+   "airfryer",
+   "oven"
+  ],
+  "coating": null,
+  "main": [
+   "pan brioche",
+   "huevo"
+  ],
+  "ingredients": [
+   {
+    "item": "pan brioche en rebanadas gruesas",
+    "g": 200,
+    "household": "4 rebanadas"
+   },
+   {
+    "item": "huevos",
+    "g": 120,
+    "household": "2 huevos"
+   },
+   {
+    "item": "leche",
+    "g": 150,
+    "household": "150 ml"
+   },
+   {
+    "item": "miel",
+    "g": 30,
+    "household": "1 chorro generoso"
+   },
+   {
+    "item": "canela",
+    "g": 2,
+    "household": "1 cucharadita"
+   }
+  ],
+  "steps": [
+   "Bate los huevos con la leche, la miel y la canela.",
+   "Empapa bien cada rebanada por los dos lados.",
+   "Sobre papel de horno, freidora a 180 °C, 8 min, girándolas a mitad (horno a 200 °C, 12 min)."
+  ],
+  "doneness": "Doradas por fuera y jugosas por dentro.",
+  "minutes": 15,
+  "servings": 4,
+  "perServing": {
+   "kcal": 270,
+   "protein": 9,
+   "carbs": 33,
+   "fat": 11
+  },
+  "tags": [
+   "postre",
+   "merienda",
+   "tradicional"
+  ],
+  "allergens": [
+   "gluten",
+   "huevo",
+   "lácteos"
+  ],
+  "flavour": "miel y canela"
+ },
+ {
+  "id": "empanadas-criollas-carne-comino-huevo",
+  "title": "Empanadas criollas de carne con comino y huevo duro",
+  "source": {
+   "creator": "@enelhornoconpetaok",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@enelhornoconpetaok/video/7341798501552098566"
+  },
+  "cuisine": "argentina",
+  "methods": [
+   "pan",
+   "airfryer"
+  ],
+  "coating": null,
+  "main": [
+   "ternera picada",
+   "masa de empanada",
+   "huevo"
+  ],
+  "ingredients": [
+   {
+    "item": "carne picada de ternera",
+    "g": 500,
+    "household": "1 bandeja"
+   },
+   {
+    "item": "cebolla",
+    "g": 150,
+    "household": "1"
+   },
+   {
+    "item": "pimiento rojo",
+    "g": 120,
+    "household": "1"
+   },
+   {
+    "item": "ajo",
+    "g": 15,
+    "household": "4 dientes"
+   },
+   {
+    "item": "aceite de oliva",
+    "g": 20,
+    "household": "2 cucharadas"
+   },
+   {
+    "item": "laurel, comino, pimentón, sal y pimienta",
+    "g": 6,
+    "household": "1 hoja y media cucharadita de comino"
+   },
+   {
+    "item": "huevos duros",
+    "g": 120,
+    "household": "2"
+   },
+   {
+    "item": "cebolleta verde picada",
+    "g": 50,
+    "household": "1 manojo pequeño"
+   },
+   {
+    "item": "discos de empanada",
+    "g": 360,
+    "household": "12 discos"
+   }
+  ],
+  "steps": [
+   "Pocha la cebolla en el aceite, añade el pimiento 1 min y luego la carne con el laurel, el comino, el pimentón, sal y pimienta. Cocina 6 min y añade el ajo a mitad.",
+   "Retira el laurel y deja enfriar. Mezcla con el huevo duro rallado y la cebolleta.",
+   "Rellena cada disco sin pasarte, moja el borde y ciérralo con repulgue.",
+   "Freidora a 190 °C, 12 min, sin amontonarlas."
+  ],
+  "doneness": "Masa dorada y relleno caliente.",
+  "minutes": 45,
+  "servings": 4,
+  "perServing": {
+   "kcal": 670,
+   "protein": 34,
+   "carbs": 51,
+   "fat": 36
+  },
+  "tags": [
+   "para compartir",
+   "congelable"
+  ],
+  "allergens": [
+   "gluten",
+   "huevo"
+  ],
+  "flavour": "comino y pimentón"
+ }
+]
