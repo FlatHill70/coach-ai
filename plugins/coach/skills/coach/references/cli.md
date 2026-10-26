@@ -86,6 +86,7 @@
   "training_days": 4, "training_weekdays": ["mon", "tue", "thu", "fri"], "session_minutes": 60, "location": "gym|home|both|outdoors", "equipment": ["barbell", "dumbbells", "cables", "machines"],
   "injuries": [], "avoid_exercises": [], "preferred_exercises": [],
   "weak_points": ["side_delts"], "priorities": ["upper_back"], "volume_targets": { "side_delts": [10, 16] },
+  "program_variety": "block|continuous|varied", "rest_preference": "short|medium|long",
   "activity": "sedentary|light|moderate|very|extreme|null", "daily_steps": 8000, "sleep_hours": 7.5,
   "rate_pct_per_week": null,
   "nutrition": { "tracking": "none|rough|precise", "diet": "omnivore", "allergies": [], "dislikes": [], "budget": "low|medium|high", "cooking": "15 min, basic", "meals_per_day": 4, "cuisine": "Spanish", "supplements": ["creatine"], "kitchen": ["airfryer", "griddle", "oven"], "favorite_creators": ["@latoneira"] },

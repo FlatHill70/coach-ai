@@ -19,7 +19,7 @@ Goal: a complete `profile.json`, the first goals, a first program and nutrition 
 
 ## Round 2 — logistics and preferences
 
-7. **Days per week and minutes per session**: be realistic. A 3-day plan they follow beats a 6-day plan they abandon.
+7. **Days per week and minutes per session**: be realistic. A 3-day plan they follow beats a 6-day plan they abandon. If time is tight, ask for their rest preference (`rest_preference`), and ask how much they like exercises to change (`program_variety`: 6-week blocks / always the same / some new every week; see `programming.md` › Program variety).
 8. **Where and with what**: commercial gym / home (list equipment: dumbbells up to X kg, bands, pull-up bar, bench, kettlebell) / outdoors / bodyweight only.
 9. **Injuries, pain, limitations** (`injuries`), exercises they hate or can't do (`avoid_exercises`), exercises they love (`preferred_exercises`).
 10. **Weak points or priorities** they perceive (e.g. "my legs are skinny", "I want a bigger back") → `weak_points` / `priorities`, using muscle-group ids.

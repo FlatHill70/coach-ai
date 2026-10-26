@@ -268,7 +268,7 @@ Follow `references/onboarding.md` exactly: safety screening first, then level, g
 Read `references/weak-points.md`. Use `workouts stalled` and `workouts balance`, plus what the user reports (photos, how clothes fit, feel), measurements and `profile.weak_points`. Run the stall checklist before changing exercises. Prescribe at most one or two **specialisation** priorities at a time, and lower other groups to maintenance to pay for it.
 
 ### Plan a program: "plan my routine", "new program", "change Monday"
-Read `references/programming.md` and the goal playbook in `references/levels-and-goals.md`. Start from the profile (days, minutes, equipment, injuries, vetoed and preferred exercises, weak points) and from **current real volume**, not a template. Increase volume gradually (+2–4 sets per group per week at most vs what they do now). Deliver each day in this format, ready for Hevy/Strong (the app name in italics for searching):
+Read `references/programming.md` and the goal playbook in `references/levels-and-goals.md`. Start from the profile (days, minutes, equipment, injuries, vetoed and preferred exercises, weak points, priorities, `program_variety`, `rest_preference`) and from **current real volume**, not a template. Rep ranges by goal and exercise type, rest by load, and starting loads from their history (`programming.md`). Increase volume gradually (+2–4 sets per group per week at most vs what they do now). Deliver each day in this format, ready for Hevy/Strong (the app name in italics for searching):
 
 ```
 Day A: Upper (Monday) · ~60 min
@@ -276,7 +276,7 @@ Day A: Upper (Monday) · ~60 min
 2. ...
 ```
 
-With the Hevy API connected (`hevy-mcp`, Hevy PRO), offer to create the routine directly in the app. Without it, just give the text.
+With the Hevy API connected (`hevy-mcp`, Hevy PRO), offer to create or update the routine directly in the app, with each set's `rep_range` filled in. Updating an existing routine or fixing logged workouts: follow `data-sources.md` › Hevy PRO API (back up, send the whole object, read it back). Without the API, just give the text.
 
 ### Log: "log my workout", "bench 60x8, 60x8", "I weighed 72.4", "lunch was…"
 - Sets: `workouts log --exercise "<catalogue key>" --sets "60x8,60x8,57.5x8@9"` (reps only: `"12,10,9"`, time: `"45s"`). Resolve the name with `exercises find` first. One call per exercise; reuse the same `--title`, `--date` and `--time` for one session.

@@ -40,6 +40,16 @@ claude mcp add hevy -s user -e HEVY_API_KEY=<key> -- npx -y hevy-mcp
 
 (on Windows: `-- cmd /c npx -y hevy-mcp`). Then you can read workouts live and **create routines directly in Hevy** from a program. The CSV route still works without PRO.
 
+The MCP tools only appear in a new Claude Code session. Until then, or for bulk edits, the REST API works directly: base `https://api.hevyapp.com/v1`, header `api-key: <key>`. Things to know before writing to it:
+- **Back up first, and confirm** before editing more than one workout: save the JSON of every workout and routine you'll touch.
+- `PUT /workouts/{id}` and `PUT /routines/{id}` **replace the whole object**. Send every exercise and set again (type, weight_kg, reps, distance, duration, rpe for workouts). Sending only the changed exercise deletes the others.
+- `PUT /workouts/{id}` rejects `routine_id` (the link to the routine is kept anyway). Routines don't accept `folder_id` on update.
+- Match exercises by `exercise_template_id`, never by title: titles can come back in the app language in one endpoint and in English in another. Templates: `GET /exercise_templates?pageSize=100`. Workouts page at most 10 per request.
+- Routine sets accept `rep_range: {start, end}`. Fill it from the program's range so Hevy's in-app progression suggestions follow the same range.
+- After every write, read the object back and compare exercise count, sets, loads and reps with the backup.
+
+Typical uses: an exercise logged under the wrong name in many workouts (swap the template in each one, except the days the user names), or updating routines from what the user actually did this week.
+
 ## Apple Health via iOS Shortcut
 Apple has no cloud API for Health, so a Shortcut on the iPhone writes a small text file to iCloud Drive whenever a chosen app closes. Setup: `references/apple-shortcut.md`. File name: `coach_health.txt`. Line format: `kind;ISO date;value;unit` with kinds `weight`, `bodyfat`, `lean`, `kcal`, `protein`, `carbs`, `fat_g`, `steps`. The engine reads it live from the inbox, so no `sync` is needed (but `sync` also keeps a copy).
 
