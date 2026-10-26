@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.0](https://github.com/FlatHill70/coach-ai/compare/v1.5.0...v1.6.0) (2026-10-26)
+
+
+### Features
+
+* programming rules aligned with Hevy Trainer ([62ea3fc](https://github.com/FlatHill70/coach-ai/commit/62ea3fc879fa7943f1102943c37674dc469555fa))
+* recipe book with 100 creator recipes and link import ([76ea12b](https://github.com/FlatHill70/coach-ai/commit/76ea12b133e46aa12c5bbdfc214aca3e5299ec4d))
+
 ## [1.5.0](https://github.com/FlatHill70/coach-ai/compare/v1.4.0...v1.5.0) (2026-10-13)
 
 
